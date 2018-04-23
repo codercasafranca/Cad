@@ -10,7 +10,8 @@
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family:"Open Sans";
+	position: relative;
 }
 
 p{
@@ -29,16 +30,17 @@ select{
 	border-right:none;
 	border-bottom:1px solid #003C75;
 	outline: none;
-	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-family:"Open Sans";
 }
 
 select{
-	color: #003C75;
+	color: #003C75;	
+	font-family:"Open Sans";	
 }
 
-select:focus{
-	opacity: .7;
+select:focus{	
+	font-family:"Open Sans Light";
 }
 
 input::placeholder,
@@ -57,14 +59,74 @@ input[type=submit]{
 	border:none;
 }
 
+/****************************
+   fonts monkey - open sans
+ ****************************/
+@font-face {
+    font-family:"Open Sans Extrabold";
+    src:url("../font-monkey/OpenSans-ExtraBold.eot?") format("eot"),
+    	url("../font-monkey/OpenSans-ExtraBold.woff") format("woff"),
+    	url("../font-monkey/OpenSans-ExtraBold.ttf") format("truetype"),
+    	url("../font-monkey/OpenSans-ExtraBold.svg#OpenSans-Extrabold") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+ @font-face {
+    font-family:"Open Sans Bold";
+    src:url("../font-monkey/OpenSans-Bold.eot?") format("eot"),
+	    url("../font-monkey/OpenSans-Bold.woff") format("woff"),
+	    url("../font-monkey/OpenSans-Bold.ttf") format("truetype"),
+	    url("../font-monkey/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"Open Sans Semibold";
+    src:url("../font-monkey/OpenSans-Semibold.eot?") format("eot"),
+	    url("../font-monkey/OpenSans-Semibold.woff") format("woff"),
+	    url("../font-monkey/OpenSans-Semibold.ttf") format("truetype"),
+	    url("../font-monkey/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+@font-face {
+    font-family:"Open Sans";
+    src:url("../font-monkey/OpenSans-Regular.eot?") format("eot"),
+	    url("../font-monkey/OpenSans-Regular.woff") format("woff"),
+	    url("../font-monkey/OpenSans-Regular.ttf") format("truetype"),
+	    url("../font-monkey/OpenSans-Regular.svg#OpenSans") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"Open Sans Light";
+    src:url("../font-monkey/OpenSans-Light.eot?") format("eot"),
+	    url("../font-monkey/OpenSans-Light.woff") format("woff"),
+	    url("../font-monkey/OpenSans-Light.ttf") format("truetype"),
+	    url("../font-monkey/OpenSans-Light.svg#OpenSans-Light") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*font-family:"Open Sans Extrabold";*/
+/*font-family:"Open Sans Bold";*/
+/*font-family:"Open Sans Semibold";*/
+/*font-family:"Open Sans";*/
+/*font-family:"Open Sans Light";*/
+
 .ui-fila-items-form-slider.btn-enviar{
 	text-align: center;
 }
 
 .ui-btn-enviar-form-slider{
 	background-color: #B0E519;
-	text-transform: uppercase;
-	font-weight: 800;
+	text-transform: uppercase;	
+	font-family:"Open Sans Bold";	
 	font-size: 17px; 
 	display: inline-block;
 	vertical-align: top;
@@ -72,16 +134,33 @@ input[type=submit]{
 	padding: 23px 76px;
 	border-radius:35px;
 	color: #fff;
+	cursor: pointer;
+
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-ms-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
 }
 
-.ui-fila-items-form-slider.textarea{
-	margin-bottom: 30px;	
+.ui-btn-enviar-form-slider:hover{
+	background-color: #003C75; 
 }
 
-.ui-textarea-slider{
-	margin-left: 1%;
-	margin-right: 1%;
+.ui-box-textarea{
+	margin-bottom: 30px;
+	position: relative;	
+	padding: 1% 2% 0%;
 }
+
+	.ui-box-icon-textarea{
+		position: absolute;
+		bottom: 10px;
+    	right: 9px;
+		width: 15px;
+		height:15px;
+		background-color: #fff;
+	}
 
 .ui-clear{
 	clear: both;
@@ -92,7 +171,8 @@ input[type=submit]{
 	padding-left: 10px;
 	padding-right: 10px;
     margin-left: auto;
-    margin-right: auto;       
+    margin-right: auto; 
+    overflow: hidden;         
 }
 
 .ui-box-container-secundario{
@@ -107,12 +187,36 @@ input[type=submit]{
 	margin-left: auto;		
 }
 
+.ui-box-modal{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1000;
+	display: none;
+}
+
+	.ui-box-modal-comienza-ahora{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 /*********** header top ***********/
 .ui-header-top{	
 	position: fixed;
 	top:0;
 	left:0;
-	z-index: 100;
+	z-index: 1000;
 	background-color: #fff;	
 	width: 100%;	
 
@@ -164,8 +268,8 @@ input[type=submit]{
 				color: #fff;
 				padding-left: 60px;
 				padding-right: 25px;
-				position: relative;
-				font-weight: 800;
+				position: relative;				
+				font-family:"Open Sans Bold";				
 				font-size: 18px;
 			}
 
@@ -193,8 +297,15 @@ input[type=submit]{
 
 	.ui-fila-top-header.a{
 		text-align: right;
-		margin-bottom: 21px;
+		margin-bottom: 11px;
 	}
+
+		.ui-fila-top-header.a .ui-box{
+			display: inline-block;
+			vertical-align: top;
+			padding-bottom: 13px;
+			border-bottom: 1px solid rgba(0,0,0,.06);
+		}
 
 	.ui-box-social-top-header{
 		display: inline-block;
@@ -219,20 +330,25 @@ input[type=submit]{
 			background-color: rgba(0,60,117,.3);
 		}
 
+	.ui-box-icon-opcion{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 5px;
+	}
+
 	.ui-box-item-social-top-header{
 		display: inline-block;
 		vertical-align: top;
 	}
 
-	.ui-texto-top{
-		font-weight: 400;
+	.ui-texto-top{		
 		font-size: 15px;
 		opacity: .8;
 	}
 
 		.ui-texto-top.c{
 			font-size: 16px;
-			font-weight: 800;
+			font-family:"Open Sans Bold";
 			margin-left: 5px;
 		}
 
@@ -308,57 +424,186 @@ input[type=submit]{
 			display: block;
 			line-height: 53px;
 			border-bottom:4px solid #fff;
+			font-family:"Open Sans Light";
 		}
 
 		.ui-menu ul li a.ui-menu-active{
 			border-bottom:4px solid #003C75;
-			font-weight: 800;
+			font-weight: 800;			
+			font-family:"Open Sans Bold";			
 		}
 
 /************ slider ***********/
-.ui-container-slider{
-	height: 962px;	
-	background: rgba(0,0,0,0.1);	
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+.ui-container-slider{	
+	position: relative;		
+	height: 962px;
 }
 
-	.bxslider.slider{
-		position: absolute;
-		top:0px;
-		left:0px;
-		height: 962px;		
-	}
-
-	.ui-box-item-slide{
-		width: 100%;
-		height: 100%;		
+	.slider{
 		position: absolute;
 		top:0;
 		left:0;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;		
+		height: 962px;
+		width: 100%;	
+		z-index: 2;
+		visibility: hidden;		
 	}
 
-		.ui-box-item-slide.a,
-		.ui-box-item-slide.b,
-		.ui-box-item-slide.c{
+		.ui-box-btn-slider-scroll-abajo{
+			position: absolute;
+			right:32px;
+			bottom:49px;	
+			visibility: visible;
+			cursor: pointer;
+		}
+
+			.ui-texto-scroll-slider{				
+				-webkit-transform:translateY(-20px);
+				-moz-transform:translateY(-20px);
+				-ms-transform:translateY(-20px);
+				-o-transform:translateY(-20px);
+				transform:translateY(-20px);
+			}
+
+				.ui-texto-scroll-slider p{	
+					color:#fff;		
+					font-family:"Open Sans Extrabold";		
+					-webkit-transform:rotate(-90deg);
+					-moz-transform:rotate(-90deg);
+					-ms-transform:rotate(-90deg);
+					-o-transform:rotate(-90deg);
+					transform:rotate(-90deg);
+				}
+			
+			.ui-box-icon-scroll-slider{				
+				text-align: center;
+			}
+
+				.ui-icon-scroll{
+					display: inline-block;
+					vertical-align: top;
+				}
+
+				.ui-box-btn-slider-scroll-abajo:hover > .ui-box-icon-scroll-slider{
+					position: relative;
+
+					-webkit-animation: btn-slider-abajo linear .3s ;
+					-moz-animation: btn-slider-abajo linear .3s ;
+					-ms-animation: btn-slider-abajo linear .3s ;
+					-o-animation: btn-slider-abajo linear .3s ;
+					animation: btn-slider-abajo linear .3s ;
+				}
+
+				@-webkit-keyframes btn-slider-abajo {
+				    0% {
+						top:0px;
+				    }
+				    50% {
+						top:8px;
+				    }
+				    100% {
+						top:0px;
+				    }
+				}
+
+				
+				@keyframes btn-slider-abajo {
+				   0% {
+						top:0px;
+				    }
+				    50% {
+						top:8px;
+				    }
+				    100% {
+						top:0px;
+				    }
+				}
+
+	.bxslider-home{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 962px;		
+		z-index: -2;		
+	}
+
+		.ui-item-slide-home{		
+			height: 962px;									
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;		
+		}
+
+		.ui-item-slide-home.a,
+		.ui-item-slide-home.b,
+		.ui-item-slide-home.c{
 			background-image: url(../img/slide-01.png);
 		}
 
+			.ui-box-texto-slide{
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;									
+			}
+
+				.ui-texto-slide{
+					height: 962px;					
+
+					display: -webkit-flex;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+				}
+
+					.ui-texto-slide-contenido{
+						max-width: 516px;
+						margin-left: 12%;						
+					}
+
+						.ui-h2-slide{							
+							font-size: 45px;
+							line-height: 49px;
+							margin-bottom: 21px;	
+							color: #fff;	
+							-webkit-text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+							-moz-text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+							-ms-text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+							-o-text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+							text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);			
+						}
+
+							.ui-h2-slide span{
+								display: block;
+							}
+
+							.ui-h2-slide .a{
+								font-family:"Open Sans";
+							}
+
+							.ui-h2-slide .b{
+								font-family:"Open Sans Light";	
+							}
+
+						.ui-texto-parrafo-slide{
+							font-size: 20px;
+							color:#fff;
+							line-height: 23px;		
+							font-family:"Open Sans Light";				
+						}
+
 .ui-box-form-slider{
-	height: 962px;
-	background-color: yellow;
+	height: 962px;	
 	padding-right: 7%;
 	visibility: hidden;
-
 	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center; 
+	z-index: 1;
+	visibility: hidden;
 }
 
 	.ui-form-slider{
@@ -368,6 +613,7 @@ input[type=submit]{
 		background-color: #fff;
 		border-radius:4px;
 		padding: 54px;
+		visibility: visible;
 
 		-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
 		-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
@@ -381,30 +627,31 @@ input[type=submit]{
 
 			.ui-h2-form-slider span{
 				display: block;
-				text-transform: uppercase;
-				font-weight: 800;
+				text-transform: uppercase;				
 			}
 
 				.ui-h2-form-slider .a{
 					font-size: 20px;
 					color:#B0E519;
+					font-family:"Open Sans";
 				}
 
 				.ui-h2-form-slider .b{
 					font-size: 25px;					
 					color:#003C75;
-				}
+					font-family:"Open Sans Extrabold";
+				}				
 
 				.ui-fila-items-form-slider > .ui-izquierda{
 					float: left;
-					width: 47.99%;
-					margin: 1%;
+					width: 45.99%;
+					margin: 1% 2%;					
 				}
 
 				.ui-fila-items-form-slider > .ui-derecha{
 					float: right;
-					width: 47.99%;
-					margin: 1%;
+					width: 45.99%;
+					margin: 1% 2%;					
 				}
 
 .ui-btn-abajo.slider{
@@ -415,22 +662,39 @@ input[type=submit]{
 		border-radius:50%;
 	}
 
+.ui-container-slider .bx-wrapper .bx-pager{
+	bottom: 174px;	
+	padding-top: 0px;
+	width:auto;
+	left:15%; 
+} 
+
 /************ sección nuestras especialidades ************/
 .ui-box-especialidades{
 	padding-bottom: 64px;
 	padding-top: 82px;
+	position: relative;
+}
+
+.ui-box-comienza-ahora{
+	position: absolute;
+	right:0;
+	bottom:0; 	
+	cursor: pointer;
+	background-color: transparent;
+	outline: none;
+	border:none;
 }
 
 	.ui-header-h2{
 		text-align: center;	
-		margin-bottom: 50px;
+		margin-bottom: 50px;		
 	}
 
 		.ui-h2{					
 			line-height: 44px;
-			font-size: 37px;	
-			font-weight: 800;
-			text-transform: uppercase;	
+			font-family:"Open Sans";
+			font-size: 37px;						
 		}
 
 			.ui-h2 .a{
@@ -445,6 +709,7 @@ input[type=submit]{
 	width: 31.33%;
 	float: left;
 	margin:1%;
+	overflow: hidden;
 }
 
 .ui-box-image-curso{	
@@ -453,12 +718,26 @@ input[type=submit]{
 
 	.ui-image-curso{
 		width: 100%;
+
+		-webkit-transition:all .4s linear;
+		-moz-transition:all .4s linear;
+		-ms-transition:all .4s linear;
+		-o-transition:all .4s linear;
+		transition:all .4s linear;
 	}
 
 		.ui-image-curso img{
 			display: block;
 			width: 100%;
 		}
+
+			.ui-item-curso:hover > .ui-box-image-curso .ui-image-curso{
+				-webkit-transform: scale(1.1,1.1);
+				-moz-transform: scale(1.1,1.1);
+				-ms-transform: scale(1.1,1.1);
+				-o-transform: scale(1.1,1.1);
+				transform: scale(1.1,1.1);
+			}
 
 .ui-box-overflow-curso{
 	position: absolute;
@@ -511,9 +790,8 @@ input[type=submit]{
 		height: 54px;		
 	}
 
-.ui-nombre-curso{	
-	font-style: normal;
-	font-weight: bold;
+.ui-nombre-curso{		
+	font-family:"Open Sans Bold";
 	line-height: 27px;
 	font-size: 23px;
 	letter-spacing: -0.03em;
@@ -601,6 +879,26 @@ input[type=submit]{
 		border-left: 12px solid #A1AB20;
 		font-size: 25px;
 	}
+
+.ui-form-slider.especialidades {
+	position: relative;
+}
+
+	.ui-icon-close{
+		position: absolute;
+		top:20px;
+		right:20px;
+		cursor: pointer;
+	}
+
+		.ui-icon-close figure{
+			max-width: 20px;
+		}
+
+			.ui-icon-close figure img{
+				display: block;
+				width: 100%;
+			}
 
 /*************** sección ¿ porque cad ? ***************/
 .ui-box-porque-cad{	
@@ -716,13 +1014,9 @@ input[type=submit]{
 				font-size: 18px;
 			}
 
-				.ui-icon-porque-cad{
-
-				}
-
 				.ui-h2-porque-cad{
 					font-size: 30px;
-					font-weight: 600;
+					font-family:"Open Sans Semibold";
 
 					-webkit-transition: all .2s linear;
 					-moz-transition: all .2s linear;
@@ -740,7 +1034,8 @@ input[type=submit]{
 	bottom:0;
 	left:0;
 	width: 100%; 
-	height: 20px;
+	height: 20px;	
+	z-index: 999;
 	text-align: center;	
 }
 
@@ -748,10 +1043,9 @@ input[type=submit]{
 		width: 102px;
 		height: 102px;
 		display: inline-block;
-		vertical-align: top;
-
+		vertical-align: top;		
 		position: relative;
-		bottom:40px;
+		bottom:40px;		
 
 		-webkit-transform:rotate(45deg);
 		-moz-transform:rotate(45deg);
@@ -771,11 +1065,13 @@ input[type=submit]{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			visibility: visible;
 		}
 
 			.ui-icon-btn-abajo{
 				padding: 15px; 
-				cursor: pointer;				
+				cursor: pointer;		
+				visibility: visible;		
 				-webkit-transform:rotate(-45deg);
 				-moz-transform:rotate(-45deg);
 				-ms-transform:rotate(-45deg);
@@ -842,7 +1138,7 @@ input[type=submit]{
 			position: absolute;
 			bottom:-25px;
 			left:0;		
-
+			cursor: pointer;
 			display: -webkit-flex;
 			display: flex;
 			justify-content: center;
@@ -950,13 +1246,13 @@ input[type=submit]{
 			display: block;
 		}
 
-			.ui-h2-video .a{
-				font-weight: 800;
+			.ui-h2-video .a{				
+				font-family:"Open Sans Bold";
 				font-size: 40px;
 			}
 
-			.ui-h2-video .b{
-				font-weight: 400;
+			.ui-h2-video .b{				
+				font-family:"Open Sans";
 				font-size: 40px;
 			}
 
@@ -977,11 +1273,19 @@ input[type=submit]{
 		bottom:0; 
 		width:33.33%;
 		height: 100%;		
-		background-image: url(../img/ex-alumno.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: bottom center;
 	}
+
+		.ui-imagen-ex-alumno{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 526px;
+			background-image: url(../img/ex-alumno.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: bottom center;
+		}
 
 	.ui-box-carousel-ex-alumnos{
 		padding-top: 109px;
@@ -999,17 +1303,20 @@ input[type=submit]{
 			}
 
 			.ui-h2-ex-alumno{
-				font-size: 37px;
-				font-weight: 800;
-				text-transform: uppercase;		
+				font-size: 40px;
+				font-family:"Open Sans";
 			}
 
 				.ui-h2-ex-alumno .a{
-					color: #B0E519;							
+					color: #B0E519;	
+					line-height: 44px;						
 				}
 
 				.ui-h2-ex-alumno .b{
-					color: #003C75;												
+					color: #003C75;	
+					line-height: 44px;	
+					font-family:"Open Sans Extrabold";	
+					text-transform: uppercase;						
 				}
 
 		.ui-box-item-carousel-ex-alumno{
@@ -1022,9 +1329,9 @@ input[type=submit]{
 			
 				.ui-box-parrafo-carousel p{
 					font-size: 20px;
-					line-height: 23px;
-					font-weight: 400px;
-					color: #B6B6B6;
+					line-height: 23px;					
+					color: #B6B6B6;						
+					font-family:"Open Sans";						
 				}
 
 		.ui-nombre-carrera-ex-alumno span{
@@ -1034,14 +1341,14 @@ input[type=submit]{
 
 			.ui-nombre-carrera-ex-alumno .a{
 				font-size: 25px;
-				color:#003C75;
-				font-weight: 700;
+				color:#003C75;				
+				font-family:"Open Sans Bold";
 			}
 
 			.ui-nombre-carrera-ex-alumno .b{
 				font-size: 20px;
 				color: rgba(0, 0, 0, 0.4);
-				font-weight: 400;
+				font-family:"Open Sans";
 			}
 
 			.owl-carousel.alumnos .owl-stage-outer{
@@ -1092,20 +1399,21 @@ input[type=submit]{
 	}
 
 		.ui-h2-nuestros-clientes span{
-			display: block;
-			line-height: 40px;
-			font-weight: 800;
-			text-transform: uppercase;
+			display: block;	
+			line-height: 40px;								
 		}
 
 			.ui-h2-nuestros-clientes .a{				
 				font-size:30px;				
-				color:#B0E519;
+				color:#B0E519;				
+				font-family:"Open Sans Bold";
 			}
 
 			.ui-h2-nuestros-clientes .b{			
-				font-size:40px;			
-				color:#003C75;				
+				font-size:40px;						
+				color:#003C75;	
+				font-family:"Open Sans Extrabold";
+				text-transform: uppercase;		
 			}
 
 	.ui-box-carousel-clientes{
@@ -1121,6 +1429,251 @@ input[type=submit]{
 	.owl-carousel.clientes .owl-dots{
 		display: none;
 	}
+
+	.owl-carousel.clientes .owl-nav{		
+		position: absolute;
+		top:50px;
+		left:0;
+		width: 100%;
+		visibility: hidden;
+	}
+
+		.owl-carousel.clientes .owl-nav .owl-prev{
+			float: left;
+			position: relative;
+			left:-30px;
+			visibility: visible;
+			border:1px solid #fff!important;
+			color:#fff;
+			outline: none;
+		}
+
+			.owl-carousel.clientes .owl-nav .owl-prev:hover{
+				background-image: url(../img/left-icon-cliente.png); 
+				background-repeat: no-repeat;				
+			}
+			
+
+		.owl-carousel.clientes .owl-nav .owl-next{
+			float: right;
+			position: relative;
+			right:-30px;
+			visibility: visible;
+			border:1px solid #fff!important;
+			color:#fff;
+			outline: none;
+		}
+
+			.owl-carousel.clientes .owl-nav .owl-next:hover{
+				background-image: url(../img/right-icon-cliente.png); 
+				background-repeat: no-repeat;				
+			}
+
+/***************************************
+      pagina programa de estudios      
+ ***************************************/
+
+/************ nuestros cursos ************/
+.ui-section-nuestros-cursos{
+	padding-top: 200px;
+}
+
+.ui-box-campos-filtros-nuestros-cursos{
+	margin-bottom: 65px;
+}
+
+.ui-filtros-nuestros-cursos{
+	max-width: 1345px;	
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+	.ui-filtros-nuestros-cursos > .ui-izquierda{
+		width:24.99%;
+		float: left;
+	}
+
+	.ui-filtros-nuestros-cursos > .ui-derecha{
+		width: 74.99%;
+		float: right;
+	}
+
+		.ui-item-filtro-nuestro-curso.b,
+		.ui-item-filtro-nuestro-curso.c,
+		.ui-item-filtro-nuestro-curso.d,
+		.ui-item-filtro-nuestro-curso.e{
+			width: 22.99%;
+			margin:0 1%;
+			float: left;
+		}
+
+		.ui-item-filtro-nuestro-curso input,
+		.ui-item-filtro-nuestro-curso select{
+			border-bottom: none;
+			font-size: 20px;
+			height: 40px;			
+		}
+
+.ui-box-item-nuestro-curso{
+	float: left;
+	width: 31.33%;
+	margin: 1%;
+	border-top-left-radius: 10px;
+	overflow: hidden;
+}
+
+	.ui-box-imagen-item-nuestro-curso{
+		position: relative;
+	}
+
+		.ui-box-fecha-item-nuestro-curso{
+			position: absolute;
+			left:0;
+			top:0;
+			background-color: #C0EA47;
+			color: #fff;
+			padding: 14px 30px 14px 20px;
+			display: block;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 10px;
+		}
+
+			.ui-box-fecha-item-nuestro-curso .a{
+				font-family:"Open Sans Extrabold";
+				font-size: 25px;	
+				position: relative;		
+				margin-right: 12px;
+			}
+
+				.ui-box-fecha-item-nuestro-curso .a:before{
+					content:'';
+					position: absolute;
+					top:5px;
+					right:-7px;
+					height: 15px;
+					width: 1px;
+					background-color: #fff;
+				}
+
+			.ui-box-fecha-item-nuestro-curso .b{
+				font-family:"Open Sans Bold";
+				font-size: 20px;			
+				position: relative;
+				bottom: 2px;
+			}
+
+		.ui-box-precio-conteo-horas{
+			position: absolute;
+			bottom:0;
+			left:0;
+			width: 100%; 
+		}
+
+			.ui-box-precio-conteo-horas > .ui-izquierda{
+				position: absolute;
+				top:0;
+				left:0;
+				height: 100%; 
+				width:36.33%;
+				background-color: #002B54;
+
+				display: -webkit-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.ui-box-precio-conteo-horas > .ui-derecha{
+				float: right;
+				width:63.66%;
+			}
+
+	.ui-imagen-nuestro-curso{
+		width: 100%;
+	}
+
+		.ui-imagen-nuestro-curso img{
+			width: 100%;
+			display: block;
+		}
+	
+	.ui-box-precio-conteo-horas{
+		color: #fff;
+		background-color: rgba(0, 43, 84, 0.85);
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+
+		.ui-box-precio-item-curso{
+			background-color: #002B54;
+			padding: 0 15px;
+		}
+
+			.ui-box-precio-item-curso .a{
+				font-family:"Open Sans Bold";
+				font-size: 16px;		
+			}
+
+			.ui-box-precio-item-curso .b{
+				font-family:"Open Sans Extrabold";
+				font-size: 40px;		
+			}
+
+.ui-box-promocion-valida{
+	position: relative;
+	padding-left: 100px;
+}
+
+	.ui-texto-promocion-valida{
+		position: absolute;
+		top:7px;
+		left:15px;
+	}
+
+		.ui-dia-hora-minuto{
+			float: left;
+			width: 33.33%;
+			text-align: center;
+		}
+
+			.ui-dia-hora-minuto span{
+				display: block;
+			}
+
+				.ui-dia-hora-minuto .a{
+					font-family:"Open Sans Extrabold";
+					font-size: 30px;
+				}
+
+				.ui-dia-hora-minuto .b{
+					font-family:"Open Sans";
+					font-size: 13px;
+				}
+
+		.ui-texto-promocion-valida span{
+			display: block;
+		}
+
+			.ui-texto-promocion-valida .a{
+				font-size: 16px;
+				font-family:"Open Sans Bold";
+			}
+
+			.ui-texto-promocion-valida .b{
+				font-size: 14px;
+				font-family:"Open Sans";
+			}
+
+	.ui-box-nombre-nuestro-curso-logotipo{
+		padding: 34px 25px;
+		position: relative;
+	}		
+
+		.ui-h2-nombre-nuestro-curso{
+			font-family:"Open Sans Bold";
+			font-size: 25px;
+			opacity: .4;
+		}
 		
 /*************** footer ***************/
 .ui-box-footer{
@@ -1132,8 +1685,8 @@ input[type=submit]{
 	color: #fff;
 }
 
-	.ui-box-center-footer{
-	   width: 1276px;		 	  
+	.ui-box-container-principal-footer{
+	   max-width: 1276px;		 	  
 	   margin-left: auto;
 	   margin-right: auto;
 	}	
@@ -1144,7 +1697,8 @@ input[type=submit]{
 
 		.ui-fila-footer-a-item.b{
 			width:74.99%;
-			float: right; 		
+			float: right; 
+			padding-top: 14px;		
 		} 
 
 			.ui-dato-contacto-footer{

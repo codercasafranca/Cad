@@ -2,11 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>CAD Perú | Corporación Americana de Desarrollo</title>
 	<link rel="stylesheet" href="css/style-monkey.css">
 	<!-- owlCarouel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">	
+	<link rel="stylesheet" href="css/jquery.custombox.css">
+	<link rel="stylesheet" href="css/YouTubePopUp.css">
+
 </head>
 <body>	
 
@@ -15,7 +19,7 @@
 		<div class="ui-box-container-principal">
 			<div class="ui-header-principal">
 				<div class="ui-izquierda">
-					<a href="">
+					<a href="index.html">
 						<figure>
 							<img src="img/logotipo-cad.png" alt="">
 						</figure>
@@ -23,28 +27,35 @@
 				</div>
 				<div class="ui-derecha">
 					<div class="ui-fila-top-header a">
-						<div class="ui-box-social-top-header">
-							<span class="ui-texto-top">Siguenos :</span>
-							<div class="ui-box-item-social-top-header">
-								<div class="ui-item-social-top a"></div>
-								<div class="ui-item-social-top b"></div>
-								<div class="ui-item-social-top c"></div>
-								<div class="ui-item-social-top d"></div>
+						<div class="ui-box">
+							<div class="ui-box-social-top-header">
+								<span class="ui-texto-top">Siguenos :</span>
+								<div class="ui-box-item-social-top-header">
+									<div class="ui-item-social-top a"></div>
+									<div class="ui-item-social-top b"></div>
+									<div class="ui-item-social-top c"></div>
+									<div class="ui-item-social-top d"></div>
+								</div>
 							</div>
-						</div>
-						<div class="ui-box-dato-top-header">
-							<figure class="icon-dato-top">
-								<img src="img/icon-dato-top-01.png">
-							</figure>
-							<span class="ui-texto-top">Lima</span>
-							<span class="ui-texto-top c">1-706-4949</span>
+							<div class="ui-box-dato-top-header">
+								<figure class="icon-dato-top">
+									<img src="img/icon-dato-top-01.png">
+								</figure>
+								<span class="ui-texto-top">Lima</span>
+								<span class="ui-texto-top c">1-706-4949</span>
+							</div>
+							<div class="ui-box-icon-opcion">
+								<figure>
+									<img src="img/icon-opcion-top.png" alt="">
+								</figure>
+							</div>
 						</div>
 					</div>
 					<div class="ui-fila-top-header b">
 						<nav class="ui-menu">
 							<ul>
 								<li>
-									<a href="#">
+									<a href="index.html">
 										<figure>
 											<img src="img/icon-home.png" alt="">
 										</figure>
@@ -54,7 +65,9 @@
 									<a href="#">Nosotros</a>
 								</li>
 								<li>
-									<a href="#" class="ui-menu-active">Programas de estudio</a>
+									<a href="programas-de-estudio.html" class="ui-menu-active">
+										Programas de estudio
+									</a>
 								</li>
 								<li>
 									<a href="#">Servicios in company</a>
@@ -88,84 +101,156 @@
 
 	<!-- slider -->
 	<div class="ui-container-slider">
-		<div class="ui-box-container-principal">
-			<div class="ui-box-form-slider">
-				<div class="ui-form-slider">
-					<header class="ui-header-form-slider">
-						<h2 class="ui-h2-form-slider">
-							<span class="a">¡Recibe más</span>
-							<span class="b">Información!</span>
-						</h2>
-					</header>
-					<div class="ui-contenido-form-slider">
-						<form action="">
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda">
-									<input type="text" placeholder="Nombre">
+		<div class="slider">
+			<div class="ui-box-container-principal">
+				<div data-ancla="nuestras-especialidades" class="ui-box-btn-slider-scroll-abajo">
+					<div class="ui-texto-scroll-slider">
+						<p>Scroll</p>
+					</div>
+					<div class="ui-box-icon-scroll-slider">
+						<figure class="ui-icon-scroll">
+							<img src="img/arrow-scroll-slider.png" alt="">
+						</figure>
+					</div>
+				</div>
+				<div class="ui-box-form-slider">
+					<div class="ui-form-slider">
+						<header class="ui-header-form-slider">
+							<h2 class="ui-h2-form-slider">
+								<span class="a">¡Recibe más</span>
+								<span class="b">Información!</span>
+							</h2>
+						</header>
+						<div class="ui-contenido-form-slider">
+							<form action="">
+								<div class="ui-fila-items-form-slider">
+										<div class="ui-izquierda ui-linea-form-slider">
+											<input type="text" placeholder="Nombre">
+										</div>
+										<div class="ui-derecha ui-linea-form-slider">
+											<input type="text" placeholder="Apellido">
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
 								</div>
-								<div class="ui-derecha">
-									<input type="text" placeholder="Apellido">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<input type="email" placeholder="Email">
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="tel" placeholder="Celular">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda">
-									<input type="email" placeholder="Email">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<select name="paises">
+											<option value="País">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+										</select>
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="text" placeholder="Región / Ciudad">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
-								<div class="ui-derecha">
-									<input type="tel" placeholder="Celular">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-box-textarea">
+										<div class="ui-box-icon-textarea">
+											<figure>
+												<img src="" alt="">
+											</figure>
+										</div>								
+										<textarea class="ui-textarea-slider" placeholder="Mensaje"></textarea>
+									</div>
 								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda">
-									<select name="paises">
-									    <option value="País">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									    <option value="Pais">País</option>
-									 </select>
+								<div class="ui-fila-items-form-slider btn-enviar">
+									<input class="ui-btn-enviar-form-slider" type="submit" value="enviar">
 								</div>
-								<div class="ui-derecha">
-									<input type="text" placeholder="Región / Ciudad">
-								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider textarea">
-								<textarea class="ui-textarea-slider" name="" id=""></textarea>
-							</div>
-							<div class="ui-fila-items-form-slider btn-enviar">
-								<input class="ui-btn-enviar-form-slider" type="submit" value="enviar">
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>				
+		<ul class="bxslider-home">
+			<li class="ui-item-slide-home a">
+				<div class="ui-box-texto-slide">
+					<div class="ui-box-container-principal">
+						<div class="ui-texto-slide">
+							<div class="ui-texto-slide-contenido">
+								<h2 class="ui-h2-slide">
+									<span class="a">Diplomados Virtuales</span> 
+									<span class="b">Gestion de Riesgos</span>
+								</h2>	
+								<p class="ui-texto-parrafo-slide">
+									Cursos online creados por expertos en el área. Acceso las 24 horas y asesoría de tutores en vivo.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ui-item-slide-home b">
+				<div class="ui-box-texto-slide">
+					<div class="ui-box-container-principal">
+						<div class="ui-texto-slide">
+							<div class="ui-texto-slide-contenido">
+								<h2 class="ui-h2-slide">
+									<span class="a">Diplomados Virtuales</span> 
+									<span class="b">Gestion de Riesgos</span>
+								</h2>	
+								<p class="ui-texto-parrafo-slide">
+									Cursos online creados por expertos en el área. Acceso las 24 horas y asesoría de tutores en vivo.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ui-item-slide-home c">
+				<div class="ui-box-texto-slide">
+					<div class="ui-box-container-principal">
+						<div class="ui-texto-slide">
+							<div class="ui-texto-slide-contenido">
+								<h2 class="ui-h2-slide">
+									<span class="a">Diplomados Virtuales</span> 
+									<span class="b">Gestion de Riesgos</span>
+								</h2>	
+								<p class="ui-texto-parrafo-slide">
+									Cursos online creados por expertos en el área. Acceso las 24 horas y asesoría de tutores en vivo.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>			
+		</ul>	
 		<div class="ui-box-btn-abajo">
-			<div class="ui-btn-abajo slider">
+			<div class="ui-btn-abajo slider" data-ancla="porque-cad">
 				<div class="box-btn-abajo slider">
 					<figure class="ui-icon-btn-abajo">
 						<img src="img/icon-btn-abajo.png" alt="">
 					</figure>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</div>
 	
 	<!-- sección especialidades -->
-	<section class="ui-box-container-principal">
+	<section id="nuestras-especialidades" class="ui-box-container-principal">
 		<div class="ui-box-especialidades">
 			<header class="ui-header-h2">
 				<h2 class="ui-h2">
@@ -248,11 +333,109 @@
 				</article>
 				<div class="ui-clear"></div>
 			</div>
+			<div class="scrollme">
+				<div 
+					class="animateme"
+					data-when="enter"
+			        data-from="0.5"
+			        data-to="0"
+			        data-opacity="0"
+			        data-translatex="200"			       
+				>
+					<button onclick="document.getElementById('modal-form-comienza-ahora').style.display='block'" class="ui-box-comienza-ahora">
+						<figure>
+							<img src="img/comienza-ahora.png" alt="">
+						</figure>
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
+	<!-- modal comienza ahora -->
+	<div id="modal-form-comienza-ahora" class="ui-box-modal">
+		<div class="ui-box-modal-comienza-ahora">
+			<div class="ui-modal-comienza-ahora">
+				<div class="ui-form-slider especialidades">
+					<header class="ui-header-form-slider">
+							<h2 class="ui-h2-form-slider">
+								<span class="a">¡Recibe más</span>
+								<span class="b">Información!</span>
+							</h2>
+					</header>
+					<div class="ui-contenido-form-slider">
+							<form action="">
+								<div class="ui-fila-items-form-slider">
+										<div class="ui-izquierda ui-linea-form-slider">
+											<input type="text" placeholder="Nombre">
+										</div>
+										<div class="ui-derecha ui-linea-form-slider">
+											<input type="text" placeholder="Apellido">
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<input type="email" placeholder="Email">
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="tel" placeholder="Celular">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<select name="paises">
+											<option value="País">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+										</select>
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="text" placeholder="Región / Ciudad">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-box-textarea">
+										<div class="ui-box-icon-textarea">
+											<figure>
+												<img src="" alt="">
+											</figure>
+										</div>								
+										<textarea class="ui-textarea-slider" placeholder="Mensaje"></textarea>
+									</div>
+								</div>
+								<div class="ui-fila-items-form-slider btn-enviar">
+									<input class="ui-btn-enviar-form-slider" type="submit" value="enviar">
+								</div>
+							</form>
+					</div>
+					<div class="ui-icon-close" 
+						onclick="document.getElementById('modal-form-comienza-ahora').style.display='none'">
+						<figure>
+							<img src="img/close-modal-form.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- sección ¿ porque cad ? -->
-	<div class="ui-box-container-principal">
+	<div id="porque-cad" class="ui-box-container-principal">
 		<div class="ui-box-porque-cad">
 			<div class="ui-izquierda">
 				<div class="ui-box-imagen-porque-cad"></div>
@@ -268,7 +451,7 @@
 								</h2>
 								<p>
 									Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
-								</p>
+								</p>							
 							</div>
 						</div>
 						<div class="ui-item-porque-cad">
@@ -312,7 +495,7 @@
 			<!-- clear -->
 			<div class="ui-clear"></div>
 			<div class="ui-box-btn-abajo">
-				<div class="ui-btn-abajo">
+				<div data-ancla="seccion-video" class="ui-btn-abajo">
 					<div class="box-btn-abajo">
 						<figure class="ui-icon-btn-abajo">
 							<img src="img/icon-btn-abajo.png" alt="">
@@ -324,14 +507,16 @@
 	</div>
 
 	<!-- seccion video -->
-	<div class="ui-box-video-home">
+	<div id="seccion-video" class="ui-box-video-home">
 		<div class="ui-box-enlace-texto-video">
-			<div class="ui-box-icon-play-video">
-				<div class="ui-box-borde-video-a"></div>
-				<div class="ui-box-borde-video-b">
-					<div class="ui-triangulo-play-video"></div>				
-				</div>					
-			</div>
+			<a class="demo" href="https://www.youtube.com/watch?v=cu8vIQw7hKQ">
+				<div class="ui-box-icon-play-video">
+					<div class="ui-box-borde-video-a"></div>
+					<div class="ui-box-borde-video-b">
+						<div class="ui-triangulo-play-video"></div>				
+					</div>					
+				</div>
+			</a>
 			<h2 class="ui-h2-video">
 				<span class="a"> 
 					Conoce la Educación 
@@ -411,7 +596,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="ui-derecha"></div>
+				<div class="ui-derecha">
+					<div class="scrollme">
+						<div 
+							class="animateme"
+					        data-when="exit"
+					        data-easing="easeinout"
+					        data-from="0.5"
+					        data-to="0"
+					        data-opacity="0"
+					        data-translatex="200"				        
+					    >
+							<div class="ui-imagen-ex-alumno"></div>
+						</div>
+					</div>
+
+				</div>
 				<!-- clear -->
 				<div class="ui-clear"></div>
 			</div>						
@@ -520,7 +720,7 @@
 
 	<!-- footer -->
 	<footer class="ui-box-footer">
-		<div class="ui-box-center-footer">
+		<div class="ui-box-container-principal-footer">
 			<div class="ui-fila-footer-a">
 				<div class="ui-fila-footer-a-item a">
 					<figure>
@@ -562,7 +762,7 @@
 	<!-- creditos y enlaces-->
 	<div class="ui-box-credito-enlaces">
 		<div class="ui-linea"></div>
-		<div class="ui-box-center-footer">
+		<div class="ui-box-container-principal-footer">
 			<div class="ui-credito-fila">
 				<div class="ui-izquierda">
 					<p class="ui-copy">&copy; CAD Todos los derechos reservados</p>
@@ -596,6 +796,9 @@
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main-script.js"></script>
+	<script src="js/jquery.scrollme.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/YouTubePopUp.jquery.js"></script>
 </body>	
 </html>

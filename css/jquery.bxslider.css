@@ -3,8 +3,7 @@
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper {
-  position: relative;
-  margin-bottom: 60px;
+  position: relative;  
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;

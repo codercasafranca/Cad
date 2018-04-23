@@ -16,19 +16,54 @@ $(document).ready(function(){
 ***********************/
 $(document).ready(function(){
   $(".owl-carousel.clientes").owlCarousel({
-     items:5,    
-     margin:5,
-     loop:true,
+    items:5,    
+    margin:5,
+    loop:true,
+    lazyLoad:true,  
+    nav:true, 
+    navText: ["<img src='img/left-icon-cliente-gris.png'>", "<img src='img/right-icon-cliente-gris.png'>"], 
+    navClass: ['owl-prev', 'owl-next'],  
   });
 });
 
-/*****************
-  bxslider banner
-******************/
+/***********************
+     bxslider - home    
+ ***********************/
 $(document).ready(function(){
-  $('.bxslider.slider').bxSlider({
-    auto:true,
+  $('.bxslider-home').bxSlider({
+    mode:"fade",
   });
 });
 
 
+/*************
+     video    
+ *************/
+$(document).ready(function(){
+  jQuery("a.demo").YouTubePopUp();
+});
+
+
+/*******************
+     ancla scroll    
+ *******************/
+$('.ui-box-btn-slider-scroll-abajo').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+});
+
+$('.ui-btn-abajo.slider').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+});
+
+/********************************
+     ancla scroll  porque cad  
+ ********************************/
+$('.ui-btn-abajo').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+});
