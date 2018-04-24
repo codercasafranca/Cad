@@ -6,10 +6,10 @@
 	<link rel="stylesheet" href="css/style-monkey.css">
 	<!-- owlCarouel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">	
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">	
 	<link rel="stylesheet" href="css/jquery.custombox.css">
 	<link rel="stylesheet" href="css/YouTubePopUp.css">
+	<link rel="stylesheet" href="css/flexslider.css">
 
 </head>
 <body>	
@@ -124,27 +124,27 @@
 						<div class="ui-contenido-form-slider">
 							<form action="">
 								<div class="ui-fila-items-form-slider">
-										<div class="ui-izquierda ui-linea-form-slider">
-											<input type="text" placeholder="Nombre">
-										</div>
-										<div class="ui-derecha ui-linea-form-slider">
-											<input type="text" placeholder="Apellido">
-										</div>
-										<!-- clear -->
-										<div class="ui-clear"></div>
+									<div class="ui-izquierda ui-linea-form-slider-01">
+										<input type="text" placeholder="Nombre">
+									</div>
+									<div class="ui-derecha ui-linea-form-slider-01">
+										<input type="text" placeholder="Apellido">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
 								<div class="ui-fila-items-form-slider">
-									<div class="ui-izquierda ui-linea-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider-01">
 										<input type="email" placeholder="Email">
 									</div>
-									<div class="ui-derecha ui-linea-form-slider">
+									<div class="ui-derecha ui-linea-form-slider-01">
 										<input type="tel" placeholder="Celular">
 									</div>
 									<!-- clear -->
 									<div class="ui-clear"></div>
 								</div>
 								<div class="ui-fila-items-form-slider">
-									<div class="ui-izquierda ui-linea-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider-01">
 										<select name="paises">
 											<option value="País">País</option>
 											<option value="Pais">País</option>
@@ -160,14 +160,14 @@
 											<option value="Pais">País</option>
 										</select>
 									</div>
-									<div class="ui-derecha ui-linea-form-slider">
+									<div class="ui-derecha ui-linea-form-slider-01">
 										<input type="text" placeholder="Región / Ciudad">
 									</div>
 									<!-- clear -->
 									<div class="ui-clear"></div>
 								</div>
 								<div class="ui-fila-items-form-slider">
-									<div class="ui-box-textarea">
+									<div class="ui-box-textarea ui-linea-form-slider-02">
 										<div class="ui-box-icon-textarea">
 											<figure>
 												<img src="" alt="">
@@ -184,9 +184,12 @@
 					</div>
 				</div>
 			</div>
-		</div>				
-		<ul class="bxslider-home">
-			<li class="ui-item-slide-home a">
+		</div>		
+
+		<div class="flexslider home">
+		  <ul class="slides home">
+		    <li class="ui-item-slide-home a">
+		    	<!-- texto slide -->
 				<div class="ui-box-texto-slide">
 					<div class="ui-box-container-principal">
 						<div class="ui-texto-slide">
@@ -202,8 +205,9 @@
 						</div>
 					</div>
 				</div>
-			</li>
-			<li class="ui-item-slide-home b">
+		    </li>
+		    <li class="ui-item-slide-home b">
+		    	<!-- texto slide -->
 				<div class="ui-box-texto-slide">
 					<div class="ui-box-container-principal">
 						<div class="ui-texto-slide">
@@ -219,8 +223,9 @@
 						</div>
 					</div>
 				</div>
-			</li>
-			<li class="ui-item-slide-home c">
+		    </li>
+		    <li class="ui-item-slide-home c">
+		    	<!-- texto slide -->
 				<div class="ui-box-texto-slide">
 					<div class="ui-box-container-principal">
 						<div class="ui-texto-slide">
@@ -236,8 +241,10 @@
 						</div>
 					</div>
 				</div>
-			</li>			
-		</ul>	
+		    </li>		       	   
+		  </ul>
+		</div>
+
 		<div class="ui-box-btn-abajo">
 			<div class="ui-btn-abajo slider" data-ancla="porque-cad">
 				<div class="box-btn-abajo slider">
@@ -247,7 +254,9 @@
 				</div>
 			</div>			
 		</div>
-	</div>
+		  
+	</div>			
+	</div>	
 	
 	<!-- sección especialidades -->
 	<section id="nuestras-especialidades" class="ui-box-container-principal">
@@ -262,7 +271,7 @@
 				<article class="ui-item-curso">
 					<div class="ui-box-image-curso">
 						<figure class="ui-image-curso">
-							<img src="img/image 42.jpg" alt="">
+							<img src="img/especialidad-home-01.jpg" alt="">
 						</figure>
 						<div class="ui-box-overflow-curso a"></div>
 					</div>
@@ -274,7 +283,7 @@
 				<article class="ui-item-curso">
 					<div class="ui-box-image-curso">
 						<figure class="ui-image-curso">
-							<img src="img/image 43.1.jpg" alt="">
+							<img src="img/especialidad-home-02.jpg" alt="">
 						</figure>
 						<div class="ui-box-overflow-curso b"></div>
 					</div>
@@ -286,7 +295,7 @@
 				<article class="ui-item-curso">
 					<div class="ui-box-image-curso">
 						<figure class="ui-image-curso">
-							<img src="img/image 43.2.jpg" alt="">
+							<img src="img/especialidad-home-03.jpg" alt="">
 						</figure>
 						<div class="ui-box-overflow-curso c"></div>
 					</div>
@@ -793,12 +802,16 @@
 	</div>
 
 
+
+
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main-script.js"></script>
 	<script src="js/jquery.scrollme.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>	
 	<script src="js/YouTubePopUp.jquery.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	
+
 </body>	
 </html>

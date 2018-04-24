@@ -27,11 +27,14 @@ $(document).ready(function(){
 });
 
 /***********************
-     bxslider - home    
+    flexslider - home    
  ***********************/
-$(document).ready(function(){
-  $('.bxslider-home').bxSlider({
-    mode:"fade",
+$(window).load(function() {
+  $('.flexslider.home').flexslider({
+    animation: "fade",
+    animationLoop: true, 
+    slideshow: true,
+    slideshowSpeed: 4000,    
   });
 });
 
@@ -67,3 +70,6 @@ $('.ui-btn-abajo').on('click', function(e){
   var strAncla = '#' + $(this).data('ancla');
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
 });
+
+
+
