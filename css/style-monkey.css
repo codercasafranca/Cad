@@ -25,29 +25,13 @@ select{
 	width: 100%;
 	padding: 8px;
 	border-left:none;
-	border-top:none;
-	color: #003C75;
+	border-top:none;	
 	border-right:none;
+	background-color: #fff;
 	border-bottom:1px solid #003C75;
 	outline: none;
 	font-size: 15px;	
 	font-family:"Open Sans";
-}
-
-input:hover,
-textarea:hover,
-select:hover{	
-	font-family:"Open Sans Light";
-	opacity: .3;
-}
-
-
-::placeholder{
-	color: #003C75;
-}
-
-input[type=submit]{
-	border:none;
 }
 
 /****************************
@@ -115,6 +99,8 @@ input[type=submit]{
 }
 
 .ui-btn-enviar-form-slider{
+	outline: none;
+	border:none;
 	background-color: #B0E519;
 	text-transform: uppercase;	
 	font-family:"Open Sans Bold";	
@@ -135,8 +121,7 @@ input[type=submit]{
 }
 
 .ui-btn-enviar-form-slider:hover{
-	background-color: #003C75; 
-	opacity: 1;
+	background-color: #003C75; 	
 	font-family: "Open Sans Bold";
 }
 
@@ -153,6 +138,10 @@ input[type=submit]{
 		width: 15px;
 		height:15px;
 		background-color: #fff;
+	}
+
+	.ui-textarea-slider{
+		height: 75px;
 	}
 
 .ui-linea-form-slider-01{
@@ -280,7 +269,7 @@ input[type=submit]{
 		padding-top: 19px;
 		float: right;
 		position: relative;
-		padding-right: 260px;
+		padding-right: 280px;
 	}
 
 		.ui-box-top-aula-virtual{
@@ -296,13 +285,12 @@ input[type=submit]{
 			align-items: center;
 			justify-content: center;	
 
-			background: rgba(2,120,174,1);
-			background: -moz-linear-gradient(-45deg, rgba(2,120,174,1) 0%, rgba(2,120,174,1) 10%, rgba(1,49,202,1) 100%);
-			background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(2,120,174,1)), color-stop(10%, rgba(2,120,174,1)), color-stop(100%, rgba(1,49,202,1)));
-			background: -webkit-linear-gradient(-45deg, rgba(2,120,174,1) 0%, rgba(2,120,174,1) 10%, rgba(1,49,202,1) 100%);
-			background: -o-linear-gradient(-45deg, rgba(2,120,174,1) 0%, rgba(2,120,174,1) 10%, rgba(1,49,202,1) 100%);
-			background: -ms-linear-gradient(-45deg, rgba(2,120,174,1) 0%, rgba(2,120,174,1) 10%, rgba(1,49,202,1) 100%);
-			background: linear-gradient(135deg, rgba(2,120,174,1) 0%, rgba(2,120,174,1) 10%, rgba(1,49,202,1) 100%);			
+			background: rgba(82,162,237,0.9);
+			background: -moz-linear-gradient(left, rgba(82,162,237,0.9) 0%, rgba(82,162,237,1) 0%, rgba(82,162,237,1) 15%, rgba(65,121,224,1) 100%);
+			background: -webkit-gradient(left top, right top, color-stop(0%, rgba(82,162,237,0.9)), color-stop(0%, rgba(82,162,237,1)), color-stop(15%, rgba(82,162,237,1)), color-stop(100%, rgba(65,121,224,1)));
+			background: -webkit-linear-gradient(left, rgba(82,162,237,0.9) 0%, rgba(82,162,237,1) 0%, rgba(82,162,237,1) 15%, rgba(65,121,224,1) 100%);
+			background: -o-linear-gradient(left, rgba(82,162,237,0.9) 0%, rgba(82,162,237,1) 0%, rgba(82,162,237,1) 15%, rgba(65,121,224,1) 100%);
+			background: -ms-linear-gradient(left, rgba(82,162,237,0.9) 0%, rgba(82,162,237,1) 0%, rgba(82,162,237,1) 15%, rgba(65,121,224,1) 100%);				
 		}
 
 			.ui-box-top-aula-virtual:before{
@@ -322,7 +310,7 @@ input[type=submit]{
 				position: absolute;
 				top:0;
 				left:-100%;
-				background-color: #0278AE; 
+				background-color: #52A1ED; 
 				height: 100%;
 				width:250px;
 				z-index: -2;
@@ -490,6 +478,10 @@ input[type=submit]{
 			line-height: 53px;
 			border-bottom:4px solid #fff;
 			font-family:"Open Sans Light";
+		}
+
+		.ui-menu ul li a:hover{
+			border-color: rgb(220,220,220)
 		}
 
 		.ui-menu ul li a.ui-menu-active{
@@ -741,7 +733,7 @@ input[type=submit]{
 			left:12%;
 			width: auto;
 			height: 4px;			
-			z-index: 10000;
+			z-index: 100;
 			visibility: visible;
 		}
 
@@ -859,13 +851,13 @@ input[type=submit]{
 		width: 557px;
 		height: 506px;
 		background-color: #fff;
-		border-radius:4px;
+		border-radius:10px;
 		padding: 54px;
 		visibility: visible;
-
-		-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
-		-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
-		box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+		
+		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}			
 
 		.ui-header-form-slider{
@@ -890,7 +882,7 @@ input[type=submit]{
 					color:#003C75;
 					line-height: 29px;
 					font-family:"Open Sans Extrabold";
-				}				
+				}		
 
 				.ui-fila-items-form-slider > .ui-izquierda{
 					float: left;
@@ -903,6 +895,49 @@ input[type=submit]{
 					width: 45.99%;
 					margin: 1% 2%;					
 				}
+
+				.ui-fila-items-form-slider.textarea{
+					margin-top: 10px;
+				}
+
+					.ui-input-form-slider::placeholder{						
+						color:#003C75;
+					}
+
+						.ui-input-form-slider:hover::placeholder{						
+							color:#003C75;
+							font-family:"Open Sans Light";		
+							opacity: .3;					
+						}
+							
+							.ui-input-form-slider:hover{
+								border-bottom: 1px solid #CBD5DF;
+							}
+
+					.ui-select-form-slider{
+						color:#003C75;
+					}
+
+						.ui-select-form-slider:hover{
+							font-family:"Open Sans Light";
+							opacity: .3;
+							border-color:#CBD5DF;
+						}
+
+					.ui-textarea-slider::placeholder{
+						color:#003C75;
+					}
+
+						.ui-textarea-slider:hover{
+							border-bottom: 1px solid #CBD5DF;
+						}
+
+						.ui-textarea-slider:hover::placeholder{
+							font-family:"Open Sans Light";
+							opacity: .3;
+							border-color:#CBD5DF;
+						}
+					
 
 .ui-btn-abajo.slider{
 	bottom: 13px;
@@ -1296,12 +1331,7 @@ input[type=submit]{
 		vertical-align: top;		
 		position: relative;
 		bottom:40px;		
-
-		-webkit-transform:rotate(45deg);
-		-moz-transform:rotate(45deg);
-		-ms-transform:rotate(45deg);
-		-o-transform:rotate(45deg);
-		transform:rotate(45deg);
+	
 	}
 
 		.box-btn-abajo{
@@ -1321,12 +1351,7 @@ input[type=submit]{
 			.ui-icon-btn-abajo{
 				padding: 15px; 
 				cursor: pointer;		
-				visibility: visible;		
-				-webkit-transform:rotate(-45deg);
-				-moz-transform:rotate(-45deg);
-				-ms-transform:rotate(-45deg);
-				-o-transform:rotate(-45deg);
-				transform:rotate(-45deg);
+				visibility: visible;					
 
 				-webkit-animation: btn-abajo .8s infinite;
 				-moz-animation: btn-abajo .8s infinite;
@@ -1740,13 +1765,17 @@ input[type=submit]{
 }
 
 	.ui-filtros-nuestros-cursos > .ui-izquierda{
-		width:24.99%;
+		width:26.99%;
 		float: left;
 	}
 
 	.ui-filtros-nuestros-cursos > .ui-derecha{
-		width: 74.99%;
+		width: 72.99%;
 		float: right;
+	}
+
+	.ui-item-filtro-nuestro-curso{
+		position: relative;
 	}
 
 		.ui-item-filtro-nuestro-curso.b,
@@ -1764,7 +1793,8 @@ input[type=submit]{
 			font-size: 20px;
 			height: 40px;
 			color:#BBBEC5;	
-			font-family:"Open Sans";		
+			font-family:"Open Sans";
+			background-color: #fff;		
 		}
 
 		.ui-item-filtro-nuestro-curso input:hover,
@@ -1785,12 +1815,31 @@ input[type=submit]{
 				opacity:1;	
 			}
 
+			.ui-box-icon-filtro-nuestro-curso{
+				position: absolute;
+				top:8px;
+				right:8px;
+			}
+
+			.ui-item-filtro-nuestro-curso.busqueda{
+				position: relative;
+			}
+
+				.ui-item-filtro-nuestro-curso.busqueda:before{
+					content:'';
+					position: absolute;
+					top:11px;
+					right:-7px;
+					width: 1px;
+					height: 20px;
+					background-color: #EEEFF4;
+				}
+
 .ui-box-item-nuestro-curso{
 	float: left;
 	width: 31.33%;
 	margin: 1%;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-radius: 10px;	
 	overflow: hidden;
 
 	-webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.10);
@@ -1963,15 +2012,23 @@ input[type=submit]{
 		padding: 34px 150px 34px 25px;
 		position: relative;
 
-	}			
+	}	
+
+			.ui-box-nombre-nuestro-curso-logotipo.b{
+				padding-right: 200px;
+			}
 
 		.ui-h2-nombre-nuestro-curso{
 			font-family:"Open Sans Bold";
-			font-size: 25px;
-			opacity: .4;
+			font-size: 22px;			
 			letter-spacing: -3%;
 			line-height: 27px;
 		}
+
+			.ui-h2-nombre-nuestro-curso a{
+				text-decoration: none;
+				color: #B5B5B5;							
+			}			
 
 		.ui-logotipos-nuestro-curso{
 			position: absolute;
@@ -1988,7 +2045,7 @@ input[type=submit]{
 			.ui-logotipos-nuestro-curso figure{
 				display: inline-block;
 				vertical-align: top;
-				margin-right: 15px;
+				margin-right: 8px;
 			}
 
 .ui-box-overlay-nivel-post-grado{
@@ -2125,6 +2182,735 @@ input[type=submit]{
 	top:0%;
 }
 
+/********** paginacion **********/
+.ui-box-paginacion {
+	position: relative;
+	text-align: center;
+	margin-bottom: 67px;
+}
+
+	.ui-box-paginacion .ui-box{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;		
+	}
+ 
+.ui-box-paginacion ul {
+	list-style:none;
+	text-align: center;	
+}
+ 
+.ui-box-paginacion ul li {
+	display:inline-block;
+	margin-right:20px;
+}
+
+	.ui-box-paginacion ul li:last-child{
+		margin-right: 0px;
+	}
+ 
+.ui-box-paginacion ul li a {
+	display:block;
+	color:#B2B2B2;
+	font-size: 20px;
+	line-height: 27px;	
+	text-decoration: none;
+	font-family:"Open Sans Bold";
+}
+ 
+.ui-box-paginacion ul li .active {
+	color: #00182E; 
+}
+
+	.ui-box-direccional-paginacion{		
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		background-repeat: no-repeat;
+		background-size: contain;	
+		cursor: pointer;	
+	}
+
+		.ui-box-direccional-paginacion.a{
+			background-image: url(../img/left-icon-cliente-gris.png);
+			position: absolute;
+			left:-25px;
+			top:6px;
+		}
+
+			.ui-box-direccional-paginacion.a:hover{
+				background-image: url(../img/left-icon-cliente.png);
+			}
+
+		.ui-box-direccional-paginacion.b{
+			background-image: url(../img/left-icon-cliente-gris.png);
+			position: absolute;
+			right:-25px;
+			top:6px;
+
+			-webkit-transform:rotate(180deg);
+			-moz-transform:rotate(180deg);
+			-ms-transform:rotate(180deg);
+			-o-transform:rotate(180deg);
+			transform:rotate(180deg);
+		}
+
+			.ui-box-direccional-paginacion.b:hover{
+				background-image: url(../img/left-icon-cliente.png);
+			}
+
+/***********************************
+      pagina detalle de curso      
+ ***********************************/
+
+ /*********** detalle de curso ***********/
+.ui-section-detalle-de-curso{
+ 	padding-top: 173px;
+ 	padding-bottom: 61px;
+}
+
+	.ui-box-detalle-curso > .ui-izquierda{
+		float: left;
+		width:61.66%;
+		margin:1%;
+	}
+
+	.ui-box-detalle-curso > .ui-derecha{
+		float: right;
+		width:32.33%;
+		margin:1%;
+	}
+
+	.ui-box-imagen-detalles-de-curso{
+		position: relative;
+		color:#fff;
+		border-radius: 5px;
+	}
+
+		.ui-box-imagen-promocion-detalle-curso{
+			position: absolute;
+			bottom:38px;
+			right:38px; 
+			padding-left: 117px;
+		}
+			
+			.ui-box-texto-promocio-detalle-curso{
+				position: absolute;
+				left:0;
+				top:17px; 
+			}
+
+			.ui-box-texto-promocio-detalle-curso span{
+				display: block;
+			}
+
+				.ui-box-texto-promocio-detalle-curso .a{
+					font-family:"Open Sans Bold";
+					line-height: 16px;
+					font-size: 16px;
+				}
+
+				.ui-box-texto-promocio-detalle-curso .b{
+					font-family:"Open Sans";
+					line-height: 16px;
+					font-size: 15px;
+				}
+
+		.ui-item-hora-minuto-detalle-curso{
+			display: inline-block;
+			margin: 0 3px;
+			vertical-align: top;
+			border-radius: 10px;
+			border:1px solid #fff;
+			width: 66px;
+			height: 66px;
+			padding-top: 7px;
+		}
+
+			.ui-item-hora-minuto-detalle-curso span{
+				display: block;
+				text-align: center;
+			}
+
+				.ui-item-hora-minuto-detalle-curso .a{
+					font-family:"Open Sans Extrabold";
+					font-size: 30px;
+					line-height: 35px;
+				}
+
+				.ui-item-hora-minuto-detalle-curso .b{
+					font-family:"Open Sans Semibold";
+					font-size: 13px;
+					line-height: 15px;
+				}
+
+	.ui-box-contenido-del-curso{
+		margin-bottom: 60px;
+	}
+
+	.ui-box-imagen-detalle-de-curso figure{
+		display: block;
+	}
+
+		.ui-box-imagen-detalle-de-curso figure img{
+			display: block;
+			width: 100%;
+		}
+	.ui-box-datos-items-detalle-de-curso{
+		color: #B0B0B0; 
+		padding-top: 16px;
+		margin-bottom: 93px;
+	}
+
+		.ui-box-datos-items-detalle-de-curso div.ui-item-datos-detalle-de-curso:nth-child(5):before{
+			background-color: #fff;
+		}
+
+		.ui-box-datos-items-detalle-de-curso div.ui-item-datos-detalle-de-curso:nth-child(8):before{
+			background-color: #fff;
+		}
+
+		.ui-item-datos-detalle-de-curso{
+			width: 20%;
+			float: left;
+			padding: 20px;
+			position: relative;
+			text-align: center;
+		}
+
+			.ui-item-datos-detalle-de-curso:before{
+				content:'';
+				position: absolute;
+				top:30px;
+				opacity: .4;
+				right:0;
+				width: 1px;
+				height: 20px;
+				background-color: #B0B0B0;
+			}
+
+		.ui-dato-detalle-de-curso{
+			position: relative;
+			padding-left: 50px;	
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;		
+		}
+
+			.ui-dato-detalle-de-curso figure{
+				position: absolute;
+				top:3px;
+				left:0;
+			}
+
+			.ui-texto-dato-detalle-de-curso span{
+				display: block;
+			}
+
+			.ui-texto-dato-detalle-de-curso .a{
+				font-family:"Open Sans";
+				font-size: 14px;				
+			}
+
+			.ui-texto-dato-detalle-de-curso .b{
+				font-family:"Open Sans Bold";
+				font-size: 15px;				
+			}
+.ui-header-acerca-del-curso{
+	margin-bottom: 60px;
+}
+
+	.ui-h2-acerca-del-curso{
+		font-family:"Open Sans Bold";
+		line-height: 46px;
+		font-size: 40px;
+		color: #003C75; 
+	}
+
+	.ui-box-bloque-texto-acerca-del-curso{
+		margin-bottom: 40px;
+	}
+
+		.ui-box-bloque-texto-acerca-del-curso p{
+			font-size: 20px;
+		}
+
+		.ui-h3-acerca-del-curso{
+			font-family:"Open Sans Bold";
+			font-size: 25px;
+			color: #003C75;
+			margin-bottom: 17px;
+		}
+
+	.ui-box-instructor-contenido-del-curso{
+		padding-left: 241px;
+		position: relative;
+		padding-bottom: 20px;
+		padding-top: 30px;
+		padding-right: 20px;
+		min-height: 201px;		
+	}
+
+		.ui-box-imagen-instructor{
+			position: absolute;
+			left:0;
+			top:0;
+			width: 199px;
+			height: 199px;
+			border-radius: 50%;			
+		}
+
+		.ui-header-instructor-contenido-del-curso{
+			margin-bottom: 18px;
+		}
+
+		.ui-h3-instructor-contenido-del-curso span{
+			display: block;
+		}
+
+			.ui-h3-instructor-contenido-del-curso .a{
+				font-size: 25px;
+				font-family:"Open Sans Bold";
+				opacity: 0.4;
+			}
+
+			.ui-h3-instructor-contenido-del-curso .b{
+				font-size: 16px;
+				font-family:"Open Sans Light";
+				opacity: 0.4;
+			}
+
+	.ui-box-texto-instructor{
+		margin-bottom: 15px;
+	}
+
+	.ui-box-texto-ver-mas{
+		text-align: right;
+	}
+
+		.ui-box-texto-ver-mas .ui-box{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			padding-right: 32px;
+		}
+
+			.ui-box-texto-ver-mas .ui-box span{
+				font-family:"Open Sans Bold";
+				font-size: 20px;
+				color: rgba(0, 0, 0, 0.4);
+			}
+
+			.ui-box-texto-ver-mas .ui-box figure{
+				display: block;
+				position: absolute;
+				top:3px;
+				right:0; 
+			}
+
+.ui-header-cursos-recomendados{
+	margin-bottom: 67px;
+}
+
+	.ui-h2-cursos-recomendados{
+		font-family:"Open Sans";
+		line-height: 35px;
+		font-size: 40px;
+		text-align: center;
+	}
+
+		.ui-h2-cursos-recomendados .a{
+			color: #B0E519;
+		}
+
+		.ui-h2-cursos-recomendados .b{
+			color: #003C75;
+		}
+
+		.ui-item-curso-recomendado{
+			margin-bottom: 30px;
+			border-radius: 5px;
+			overflow: hidden;
+			-webkit-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+			-moz-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+			-ms-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+			-o-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+			box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+		}
+
+.ui-item-curso-recomendado:hover > .ui-box-imagen-item-nuestro-curso .ui-box-overlay-nivel-post-grado{
+	top:0%;
+}
+
+.ui-box-comprar-curso-recomendado{
+	background-color:  #003C75;
+	border-radius: 50px;
+	margin-bottom: 100px;
+	min-height: 80px;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ui-box-comprar-curso-recomendado span{
+	color: #fff;
+	padding: 0 5px;
+}
+
+	.ui-box-comprar-curso-recomendado .a{
+		font-family:"Open Sans Bold";
+		line-height: 23px;
+		font-size: 20px;
+		text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.ui-box-comprar-curso-recomendado .b{
+		font-family:"Open Sans Extrabold";
+		line-height: 35px;
+		font-size: 30px;
+		text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+	}
+
+	.ui-box-comprar-curso-recomendado .c{
+		font-family:"Open Sans Extrabold";
+		line-height: 29px;
+		padding-left: 15px;
+		font-size: 25px;
+		text-transform: uppercase;
+		position: relative;		
+		text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+	}
+		
+		.ui-box-comprar-curso-recomendado .c:before{
+			content:'';
+			position: absolute;
+			top:3px;
+			left:0;
+			width: 1px;
+			height: 20px;
+			background-color: #fff;
+		}
+
+	.ui-box-fila-form-detalle-curso > .ui-izquierda{
+		position: relative;
+	}
+
+		.ui-box-fila-form-detalle-curso > .ui-izquierda:before{
+			content: '';
+		    position: absolute;
+		    bottom: -1px;
+		    right: -4px;
+		    width: 1px;
+		    height: 12px;
+		    background-color:rgb(190,190,190);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		}
+
+		.ui-box-fila-form-detalle-curso > .ui-izquierda:hover:before{
+			background-color: #00182E;
+		}
+
+	.ui-box-fila-form-detalle-curso > .ui-derecha{
+		position: relative;
+	}
+
+		.ui-box-fila-form-detalle-curso > .ui-derecha:before{
+			content: '';
+		    position: absolute;
+		    bottom: -1px;
+		    right: -4px;
+		    width: 1px;
+		    height: 12px;
+		    background-color:rgb(190,190,190);		
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		}
+
+		.ui-box-fila-form-detalle-curso > .ui-derecha:hover:before{
+			background-color: #00182E;
+		}
+
+	.ui-box-form-detalle-curso{
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		background-color: #fff;
+		padding: 50px 25px; 
+		margin-bottom: 125px;
+	}
+
+		.ui-header-form-detalle-curso{
+			margin-bottom: 50px;
+		}
+
+		.ui-h2-form-detalle-curso{
+			text-align: center;
+		}
+
+			.ui-h2-form-detalle-curso span{
+				display: block;
+			}
+
+			.ui-h2-form-detalle-curso .a{
+				font-family:"Open Sans Bold";
+				line-height: 30px;
+				font-size: 30px;
+				color: #003C75;
+			}
+
+			.ui-h2-form-detalle-curso .b{
+				font-family:"Open Sans";
+				line-height: 23px;
+				font-size: 20px;
+				color: #858585;
+			}
+
+		.ui-box-fila-form-detalle-curso{
+			margin-bottom: 20px;
+		}
+
+			.ui-box-fila-form-detalle-curso > .ui-izquierda{
+				float: left;
+				width: 45.99%;
+				margin:0 2%;
+
+			}
+
+			.ui-box-fila-form-detalle-curso > .ui-derecha{
+				float: right;
+				width: 45.99%;
+				margin:0 2%;
+
+			}
+		
+		.ui-box-select-form-detalle-curso{
+			-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+			-ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+			-o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);			
+			border-radius: 50px;
+			margin: 0 2%;
+			position: relative;
+		}
+
+			.ui-box-select-form-detalle-curso:before{
+				content: '';
+			    position: absolute;
+			    bottom: -1px;
+			    right: -4px;
+			    width: 1px;
+			    height: 12px;
+			    background-color: rgb(190,190,190);
+			    -webkit-transform: rotate(45deg);
+			    -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+
+			.ui-box-select-form-detalle-curso:hover{
+				border-bottom: 1px solid  #00182E;
+			}
+
+			.ui-box-select-form-detalle-curso:hover:before{
+				background-color: #00182E;
+			}
+
+		.ui-box-como-se-entero{
+			margin: 0 2%;
+			position: relative;
+		}
+
+			.ui-box-como-se-entero:before{
+				content: '';
+			    position: absolute;
+			    bottom: -1px;
+			    right: -4px;
+			    width: 1px;
+			    height: 12px;
+			    background-color: rgb(190,190,190);
+			    -webkit-transform: rotate(45deg);
+			    -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+
+			.ui-box-como-se-entero:hover:before{
+				background-color: #00182E;
+			}
+
+			.ui-box-input-politica{
+				position: relative;
+			}
+
+			.ui-box-input-politica:before{
+				content: '';
+			    position: absolute;
+			    bottom: -1px;
+			    right: -4px;
+			    width: 1px;
+			    height: 12px;
+			    background-color: rgb(190,190,190);
+			    -webkit-transform: rotate(45deg);
+			    -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+
+				.ui-box-input-politica:hover:before{
+					background-color: #00182E;
+				}
+	
+				.ui-input-detalle-curso{
+					font-size: 18px;
+					font-family:"Open Sans";
+					border-bottom: 1px solid #E3E3E3;
+				}
+
+					.ui-input-detalle-curso:hover{
+						border-bottom: 1px solid #00182E;
+					}
+			
+				.ui-input-detalle-curso::placeholder{
+					color: rgb(190,190,190);					
+				}
+
+					.ui-input-detalle-curso:hover::placeholder{						
+						color:#00182E;
+					}
+
+				.ui-select-detalle-curso{
+					color: rgb(190,190,190);
+					border-bottom: 1px solid #E3E3E3;
+				}
+
+					.ui-select-detalle-curso:hover{
+						color:#00182E;
+					}
+
+	.ui-box-politica-condiciones-detalle-curso{
+		padding-top: 25px;
+		margin-bottom: 26px;		
+	}
+
+	.ui-box-politica-condiciones-detalle-curso p{
+		font-size: 18px;
+		font-family:"Open Sans";
+		color: #474A4F
+		opacity:.7;
+		margin: 0 2%;
+	}		
+
+		.ui-box-texto-terminos-detalle-curso p{
+			color: #000;
+		}
+
+		.ui-box-texto-terminos-detalle-curso p span{
+			font-family:"Open Sans Bold";
+			color: #4C769E;
+			font-size: 18px;
+		}
+
+	.ui-box-texto-terminos-detalle-curso{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+		.ui-box-texto-terminos-detalle-curso p{
+			font-family:"Open Sans";
+			font-size: 18px;
+		}
+
+		.ui-box-btn-form-detalle-curso{
+			text-align: center;
+		}
+
+			.ui-btn-form-detalle-curso{
+				background: #B0E519;
+				border-radius: 30px;
+				width: 204px;
+				height: 60px;
+				border:none;
+				outline: none;
+				color:#fff;		
+				font-family:"Open Sans Bold";	
+				font-size: 16px;
+				text-align: center;	
+				text-transform: uppercase;
+				text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);			
+			}
+
+
+
+/******* accordion ********/
+.ac-pane.acerca-del-curso:last-child { margin-bottom: 0; }
+
+.ac-content.acerca-del-curso { display: none; }
+
+.ac-title.acerca-del-curso {  
+  display: block;
+  font-size: 18px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;  
+  padding-left: 44px;   
+  font-family:"Open Sans Extrabold";
+  text-decoration: none;
+  color:#003C75;  
+}
+
+	.ac-title.acerca-del-curso span{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+		.ac-title.acerca-del-curso .a{
+			margin-right: 30px;
+		}
+
+	.ui-icon-acordeon-a{
+		position: absolute;
+		top:21px;
+		left:7px;
+	}
+
+.ui-icon-acordeon-boton{
+	position: absolute;
+	top:25px;
+	right:0; 
+	background-image: url(../img/acordeon-a.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 11px;
+}
+
+.active .ac-title.acerca-del-curso .ui-icon-acordeon-boton{
+	background-image: url(../img/acordeon-b.png);
+}
+
+.ac-content.acerca-del-curso {
+  border: 1px solid #fff;
+  margin-top: -1px;
+  padding: 38px 34px;
+}
+
+	.ac-content.acerca-del-curso p{
+		font-family:"Open Sans";
+		font-size: 20px;
+		line-height: normal;
+	}
 
 /*************** footer ***************/
 .ui-box-footer{
@@ -2143,7 +2929,7 @@ input[type=submit]{
 	}	
 		.ui-fila-footer-a-item.a{
 			width:24.99%;
-			float: left; 		
+			float: left; 
 		} 
 
 		.ui-fila-footer-a-item.b{
@@ -2160,6 +2946,10 @@ input[type=submit]{
 				.ui-dato-footer{
 					position: relative;
 					padding-left: 52px;
+				}
+
+				.ui-texto-dato-footer p{
+					color: #fff;
 				}
 
 				.ui-icon-footer{
