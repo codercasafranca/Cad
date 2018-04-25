@@ -168,6 +168,14 @@ select{
 		opacity: .3;		
 	}
 
+	.ui-linea-form-slider-01.select:before{
+		bottom:.3px;		
+	}
+
+	.ui-linea-form-slider-01.select:hover:before{
+		opacity: .2;
+	}
+
 .ui-linea-form-slider-02{
 	position: relative;
 }
@@ -916,6 +924,8 @@ select{
 
 					.ui-select-form-slider{
 						color:#003C75;
+						position: relative;
+						top:-2px;
 					}
 
 						.ui-select-form-slider:hover{
@@ -2023,6 +2033,7 @@ select{
 			font-size: 22px;			
 			letter-spacing: -3%;
 			line-height: 27px;
+			height: 81px;			
 		}
 
 			.ui-h2-nombre-nuestro-curso a{
