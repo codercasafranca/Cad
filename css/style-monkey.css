@@ -2923,6 +2923,497 @@ select{
 		line-height: normal;
 	}
 
+/********************************
+   pagina servicios in company  
+ ********************************/
+
+ /*********** servicios in company **********/
+.ui-banner-servicios-in-company{	
+	height: 707px;
+	position: relative;
+	background-image: url(../img/bg-servicios-in-company.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.ui-box-overlay-servicios-in-company{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.1);		
+	}
+
+.ui-box-servicios-in-company{
+	height: 707px;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-right: 50px;
+	padding-bottom: 50px;	
+	position: relative;
+	z-index: 2;
+
+}
+
+	.ui-box-contenedor-servicios-in-company-a{
+		max-width: 694px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 86px 0;		
+		text-align: center;
+	}
+
+	.ui-box-header-parrafo-servicios-in-company{
+		margin-bottom: 58px;
+	}
+
+	.ui-box-header-parrafo-servicios-in-company p{
+		font-size: 20px;
+		font-family:"Open Sans";
+	}
+
+	.ui-header-servicios-in-company{
+		margin-bottom: 54px;
+	}
+
+		.ui-h2-servicios-in-company{
+			text-align: center;
+			font-size: 38px;
+			font-family:"Open Sans";
+			line-height: 44px;			
+		}
+
+			.ui-h2-servicios-in-company .a{
+				color: #BFE945;
+			}
+
+			.ui-h2-servicios-in-company .b{
+				color: #336391;
+			}
+
+	.ui-h3-servicios-in-company span{
+		display: block;
+	}
+
+		.ui-h3-servicios-in-company .a{
+			color: #919191;
+			font-family:"Open Sans";
+			line-height: 30px;
+			font-size: 25px; 
+		}
+
+		.ui-h3-servicios-in-company .b{
+			font-family:"Open Sans Bold";
+			font-size: 30px;
+			line-height: 35px;
+			color: #336391;
+		}
+
+	.ui-item-consultoria-tab{
+		float: left;
+		width: 22.99%;
+		margin: 1%;
+		display: none;
+	}
+
+		.ui-item-figura-consultoria-tab figure{
+			display: block;
+		}
+
+			.ui-item-figura-consultoria-tab figure img{
+				display: block;
+				width: 100%;
+			}
+
+		.ui-box-icon-textarea.in-company{
+			bottom: 6px;
+		}
+
+		.ui-linea-form-slider-02.in-company:before {		   
+		    bottom: 4px;		    
+		}
+
+	/*tabs servicios in company*/		
+	.tab {
+	    overflow: hidden;	    
+	    background-color: #f1f1f1;
+	}
+
+	.tab button {
+	    background-color: #fff;
+	    float: left;
+	    width: 49.99%;
+	    border: none;
+	    outline: none;
+	    color: #003C75;
+	    cursor: pointer;
+	    padding: 14px 16px;
+	    min-height: 65px;
+	    transition: 0.3s;	    
+	    font-size: 25px;
+	    font-family:"Open Sans Semibold"; 
+	}
+		
+	.tab button.active {
+	    background-color: #2C5C89;
+	    color:#fff;
+	    font-family:"Open Sans";	    
+	}
+	
+	.tabcontent {
+	    display: none;
+	    padding: 42px 12px;	   
+	    border-top: none;
+	}	
+
+	.tabcontent.active{
+		display: block;
+	}
+
+		.tabcontent p{
+			font-size: 20px;
+			line-height: 27px;
+		}
+
+.ui-box-contenedor-servicios-in-company-b{
+	padding: 84px 0;
+	max-width: 1114px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+	.ui-box-item-staff-profesional{
+		cursor: pointer;
+	}
+
+		.ui-box-imagen-staff-profesional{
+			text-align: center;
+			margin-bottom: 28px;
+		}
+
+			.ui-item-staff-profesional{
+				width: 234px;
+				height: 234px;
+				display: inline-block;
+				vertical-align: bottom;
+				border-radius: 50%;	
+				background-position: center center;
+				background-size: contain;	
+				background-repeat: no-repeat;		
+			}
+
+				.ui-item-staff-profesional.a{
+					background-image: url(../img/staff-01.png);
+				}
+
+				.ui-item-staff-profesional.b{
+					background-image: url(../img/staff-02.png);
+				}
+				
+
+		.ui-dato-item-staff-profesional{
+			text-align: center;
+		}
+
+			.ui-dato-item-staff-profesional span{
+				display: block;
+			}
+
+				.ui-dato-item-staff-profesional .a{
+					font-size: 20px;
+					font-family:"Open Sans Bold";	  
+					line-height: 27px;
+					margin-bottom: 15px;
+					color: rgb(110,110,110);
+				}
+
+				.ui-dato-item-staff-profesional .b{
+					font-family:"Open Sans Light";
+					font-size: 15px;
+					line-height: 20px;
+					color: rgb(130,130,130);
+				}
+	
+	.owl-carousel.staff-profesional .owl-dots{
+		display: none;
+	}
+
+	.owl-carousel.staff-profesional .owl-nav{		
+		height: 18px;
+		position: absolute;
+		top:50%;
+		left:0;
+		visibility: hidden;
+		width: 100%;
+	}
+
+	.owl-carousel.staff-profesional .owl-nav button{
+		border: none!important;
+		visibility: visible;
+	}
+
+		.owl-carousel.staff-profesional .owl-prev{
+			float: left;
+			position: relative;
+			right: 30px; 
+		}
+
+		.owl-carousel.staff-profesional .owl-next{
+			float: right;
+			position: relative;
+			left: 30px;
+		}
+
+		.ui-box-items-clientes-logotipos{
+			margin-bottom: 50px;
+		}
+
+		.ui-box-cliente-item-logotipo{
+			float: left;
+			width: 33.33%;			
+			min-height: 163px;		
+			position: relative;				
+
+			display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center; 
+		}
+
+			.ui-box-cliente-item-logotipo figure{
+				max-width: 280px;
+			}
+
+				.ui-box-cliente-item-logotipo figure img{
+					width: 100%;
+					display: block;
+				}
+
+			.ui-box-cliente-item-logotipo:before{
+				content:'';
+				position: absolute;
+				right:0;
+				top:35px;
+				width: 1px;
+				height: 89px;
+				background-color: rgba(0,0,0,0.2);  
+			}
+
+			.ui-box-cliente-item-logotipo:after{
+				content:'';
+				position: absolute;
+				right:20px;
+				bottom:0;  
+				width: 308px;
+				height: 1px;
+				background-color: rgba(0,0,0,0.2);
+			}
+
+				.ui-box-cliente-item-logotipo.no-border-right:before{
+					background-color: #fff;
+				}
+
+				.ui-box-cliente-item-logotipo.no-border-bottom:after{
+					background-color: #fff;
+				}
+
+	.ui-box-btn-ver-mas-clientes{
+		text-align: center;		
+	}
+
+		.ui-btn-ver-mas-cliente{
+			display: inline-block;
+			vertical-align: bottom;
+			width: 57px;
+			height: 57px;
+			border-radius: 50%;
+			border:1px solid rgba(0,0,0,.5);				
+			position: relative;		
+		}
+
+			.btn-ver-mas-cliente{
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-flex;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+		
+			.ver-mas-cliente span{
+				width: 20px;
+				height: 1px;
+				display: block;
+				background-color:rgba(0,0,0,.5); 
+			}
+
+				.ver-mas-cliente .a{
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					transform: rotate(90deg);
+					position: relative;
+					top:1px;
+				}
+
+		/*testimonios*/
+		.ui-box-item-testimonio{
+			width: 45.99%;
+			margin: 4% 2%;
+			float: left;
+			min-height: 140px;
+			position: relative;
+			padding-left: 180px; 
+		}
+
+			.ui-imagen-testimonio{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top:0;
+				left:0;				
+				border-radius: 50%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+				.ui-imagen-testimonio.a{
+					background-image: url(../img/testimonio-01.png);
+				}
+
+				.ui-imagen-testimonio.b{
+					background-image: url(../img/testimonio-02.png);
+				}
+
+				.ui-imagen-testimonio.c{
+					background-image: url(../img/testimonio-03.png);
+				}
+
+				.ui-imagen-testimonio.d{
+					background-image: url(../img/testimonio-04.png);
+				}
+
+		.ui-header-item-testimonio{
+			margin-bottom: 14px;
+		}
+
+			.ui-h3-item-testimonio span{
+				display: block;
+			}
+
+				.ui-h3-item-testimonio .a{
+					font-family:"Open Sans Bold";
+					font-size: 25px;
+					line-height: 34px;
+					color:rgb(130,130,130);
+				}
+
+				.ui-h3-item-testimonio .b{
+					font-family:"Open Sans Light";
+					font-size: 16px;
+					line-height: 22px;
+					color:rgb(200,200,200);
+				}
+
+				.ui-box-item-testimonio p{
+					font-family:"Open Sans Light";
+					font-size: 16px;
+					line-height: 22px;
+				}
+
+	.ui-box-contenedor-modal{
+		background-color: rgba(0,0,0,.8);
+		position: fixed;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		display: none;
+	}
+
+		.ui-box-contenedor-modal > .ui-box{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+
+			display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.ui-box-user-staff-profesional{
+			max-width: 492px;	
+			height: 902px;		
+			background-color: #fff;
+			padding: 50px 80px;
+			text-align: center;				
+			position: relative;	
+		}
+
+			.ui-box-icon-cerrar-modal{
+				position: absolute;
+				top:30px;
+				right:23px;		
+				cursor: pointer;			
+			}
+
+		.ui-figura-user-staff-modal{
+			margin-bottom: 29px;				
+			text-align: center;
+		}
+
+			.ui-figura-user-staff-modal figure{
+				display: inline-block;
+				vertical-align: top;
+				max-width: 260px;
+			}
+
+			.ui-figura-user-staff-modal figure img{
+				display: block;
+				width: 100%;
+			}
+
+		.ui-h2-user-staff{
+			margin-bottom: 48px;
+		}
+
+			.ui-h2-user-staff span{
+				display: block;
+				line-height: 34px;
+			}
+
+				.ui-h2-user-staff .a{
+					font-family:"Open Sans Bold";
+					font-size: 25px;
+				}
+
+				.ui-h2-user-staff .b{
+					font-family:"Open Sans Light";
+					font-size: 16px;
+					line-height: 22px;
+				}
+
+		.ui-datos-user-staff p{
+			line-height: 30px;
+			font-size: 20px;
+			font-family:"Open Sans";
+		}
+
 /*************** footer ***************/
 .ui-box-footer{
 	background-color: #00182E;	

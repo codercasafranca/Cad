@@ -26,6 +26,21 @@ $(document).ready(function(){
   });
 });
 
+/******************************
+ owl carousel staff profesional
+*******************************/
+$(document).ready(function(){
+  $(".owl-carousel.staff-profesional").owlCarousel({
+    items:4,    
+    margin:5,
+    loop:true,
+    lazyLoad:true,  
+    nav:true, 
+    navText: ["<img src='img/left-icon-cliente-gris.png'>", "<img src='img/right-icon-cliente-gris.png'>"], 
+    navClass: ['owl-prev', 'owl-next'],  
+  });
+});
+
 /***********************
     flexslider - home    
  ***********************/
@@ -71,5 +86,22 @@ $('.ui-btn-abajo').on('click', function(e){
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
 });
 
+
+/*********************************
+    tabs servicios in company     
+ *********************************/
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
 
