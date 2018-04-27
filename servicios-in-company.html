@@ -186,138 +186,165 @@
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem quod tempora, doloribus exercitationem 
 					</p>
-				</div>
-				<div class="ui-box-tabs-servicios-in-company">
-					<div class="tab">
-						<button class="tablinks active" 
-								onclick="openCity(event, 'London')">
-							Cursos in Company
-						</button>
-						<button class="tablinks" 
-								onclick="openCity(event, 'Paris')">
-							Consultorias
-						</button>	
+				</div>								
+			</div>
+			<div class="ui-box-tabs-servicios-in-company">
+				<div class="ui-tabs-servicios-in-company">
+					<div class="tab-in-company">						
+						<button class="tablinks-in-company active" 
+								onclick="openCursos(event, 'Cursos')">
+								Cursos in Company
+						</button>					
+						<button class="tablinks-in-company" 
+								onclick="openCursos(event, 'Consultorias')">
+								Consultorias
+						</button>						
 						<!-- clear -->
 						 <div class="ui-clear"></div>  	
 					</div>
+				</div>
 					
-					<div id="London" class="tabcontent active">
+				<div class="ui-box-tab-content-a">
+					<div id="Cursos" class="tabcontent-in-company active">
 						<header class="ui-header-servicios-in-company">
-						  	<h3 class="ui-h3-servicios-in-company">
-						  		<span class="a">Ventajas</span>
-						  		<span class="b">Metodológicas</span>
-						  	</h3>
+							  <h3 class="ui-h3-servicios-in-company">
+							  	<span class="a">Ventajas</span>
+							  	<span class="b">Metodológicas</span>
+							  </h3>
 						</header>
 						<p>
-						  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, expedita illum voluptatem accusantium perferendis hic error quisquam quo quasi? Autem fuga, hic unde non, eius praesentium aliquid iusto placeat veritatis adipisci beatae laudantium debitis. Eligendi, deserunt?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, expedita illum voluptatem accusantium perferendis hic error quisquam quo quasi? Autem fuga, hic unde non, eius praesentium aliquid iusto placeat veritatis adipisci beatae laudantium debitis. Eligendi, deserunt?
 						</p>
 					</div>
+				</div>
 					
-					<div id="Paris" class="tabcontent">
+				<div class="ui-box-tab-content-b">
+					<div id="Consultorias" class="tabcontent-in-company">
 						<div class="ui-box-consultorias-tab-items">
-							<div class="ui-item-consultoria-tab">
+							<div class="ui-item-consultoria-tab" 
+								onclick="document.getElementById('modal-consultoria-a').style.display = 'block'">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-01.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
-							<div class="ui-item-consultoria-tab">
+							</div>	
+							<div class="ui-item-consultoria-tab"
+								onclick="document.getElementById('modal-consultoria-a').style.display = 'block'">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-02.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>								
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-03.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-04.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-05.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-06.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-07.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
-										<img src="img/tab-consultoria-02.jpg" alt="">
+										<img src="img/tab-consultoria-08.jpg" alt="">
 									</figure>
+									<div class="ui-overlay-figura-consultoria-tab"></div>
 								</div>
 								<div class="ui-box-item-bloque-texto-consultoria-tab">
 									<p>
 										Formulación y Evaluación de Proyectos de Inversión Pública
 									</p>
 								</div>
-							</div>
+							</div>	
 							<!-- clear -->
 							<div class="ui-clear"></div>
 						</div>
-					</div>				
-				</div>				
+					</div>
+				</div>
+
+				<div class="ui-box-btn-abajo servicios-in-company">
+					<div class="ui-btn-abajo staff-profesional" data-ancla="staff-profesional">
+						<div class="box-btn-abajo slider">
+							<figure class="ui-icon-btn-abajo">
+								<img src="img/icon-btn-abajo.png" alt="">
+							</figure>
+						</div>
+					</div>			
+				</div>
 			</div>
-			<div class="ui-box-contenedor-servicios-in-company-b">
+
+			<div id="staff-profesional" class="ui-box-contenedor-servicios-in-company-b">
 				<header class="ui-header-servicios-in-company">
 					<h2 class="ui-h2-servicios-in-company">
 						<span class="a">Staff</span>
@@ -327,7 +354,8 @@
 				<div class="ui-box-carousel-servicios-in-company">
 					<div class="owl-carousel staff-profesional">
 					  	<div>
-							<div class="ui-box-item-staff-profesional">
+							<div class="ui-box-item-staff-profesional" 
+								onclick="document.getElementById('modal-staff-b').style.display='block'">
 								<div class="ui-box-imagen-staff-profesional">
 									<div class="ui-item-staff-profesional a"></div>						
 								</div>
@@ -338,7 +366,8 @@
 							</div>
 					  	</div>	
 					  	<div>
-							<div onclick="document.getElementById('modal-staff-a').style.display='block'" class="ui-box-item-staff-profesional">
+							<div class="ui-box-item-staff-profesional" 
+								onclick="document.getElementById('modal-staff-a').style.display='block'">
 								<div class="ui-box-imagen-staff-profesional">
 									<div class="ui-item-staff-profesional b"></div>						
 								</div>
@@ -526,6 +555,36 @@
 		</div>
 	</section>
 
+	<!-- modal consultoria items tab -->
+	<div id="modal-consultoria-a" class="ui-box-contenedor-modal">
+		<div class="ui-box">
+			<div class="ui-modal-tab-consultoria-tab">
+				<div class="ui-box-figura-modal-consultoria-tab">
+					<figure class="ui-figura-modal-consultoria">
+						<img src="img/figura-modal-consultoria-01.jpg" alt="">
+					</figure>
+					<div class="ui-box-close-modal-consultoria-tab" 
+						onclick="document.getElementById('modal-consultoria-a').style.display = 'none'">
+						<figure>
+							<img src="img/close-modal-consultoria-tab.png" alt="">
+						</figure>
+					</div>		
+					<div class="ui-overlay-modal-consultoria-tab"></div>			
+				</div>
+				<div class="ui-contenido-modal-consultoria">
+					<header class="ui-header-modal-consultoria">
+						<h2 class="ui-h2-modal-consultoria">
+							Formulación y Evaluación de Proyectos de Inversión Pública
+						</h2>						
+					</header>
+					<p>
+						Actualmente soy Gerenta de Marketing en RIPLEY PERÚ (+5,000 empleados). Soy una Ejecutiva Senior de Marketing con amplia experiencia internacional liderando equipos a nivel local y regional: Argentina, Ecuador, Colombia, Chile y Perú. Experta en el manejo estratégico de marcas, consolidación de portafolios, lanzamiento de productos nuevos al mercado, apertura de nuevos mercados y estrategias de comunicación transmedia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- modal staff profesional -->
 	<div id="modal-staff-a" class="ui-box-contenedor-modal">
 		<div class="ui-box">
@@ -538,6 +597,32 @@
 				<div class="ui-figura-user-staff-modal">
 					<figure>
 						<img src="img/staff-02.png" alt="">
+					</figure>
+				</div>
+				<div class="ui-datos-user-staff">
+					<h2 class="ui-h2-user-staff">
+						<span class="a">Marco Ripolling</span>
+						<span class="b">Experto en EN Marketing Digital & Comunicaciones</span>
+					</h2>
+					<p>
+						Actualmente soy Gerenta de Marketing en RIPLEY PERÚ (+5,000 empleados). Soy una Ejecutiva Senior de Marketing con amplia experiencia internacional liderando equipos a nivel local y regional: Argentina, Ecuador, Colombia, Chile y Perú. Experta en el manejo estratégico de marcas, consolidación de portafolios, lanzamiento de productos nuevos al mercado, apertura de nuevos mercados y estrategias de comunicación transmedia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-staff-b" class="ui-box-contenedor-modal">
+		<div class="ui-box">
+			<div class="ui-box-user-staff-profesional">
+				<div onclick="document.getElementById('modal-staff-b').style.display='none'" class="ui-box-icon-cerrar-modal">
+					<figure>
+						<img src="img/close-modal.png" alt="">
+					</figure>
+				</div>
+				<div class="ui-figura-user-staff-modal">
+					<figure>
+						<img src="img/staff-01.png" alt="">
 					</figure>
 				</div>
 				<div class="ui-datos-user-staff">
@@ -626,9 +711,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>

@@ -35,9 +35,7 @@ $(document).ready(function(){
     margin:5,
     loop:true,
     lazyLoad:true,  
-    nav:true, 
-    navText: ["<img src='img/left-icon-cliente-gris.png'>", "<img src='img/right-icon-cliente-gris.png'>"], 
-    navClass: ['owl-prev', 'owl-next'],  
+    nav:true,           
   });
 });
 
@@ -77,6 +75,16 @@ $('.ui-btn-abajo.slider').on('click', function(e){
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
 });
 
+/*******************************************
+     ancla scroll  servicios in company  
+ *******************************************/
+$('.ui-btn-abajo.staff-profesional').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+});
+
+
 /********************************
      ancla scroll  porque cad  
  ********************************/
@@ -86,22 +94,36 @@ $('.ui-btn-abajo').on('click', function(e){
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
 });
 
-
 /*********************************
     tabs servicios in company     
  *********************************/
-function openCity(evt, cityName) {
+function openCursos(evt, cursosName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tabcontent-in-company");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks-in-company");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cursosName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-
+/****************
+    tab blog     
+ ****************/
+function openBlog(evt, blogName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-blog");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-blog");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(blogName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
