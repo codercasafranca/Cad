@@ -66,13 +66,13 @@ $(document).ready(function(){
 $('.ui-box-btn-slider-scroll-abajo').on('click', function(e){
   e.preventDefault();
   var strAncla = '#' + $(this).data('ancla');
-  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-114}, 1500);
 });
 
-$('.ui-btn-abajo.slider').on('click', function(e){
+$('.ui-btn-abajo-slider').on('click', function(e){
   e.preventDefault();
   var strAncla = '#' + $(this).data('ancla');
-  $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-114}, 1500);
 });
 
 /*******************************************
@@ -88,7 +88,7 @@ $('.ui-btn-abajo.staff-profesional').on('click', function(e){
 /********************************
      ancla scroll  porque cad  
  ********************************/
-$('.ui-btn-abajo').on('click', function(e){
+$('.ui-btn-abajo-porque-cad').on('click', function(e){
   e.preventDefault();
   var strAncla = '#' + $(this).data('ancla');
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
@@ -127,3 +127,14 @@ function openBlog(evt, blogName) {
     document.getElementById(blogName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+/*************************
+    btn comienza ahora
+ *************************/
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+        $('.ui-box-comienza-ahora').fadeIn();
+    } else {
+        $('.ui-box-comienza-ahora').fadeOut();
+    }
+});

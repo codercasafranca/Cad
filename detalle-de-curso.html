@@ -2,18 +2,26 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>CAD Perú | Corporación Americana de Desarrollo</title>
 	<link rel="stylesheet" href="css/style-monkey.css">
-
+	<link rel="stylesheet" href="css/style-monkey-responsive.css">
 </head>
 <body>	
+
+	<!-- comienza ahora -->
+	<button onclick="document.getElementById('modal-form-comienza-ahora').style.display='block'" class="ui-box-comienza-ahora">
+		<figure>
+			<img src="img/comienza-ahora.png" alt="">
+		</figure>
+	</button>
 
 	<!-- header top -->
 	<header class="ui-header-top">
 		<div class="ui-box-container-principal">
 			<div class="ui-header-principal">
 				<div class="ui-izquierda">
-					<a href="index.html">
+					<a class="ui-box-logotipo" href="index.html">
 						<figure>
 							<img src="img/logotipo-cad.png" alt="">
 						</figure>
@@ -49,7 +57,7 @@
 						<nav class="ui-menu">
 							<ul>
 								<li>
-									<a href="index.html"  class="ui-menu-active">
+									<a href="index.html">
 										<figure>
 											<img src="img/icon-home.png" alt="">
 										</figure>
@@ -1157,7 +1165,6 @@
 	
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>	
-	<script src="js/paccordion.js"></script>
-	
+	<script src="js/paccordion.js"></script>	
 </body>	
 </html>

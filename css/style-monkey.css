@@ -94,6 +94,18 @@ select{
 /*font-family:"Open Sans";*/
 /*font-family:"Open Sans Light";*/
 
+.ui-box-comienza-ahora{
+	position: fixed;
+	right:0;
+	bottom:0; 	
+	z-index: 99;
+	display: none;
+	cursor: pointer;
+	background-color: transparent;
+	outline: none;
+	border:none;
+}
+
 .ui-fila-items-form-slider.btn-enviar{
 	text-align: center;
 }
@@ -142,6 +154,7 @@ select{
 
 	.ui-textarea-slider{
 		height: 75px;
+		overflow-y: hidden;
 	}
 
 .ui-linea-form-slider-01{
@@ -270,21 +283,30 @@ select{
 
 	.ui-header-principal > .ui-izquierda{
 		float: left;
-		padding-top: 19px;
+		padding-top: 19px;		
+		min-height: 122px;
+		margin-left: 10%;
 	}
 
 	.ui-header-principal > .ui-derecha{
 		padding-top: 19px;
 		float: right;
 		position: relative;
-		padding-right: 280px;
+		padding-right: 280px;		
+		min-height: 122px;
+	}
+
+	.ui-box-logotipo{
+		display: block;		
+		text-decoration: none;
+		color: #fff;
 	}
 
 		.ui-box-top-aula-virtual{
-			width: 250px;
+			width: 265px;
 			position: absolute;
 			top:0;
-			right:0;
+			right:-15px;
 			height: 100%;				
 			border-bottom-left-radius: 60px;
 
@@ -305,11 +327,12 @@ select{
 				content:'';
 				position: absolute;
 				top:0;
+				right: 0;
 				border-top-right-radius: 45px;
 				left:-100%;
 				background-color: #fff; 
 				height: 100%;
-				width:250px;
+				width:265px;
 				z-index: -1;				
 			}
 
@@ -320,7 +343,7 @@ select{
 				left:-100%;
 				background-color: #52A1ED; 
 				height: 100%;
-				width:250px;
+				width:265px;
 				z-index: -2;
 			}
 
@@ -489,26 +512,51 @@ select{
 		}
 
 		.ui-menu ul li a:hover{
-			border-color: rgb(220,220,220)
+			border-color: #003C75;
+			font-family:"Open Sans Bold";
 		}
 
 		.ui-menu ul li a.ui-menu-active{
-			border-bottom:4px solid #003C75;
-			font-weight: 800;			
+			border-bottom:4px solid #003C75;						
 			font-family:"Open Sans Bold";			
 		}
 
+		.ui-menu ul li:nth-child(1){
+			width: 28px;
+		}
+
+		.ui-menu ul li:nth-child(2){
+			width: 81px;
+		}
+
+		.ui-menu ul li:nth-child(3){
+			width: 196px;
+		}
+
+		.ui-menu ul li:nth-child(4){
+			width: 189px;
+		}
+
+		.ui-menu ul li:nth-child(5){
+			width: 93px;
+		}
+
+		.ui-menu ul li:nth-child(6){
+			width: 36px;
+		}
+
 /************ slider ***********/
-.ui-container-slider{	
+.ui-box-section-slider{	
 	position: relative;		
-	height: 962px;
+	height: 832px;
+	margin-top: 122px;
 }
 
 	.slider{
 		position: absolute;
 		top:0;
 		left:0;
-		height: 962px;
+		height: 832px;
 		width: 100%;	
 		z-index: 2;
 		visibility: hidden;		
@@ -527,11 +575,13 @@ select{
 				-moz-transform:translateY(-20px);
 				-ms-transform:translateY(-20px);
 				-o-transform:translateY(-20px);
-				transform:translateY(-20px);
+				transform:translateY(-20px);				
+				height: 35px;
 			}
 
 				.ui-texto-scroll-slider p{	
 					color:#fff;		
+					letter-spacing: 1.6px;
 					font-family:"Open Sans Extrabold";		
 					-webkit-transform:rotate(-90deg);
 					-moz-transform:rotate(-90deg);
@@ -589,7 +639,7 @@ select{
 		top:0;
 		left:0;
 		width: 100%;
-		height: 962px;		
+		height: 832px;		
 		z-index: -2;
 		visibility: visible;				
 	}
@@ -599,7 +649,7 @@ select{
 	}
 
 		.ui-item-slide-home{		
-			height: 962px;									
+			height: 832px;								
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;		
@@ -620,7 +670,7 @@ select{
 			}
 
 				.ui-texto-slide{
-					height: 962px;					
+					height: 832px;				
 
 					display: -webkit-flex;
 					display: flex;
@@ -630,7 +680,7 @@ select{
 
 					.ui-texto-slide-contenido{
 						max-width: 516px;
-						margin-left: 12%;						
+						margin-left: 10%;						
 					}
 
 						.ui-h2-slide{							
@@ -667,20 +717,20 @@ select{
 /******* flexSlider animacion *******/
 .ui-item-slide-home.flex-active-slide .ui-h2-slide{
 	position: relative;
-	-webkit-animation: texto-slide-a .5s linear;
-	 -moz-animation: texto-slide-a .5s linear;
-	 -ms-animation: texto-slide-a .5s linear;
-	 -o-animation: texto-slide-a .5s linear;
-	 animation: texto-slide-a .5s linear; 
+	-webkit-animation: texto-slide-a .7s linear;
+	 -moz-animation: texto-slide-a .7s linear;
+	 -ms-animation: texto-slide-a .7s linear;
+	 -o-animation: texto-slide-a .7s linear;
+	 animation: texto-slide-a .7s linear; 
 }
 
 	@-webkit-keyframes texto-slide-a {
 	    0% {
-	    	top: -70px;
+	    	right: 90px;
 	    	opacity: 0;
 	    }
 	    100% {
-	    	top: 0px;
+	    	right: 0px;
 	    	opacity: 1;
 	    }
 	}
@@ -688,31 +738,31 @@ select{
 	/* Standard syntax */
 	@keyframes texto-slide-a {
 	    0% {
-	    	top: -70px;
+	    	right: 90px;
 	    	opacity: 0;
 	    }
 	    100% {
-	    	top: 0px;
+	    	right: 0px;
 	    	opacity: 1;
 	    }
 	}
 
 	.ui-item-slide-home.flex-active-slide .ui-texto-parrafo-slide{
 		position: relative;
-		-webkit-animation: texto-slide-b .5s linear;
-		 -moz-animation: texto-slide-b .5s linear;
-		 -ms-animation: texto-slide-b .5s linear;
-		 -o-animation: texto-slide-b .5s linear;
-		 animation: texto-slide-b .5s linear; 
+		-webkit-animation: texto-slide-b .7s linear;
+		 -moz-animation: texto-slide-b .7s linear;
+		 -ms-animation: texto-slide-b .7s linear;
+		 -o-animation: texto-slide-b .7s linear;
+		 animation: texto-slide-b .7s linear; 
 	}
 
 		@-webkit-keyframes texto-slide-b {
 		    0% {
-		    	top: 70px;
+		    	right: 90px;
 		    	opacity: 0;
 		    }
 		    100% {
-		    	top: 0px;
+		    	right: 0px;
 		    	opacity: 1;
 		    }
 		}
@@ -720,11 +770,11 @@ select{
 		/* Standard syntax */
 		@keyframes texto-slide-b {
 		    0% {
-		    	top: 70px;
+		    	right: 90px;
 		    	opacity: 0;
 		    }
 		    100% {
-		    	top: 0px;
+		    	right: 0px;
 		    	opacity: 1;
 		    }
 		}
@@ -737,8 +787,8 @@ select{
 
 		.flexslider.home .flex-control-nav{
 			position: absolute;
-			bottom:23%;
-			left:12%;
+			bottom:36%;
+			left:10%;
 			width: auto;
 			height: 4px;			
 			z-index: 100;
@@ -843,7 +893,7 @@ select{
 					
 
 .ui-box-form-slider{
-	height: 962px;	
+	height: 832px;	
 	padding-right: 7%;
 	visibility: hidden;
 	display: -webkit-flex;
@@ -968,17 +1018,7 @@ select{
 .ui-box-especialidades{
 	padding-bottom: 64px;
 	padding-top: 82px;
-	position: relative;
-}
-
-.ui-box-comienza-ahora{
-	position: absolute;
-	right:0;
-	bottom:0; 	
-	cursor: pointer;
-	background-color: transparent;
-	outline: none;
-	border:none;
+	position: relative;	
 }
 
 	.ui-header-h2{
@@ -1081,15 +1121,10 @@ select{
 	position: relative;
 }
 
-	.ui-texto-boton-curso  p{
-		height: 54px;		
-	}
-
 .ui-nombre-curso{		
 	font-family:"Open Sans Bold";
-	line-height: 27px;
-	font-size: 23px;
-	letter-spacing: -0.03em;
+	line-height: 25px;
+	font-size: 23px;	
 
 	-webkit-transition:all .1s linear;
 	-moz-transition:all .1s linear;
@@ -1196,8 +1231,21 @@ select{
 			}
 
 /*************** sección ¿ porque cad ? ***************/
+.ui-box-section-porque-cad{
+	position: relative;
+	background-color: #FCFCFC;
+}
+
+.ui-vector-bg-porque-cad{
+	position: absolute;
+	bottom:0;
+	right:0;
+	z-index: 1;	
+}
+
 .ui-box-porque-cad{	
 	position: relative;
+	z-index: 2;
 }
 
 	.ui-box-porque-cad > .ui-izquierda{
@@ -1205,17 +1253,82 @@ select{
 		top:0;
 		left:0;
 		height: 100%;
-		width:35%;		
-		background-image: url(../img/group-3-1.png);
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		width:35%;								
 	}
+
+	.ui-box-imagen-porque-cad{		
+		position: relative;
+	}
+
+		.ui-box-imagen-porque-cad figure{			
+			display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+			.ui-box-imagen-porque-cad figure img{
+				display: block;				
+				margin: auto;
+			}
+
+			.ui-box-enlace-porque-cad{				
+				position: absolute;
+				top:0;
+				left:0;
+				z-index: 10;	
+				width: 100%;
+				text-align: center;
+			}
+
+				.ui-box-enlace-porque-cad > .ui-box{
+					display: inline-block;
+					vertical-align: bottom;					
+					text-align: left;
+					position: relative;
+					right: 30px;
+				}
+
+					.ui-h2-enlace-porque-cad span{
+						display: block;
+						letter-spacing: -2px;
+					}
+
+					.ui-h2-enlace-porque-cad .a{
+						font-family:"Open Sans";
+						opacity: .8;
+						font-size: 37px;
+						line-height: 44px;
+						color: #B0E519;
+					}
+
+					.ui-h2-enlace-porque-cad .b{
+						font-family:"Open Sans Extrabold";
+						opacity: .8;
+						font-size: 60px;
+						line-height: 65px;
+						color: #003C75;
+					}
+
+					.ui-conocenos-enlace-porque-cad{
+						font-family:"Open Sans Bold";
+						line-height: 29px;
+						font-size: 25px;
+						color:#336391;
+						text-decoration: none;
+						position: relative;
+						display: block;						
+					}
+
+						.ui-conocenos-enlace-porque-cad figure{
+							position: absolute;
+							top:8px;
+							right:0;
+						}
 
 	.ui-box-porque-cad > .ui-derecha{
 		float: right;
-		width:65%;
-		background-color: #fff;
+		width:65%;	
 	}	
 
 	.ui-box-items-porque-cad{
@@ -1242,6 +1355,7 @@ select{
 				padding-top: 28px;
 				padding-right: 30px;
 				color: #BDBDBD; 
+				background-color: #fff;
 
 				-webkit-transition: all .2s linear;
 				-moz-transition: all .2s linear;
@@ -1251,9 +1365,9 @@ select{
 			}
 
 			.ui-item-porque-cad:hover{
-				-webkit-box-shadow: 6px 8px 5px -4px rgba(175,229,25,0.40);
-				-moz-box-shadow: 6px 8px 5px -4px rgba(175,229,25,0.40);
-				box-shadow: 6px 8px 5px -4px rgba(175,229,25,0.40);
+				-webkit-box-shadow: 6px 8px 20px rgba(176, 229, 25, 0.3);
+				-moz-box-shadow: 6px 8px 20px rgba(176, 229, 25, 0.3);
+				box-shadow: 6px 8px 20px rgba(176, 229, 25, 0.3);
 			}
 
 				.ui-icon-porque-cad{
@@ -1324,32 +1438,33 @@ select{
 						color: #B0E519;
 					}
 
-.ui-box-btn-abajo{
+.ui-box-btn-abajo-slider{
 	position: absolute;
 	bottom:0;
 	left:0;
 	width: 100%; 
 	height: 20px;	
-	z-index: 999;
-	text-align: center;	
+	z-index: 99;
+	text-align: center;		
 }
 
-	.ui-btn-abajo{
+	.ui-btn-abajo-slider{
 		width: 102px;
-		height: 102px;
+		height: 102px;				
 		display: inline-block;
 		vertical-align: top;		
 		position: relative;
-		bottom:40px;		
-	
+		bottom:40px;
+		border-radius:50%;		
 	}
 
-		.box-btn-abajo{
+		.box-btn-abajo-slider{
 			position: absolute;
-			top:0;
+			top:26px;
 			left:0;
 			width: 100%;
 			height: 100%;
+			border-radius:50%;
 			background-color: #fff;
 			display: -webkit-flex;
 			display: flex;
@@ -1358,19 +1473,20 @@ select{
 			visibility: visible;
 		}
 
-			.ui-icon-btn-abajo{
-				padding: 15px; 
+			.ui-icon-btn-abajo-slider{				
 				cursor: pointer;		
-				visibility: visible;					
+				visibility: visible;				
+				position: relative;
+				bottom: 21px;									
 
-				-webkit-animation: btn-abajo .8s infinite;
-				-moz-animation: btn-abajo .8s infinite;
-				-ms-animation: btn-abajo .8s infinite;
-				-o-animation: btn-abajo .8s infinite;
-				animation: btn-abajo .8s infinite;
+				-webkit-animation: btn-abajo-slider .8s infinite;
+				-moz-animation: btn-abajo-slider .8s infinite;
+				-ms-animation: btn-abajo-slider .8s infinite;
+				-o-animation: btn-abajo-slider .8s infinite;
+				animation: btn-abajo-slider .8s infinite;
 			}
 
-			@-webkit-keyframes btn-abajo {
+			@-webkit-keyframes btn-abajo-slider {
 			    0%   {
 			    	padding-top:0px;
 			    	}				    
@@ -1382,7 +1498,7 @@ select{
 			    }
 			}
 			
-			@keyframes example {
+			@keyframes btn-abajo-slider {
 			    0%   {
 			    	padding-top:0px;
 			    	}				    
@@ -1392,7 +1508,76 @@ select{
 			    100% {
 			    	padding-top:0px;
 			    }
-			}
+			}		
+
+.ui-box-btn-abajo-porque-cad{
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 20px;
+	    z-index: 99;
+	    text-align: center;	    
+	}		
+		.ui-btn-abajo-porque-cad{
+			width: 102px;
+		    height: 102px;
+		    display: inline-block;
+		    vertical-align: top;
+		    position: relative;		   
+		    border-radius: 50%;
+		}
+			.box-btn-abajo-porque-cad{
+				position: absolute;
+			    bottom: 50px;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    border-radius: 50%;
+			    background-color: #fff;
+			    display: -webkit-flex;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    visibility: visible;
+			}	
+
+				.ui-icon-btn-abajo-porque-cad{
+					cursor: pointer;
+				    visibility: visible;				    
+				    position: relative;
+				    top:6px;		    
+				   
+				    -webkit-animation: btn-abajo-porque-cad .8s infinite;
+				    -moz-animation: btn-abajo-porque-cad .8s infinite;
+				    -ms-animation: btn-abajo-porque-cad .8s infinite;
+				    -o-animation: btn-abajo-porque-cad .8s infinite;
+				    animation: btn-abajo-porque-cad .8s infinite;
+				}
+
+				@-webkit-keyframes btn-abajo-porque-cad {
+				    0%   {
+				    	padding-top:0px;
+				    	}				    
+				    50%  {
+				    	padding-top:14px;
+				    }			    
+				    100% {
+				    	padding-top:0px;
+				    }
+				}
+				
+				@keyframes btn-abajo-porque-cad {
+				    0%   {
+				    	padding-top:0px;
+				    	}				    
+				    50%  {
+				    	padding-top:14px;
+				    }			    
+				    100% {
+				    	padding-top:0px;
+				    }
+				}
 
 /************* sección video *************/
 .ui-box-video-home{
@@ -1404,11 +1589,22 @@ select{
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 100%;	
+	position: relative;
 
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.overlay-video-home{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .2;
 }
 
 	.ui-box-enlace-texto-video{		
@@ -1539,8 +1735,7 @@ select{
 			.ui-h2-video .b{				
 				font-family:"Open Sans";
 				font-size: 40px;
-			}
-
+			}	
 
 /************* seccion nuestros ex alumnos *************/
 .ui-box-nuestros-ex-alumnos{	
@@ -1590,11 +1785,12 @@ select{
 			.ui-h2-ex-alumno{
 				font-size: 40px;
 				font-family:"Open Sans";
+				opacity: .9;
 			}
 
-				.ui-h2-ex-alumno .a{
-					color: #B0E519;	
-					line-height: 44px;						
+				.ui-h2-ex-alumno .a{					
+					color: #B0E519;						
+					line-height: 44px;									
 				}
 
 				.ui-h2-ex-alumno .b{
@@ -1655,10 +1851,12 @@ select{
 	display: inline-block;
 	vertical-align: top;
 	margin:0 4px;
+	opacity: .4;
 }
 
 .owl-carousel button.active{
 	background-color: #336391;
+	opacity: 1;
 	border: 1px solid #336391!important;
 }
 
@@ -1706,9 +1904,9 @@ select{
 		padding-right: 20px;		
 	}
 
-	.ui-item-box-cliente{
-		height: 115px;		
-	}
+		.ui-item-box-cliente{
+			padding: 0 15px;
+		}
 
 
 	.owl-carousel.clientes .owl-dots{
@@ -1720,8 +1918,12 @@ select{
 		top:50px;
 		left:0;
 		width: 100%;
-		visibility: hidden;
+		visibility: hidden;		
 	}
+
+		.owl-carousel.clientes .owl-nav button{
+			opacity: 1;
+		}
 
 		.owl-carousel.clientes .owl-nav .owl-prev{
 			float: left;
@@ -1847,8 +2049,8 @@ select{
 
 .ui-box-item-nuestro-curso{
 	float: left;
-	width: 31.33%;
-	margin: 1%;
+	width: 32.33%;
+	margin: .5%;
 	border-radius: 10px;	
 	overflow: hidden;
 
@@ -1903,6 +2105,7 @@ select{
 			bottom:0;
 			left:0;
 			width: 100%; 
+			overflow: hidden;
 		}
 
 			.ui-box-precio-conteo-horas > .ui-izquierda{
@@ -1912,11 +2115,9 @@ select{
 				height: 100%; 
 				width:36.33%;
 				background-color: #002B54;
-
-				display: -webkit-flex;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				-webkit-box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.5);
+				-moz-box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.5);
+				box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.5);				
 			}
 
 			.ui-box-precio-conteo-horas > .ui-derecha{
@@ -1940,10 +2141,22 @@ select{
 		padding-top: 15px;
 	}
 
-		.ui-box-precio-item-curso{
-			background-color: #002B54;
-			padding: 0 15px;
+		.ui-box-precio-item-curso{			
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;	
+
+			display: -webkit-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;	
 		}
+
+			.ui-box-precio-item-curso .ui-box{					
+				max-width: 144px;	
+			}
 
 			.ui-box-precio-item-curso .a{
 				font-family:"Open Sans Bold";
@@ -2067,7 +2280,8 @@ select{
 	height: 100%;
 	background-color: #001C36;
 	color: #fff;
-	padding: 50px 30px;	
+	text-decoration: none;
+	padding: 50px 30px;		
 
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -2075,6 +2289,7 @@ select{
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
+
 
 	.ui-img-overlay-item-post-grado{
 		position: absolute;
@@ -2126,7 +2341,7 @@ select{
 	 	.ui-box-overlay-texto-aula-virtual figure{
 	 		position: absolute;
 	 		top:2px;
-	 		left:0;
+	 		left:0;	 		
 	 	}
 
 	 		.ui-box-overlay-texto-aula-virtual figure img{
@@ -2144,10 +2359,48 @@ select{
 	 			background-color: #fff;
 	 		}
 
+	 		.ui-arrow-overlay-post-grado{
+	 			display: inline-block;
+	 			vertical-align: top;	 			
+	 			position: relative;	 			
+	 		}
+
+	 .ui-box-item-nuestro-curso:hover > .ui-box-imagen-item-nuestro-curso .ui-arrow-overlay-post-grado{
+		-webkit-animation: arrow-detalle-curso .3s infinite;
+	 	-moz-animation: arrow-detalle-curso .3s infinite;
+	 	-ms-animation: arrow-detalle-curso .3s infinite;
+	 	-o-animation: arrow-detalle-curso .3s infinite;
+	 	animation: arrow-detalle-curso .3s infinite;
+	 }
+
+	 @-webkit-keyframes arrow-detalle-curso {
+	    0% {
+			left:0px;						
+	    }
+	    50% {
+			left:6px; 			
+	    }
+	    100%{
+			left:0px;			
+	    }
+	}
+	
+	@keyframes arrow-detalle-curso {
+	    0% {
+			left:0px;			
+	    }
+	    50% {
+			left:6px; 				
+	    }
+	    100%{
+			left:0px;				
+	    }
+	}
+
 	.ui-box-item-dato-overlay-curso{
 		padding-left: 47px;
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 15px;		
 	}
 
 	.ui-box-item-dato-overlay-curso.no-margin-bottom{
@@ -2167,13 +2420,13 @@ select{
 			}
 		
 		.ui-box-item-dato-overlay-curso span{
-			display: block;
+			display: block;								
 		}
 
 			.ui-box-item-dato-overlay-curso .a{
 				font-size: 15px;
 				line-height: 17px;
-				font-family:"Open Sans";
+				font-family:"Open Sans";				
 			}
 
 			.ui-box-item-dato-overlay-curso .b{
@@ -2192,6 +2445,7 @@ select{
 .ui-box-item-nuestro-curso:hover > .ui-box-imagen-item-nuestro-curso .ui-box-overlay-nivel-post-grado{
 	top:0%;
 }
+
 
 /********** paginacion **********/
 .ui-box-paginacion {
@@ -3945,7 +4199,7 @@ select{
 
 				.ui-dato-footer{
 					position: relative;
-					padding-left: 52px;
+					padding-left: 65px;
 				}
 
 				.ui-texto-dato-footer p{
@@ -4016,8 +4270,8 @@ select{
 
 			.ui-items-enlaces-creditos li a{
 				color: #fff; 
-				text-decoration: none;
-				font-style: Light;
+				text-decoration: none;				
 				font-size: 14px;
 				line-height: 19px;
+				font-family:"Open Sans Light";
 			}

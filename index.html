@@ -2,8 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>CAD Perú | Corporación Americana de Desarrollo</title>
 	<link rel="stylesheet" href="css/style-monkey.css">
+	<link rel="stylesheet" href="css/style-monkey-responsive.css">
 	<!-- owlCarouel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">	
@@ -14,12 +16,19 @@
 </head>
 <body>	
 
+	<!-- comienza ahora -->
+	<button onclick="document.getElementById('modal-form-comienza-ahora').style.display='block'" class="ui-box-comienza-ahora">
+		<figure>
+			<img src="img/comienza-ahora.png" alt="">
+		</figure>
+	</button>
+
 	<!-- header top -->
 	<header class="ui-header-top">
 		<div class="ui-box-container-principal">
 			<div class="ui-header-principal">
 				<div class="ui-izquierda">
-					<a href="index.html">
+					<a class="ui-box-logotipo" href="index.html">
 						<figure>
 							<img src="img/logotipo-cad.png" alt="">
 						</figure>
@@ -55,7 +64,7 @@
 						<nav class="ui-menu">
 							<ul>
 								<li>
-									<a href="index.html"  class="ui-menu-active">
+									<a href="index.html">
 										<figure>
 											<img src="img/icon-home.png" alt="">
 										</figure>
@@ -100,7 +109,7 @@
 	</header>
 
 	<!-- slider -->
-	<div class="ui-container-slider">
+	<div class="ui-box-section-slider">
 		<div class="slider">
 			<div class="ui-box-container-principal">
 				<div data-ancla="nuestras-especialidades" class="ui-box-btn-slider-scroll-abajo">
@@ -245,16 +254,15 @@
 		  </ul>
 		</div>
 
-		<div class="ui-box-btn-abajo">
-			<div class="ui-btn-abajo slider" data-ancla="porque-cad">
-				<div class="box-btn-abajo slider">
-					<figure class="ui-icon-btn-abajo">
+		<div class="ui-box-btn-abajo-slider">
+			<div class="ui-btn-abajo-slider" data-ancla="nuestras-especialidades">
+				<div class="box-btn-abajo-slider">
+					<figure class="ui-icon-btn-abajo-slider">
 						<img src="img/icon-btn-abajo.png" alt="">
 					</figure>
 				</div>
 			</div>			
-		</div>
-		  
+		</div>		  
 	</div>			
 	</div>	
 	
@@ -319,7 +327,7 @@
 				<article class="ui-item-curso">
 					<div class="ui-box-image-curso">
 						<figure class="ui-image-curso">
-							<img src="img/image 49.jpg" alt="">
+							<img src="img/especialidad-home-05.jpg" alt="">
 						</figure>
 						<div class="ui-box-overflow-curso e"></div>
 					</div>
@@ -341,23 +349,7 @@
 					</div>
 				</article>
 				<div class="ui-clear"></div>
-			</div>
-			<div class="scrollme">
-				<div 
-					class="animateme"
-					data-when="enter"
-			        data-from="0.5"
-			        data-to="0"
-			        data-opacity="0"
-			        data-translatex="200"			       
-				>
-					<button onclick="document.getElementById('modal-form-comienza-ahora').style.display='block'" class="ui-box-comienza-ahora">
-						<figure>
-							<img src="img/comienza-ahora.png" alt="">
-						</figure>
-					</button>
-				</div>
-			</div>
+			</div>		
 		</div>
 	</section>
 
@@ -444,79 +436,106 @@
 	</div>
 
 	<!-- sección ¿ porque cad ? -->
-	<div id="porque-cad" class="ui-box-container-principal">
-		<div class="ui-box-porque-cad">
-			<div class="ui-izquierda">
-				<div class="ui-box-imagen-porque-cad"></div>
-			</div>
-			<div class="ui-derecha">
-				<div class="ui-box-items-porque-cad">
-					<div class="ui-items-porque-cad">
-						<div class="ui-item-porque-cad">
-							<div class="ui-icon-porque-cad a"></div>
-							<div class="ui-item-contenido-porque-cad">
-								<h2 class="ui-h2-porque-cad">
-									Confianza
-								</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
-								</p>							
-							</div>
-						</div>
-						<div class="ui-item-porque-cad">
-							<div class="ui-icon-porque-cad b"></div>
-							<div class="ui-item-contenido-porque-cad">
-								<h2 class="ui-h2-porque-cad">
-									Calidad
-								</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
-								</p>
-							</div>
-						</div>
-						<div class="ui-item-porque-cad">
-							<div class="ui-icon-porque-cad c"></div>
-							<div class="ui-item-contenido-porque-cad">
-								<h2 class="ui-h2-porque-cad">
-									Respaldo
-								</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
-								</p>
-							</div>
-						</div>
-						<div class="ui-item-porque-cad">
-							<div class="ui-icon-porque-cad d"></div>
-							<div class="ui-item-contenido-porque-cad">
-								<h2 class="ui-h2-porque-cad">
-									Integridad
-								</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
-								</p>
-							</div>
-						</div>
-						<!-- .clear -->
-						<div class="ui-clear"></div>
-					</div>
-				</div>
-			</div>
-			<!-- clear -->
-			<div class="ui-clear"></div>
-			<div class="ui-box-btn-abajo">
-				<div data-ancla="seccion-video" class="ui-btn-abajo">
-					<div class="box-btn-abajo">
-						<figure class="ui-icon-btn-abajo">
-							<img src="img/icon-btn-abajo.png" alt="">
+	<div id="porque-cad" class="ui-box-section-porque-cad">
+		<div class="ui-box-container-principal">
+			<div class="ui-box-porque-cad">
+				<div class="ui-izquierda">
+					<div class="ui-box-imagen-porque-cad">
+						<figure>
+							<img src="img/group-3-1.png" alt="">
 						</figure>
+						<div class="ui-box-enlace-porque-cad">
+							<div class="ui-box">
+								<h2 class="ui-h2-enlace-porque-cad">
+									<span class="a">¿ Por qué</span>
+									<span class="b">Cad ?</span>
+								</h2>
+								<a class="ui-conocenos-enlace-porque-cad" href="">
+									Conocenos
+									<figure>
+										<img src="img/porque-cad-enlace-icon.png" alt="">
+									</figure>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>				
+				<div class="ui-derecha">
+					<div class="ui-box-items-porque-cad">
+						<div class="ui-items-porque-cad">
+							<div class="ui-item-porque-cad">
+								<div class="ui-icon-porque-cad a"></div>
+								<div class="ui-item-contenido-porque-cad">
+									<h2 class="ui-h2-porque-cad">
+										Confianza
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
+									</p>							
+								</div>
+							</div>
+							<div class="ui-item-porque-cad">
+								<div class="ui-icon-porque-cad b"></div>
+								<div class="ui-item-contenido-porque-cad">
+									<h2 class="ui-h2-porque-cad">
+										Calidad
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
+									</p>
+								</div>
+							</div>
+							<div class="ui-item-porque-cad">
+								<div class="ui-icon-porque-cad c"></div>
+								<div class="ui-item-contenido-porque-cad">
+									<h2 class="ui-h2-porque-cad">
+										Respaldo
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
+									</p>
+								</div>
+							</div>
+							<div class="ui-item-porque-cad">
+								<div class="ui-icon-porque-cad d"></div>
+								<div class="ui-item-contenido-porque-cad">
+									<h2 class="ui-h2-porque-cad">
+										Integridad
+									</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor labore.
+									</p>
+								</div>
+							</div>
+							<!-- .clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+				</div>
+				<!-- clear -->
+				<div class="ui-clear"></div>	
+			</div>
 		</div>
-	</div>
+		<div class="ui-box-btn-abajo-porque-cad">
+			<div class="ui-btn-abajo-porque-cad" data-ancla="seccion-video">
+				<div class="box-btn-abajo-porque-cad">
+					<figure class="ui-icon-btn-abajo-porque-cad">
+						<img src="img/icon-btn-abajo.png" alt="">
+					</figure>
+				</div>
+			</div>			
+		</div>
+		<div class="ui-vector-bg-porque-cad">
+			<figure>
+				<img src="img/bg-porque-cad.png" alt="">
+			</figure>
+		</div>
+	</div>		
+	
 
 	<!-- seccion video -->
 	<div id="seccion-video" class="ui-box-video-home">
+		<div class="overlay-video-home"></div>	
 		<div class="ui-box-enlace-texto-video">
 			<a class="demo" href="https://www.youtube.com/watch?v=cu8vIQw7hKQ">
 				<div class="ui-box-icon-play-video">
@@ -534,7 +553,7 @@
 					del Futuro
 				</span>
 			</h2>
-		</div>
+		</div>		
 	</div>
 	
 	<!-- seccion nuestros ex alumnos -->
@@ -646,35 +665,35 @@
 						<div class="owl-carousel clientes">
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-u-p.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-upc.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-esan.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-utp.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-upci.jpg" alt="">
 									</figure>
 								</div>
@@ -682,35 +701,35 @@
 
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-u-p.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-upc.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-esan.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-utp.jpg" alt="">
 									</figure>
 								</div>
 							</div>
 							<div>
 								<div class="ui-item-box-cliente">
-									<figure class=".ui-image-item-cliente">
+									<figure class="ui-image-item-cliente">
 										<img src="img/logotipo-upci.jpg" alt="">
 									</figure>
 								</div>
@@ -800,9 +819,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>
