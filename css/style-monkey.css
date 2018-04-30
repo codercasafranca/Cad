@@ -11,7 +11,7 @@
 
 body{
 	font-family:"Open Sans";
-	position: relative;
+	position: relative;	
 }
 
 p{
@@ -958,6 +958,10 @@ select{
 					margin-top: 10px;
 				}
 
+				.ui-input-form-slider{				
+					height: 35px;
+				}
+
 					.ui-input-form-slider::placeholder{						
 						color:#003C75;
 					}
@@ -976,6 +980,10 @@ select{
 						color:#003C75;
 						position: relative;
 						top:-2px;
+						height: 35px;						
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						appearance: none;
 					}
 
 						.ui-select-form-slider:hover{
@@ -1956,7 +1964,293 @@ select{
 				background-repeat: no-repeat;				
 			}
 
-/***************************************
+/***************************
+      pagina nosotros      
+ ***************************/
+.ui-box-banner-nosotros{
+	margin-top: 122px;
+	height: 587px;
+	background-image: url(../img/banner-nosotros.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ui-section-cad-peru{
+	padding-top: 78px;
+}
+
+	.ui-box-cad-peru-a{
+		max-width: 951px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	.ui-header-cad-peru{
+		margin-bottom: 28px;
+	}
+
+		.ui-h2-cad-peru{
+			color: rgba(0, 60, 117, 0.8);
+			line-height: 44px;
+			font-size: 38px;
+		}
+
+			.ui-h2-cad-peru .a{
+				text-transform: uppercase;
+			}
+
+	.ui-box-cad-peru-a p{
+		font-family:"Open Sans";
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.ui-box-cad-peru-b{
+		max-width: 1295px;
+		margin-right: auto;
+		margin-left: auto;	
+		position: relative;	
+	}
+
+		.ui-box-cad-peru-b > .ui-izquierda{
+			float: left;
+			width:43.33%;			
+			position: absolute;
+			top:0;
+			left:0;
+			height: 100%;
+			min-height: 587px;
+		}		
+
+			.ui-box-figura-cad-peru figure{
+				display: block;
+				position: absolute;
+				left:0;
+				bottom:0;
+				width: 100%;  
+			}
+
+				.ui-box-figura-cad-peru figure img{
+					display: block;						
+					width: 100%;
+				}
+
+		.ui-box-cad-peru-b > .ui-derecha{
+			float: right;
+			min-height: 587px;			
+			width:56.66%;			
+
+			display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.ui-header-historia-cad-peru{
+			margin-bottom: 32px;
+		}
+
+			.ui-h2-historia-cad-peru span{
+				display: block;
+			}
+
+				.ui-h2-historia-cad-peru .a{
+					color:rgba(176, 229, 25, 0.8);
+					opacity: .8;
+					font-size: 37px;
+					line-height: 44px;
+				}
+
+				.ui-h2-historia-cad-peru .b{
+					color:#003C75;
+					opacity: .8;
+					font-size: 55px;
+					font-family:"Open Sans Extrabold";
+					line-height: 44px;
+				}
+
+				.tabcontent-cad-peru p{
+					opacity: 3;
+					font-family:"Open Sans";
+					line-height: 27px;
+					font-size: 20px;
+				}
+
+/*** tabs cad perú ***/
+.tab-cad-peru {
+    overflow: hidden; 
+    padding: 3px 0;
+}
+
+.tab-cad-peru button.tablinks-cad-peru {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;   
+    width: 197px;
+    height: 60px;
+    font-family:"Open Sans Bold";
+    font-size: 25px;
+    opacity: 0.3;
+    color:#000;
+
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
+}
+
+.tab-cad-peru button.tablinks-cad-peru.active {
+    background-color: #326290;
+    color:#fff;        
+    opacity: 1;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tabcontent-cad-peru {
+    display: none;
+    padding: 6px 12px;    
+    border-top: none;
+    margin-bottom: 46px;
+}
+
+.tabcontent-cad-peru.active{
+	display: block;
+}
+
+/*carousel nuestras sedes*/
+.ui-box-nuestras-sedes{
+	padding: 60px 0 80px;
+}
+
+.ui-h3-nuestra-sede{
+	color: #003C75;
+	font-size: 25px;
+	font-family:"Open Sans Bold";
+	line-height: 29px;
+	margin-bottom: 12PX;
+}
+
+.ui-box-item-nuestra-sede{	
+	padding: 5px 15px;
+	text-align: center;
+	position: relative;
+}
+	
+	.ui-box-item-nuestra-sede:before{
+		content:'';
+		position: absolute;
+		top:26px;
+		right:-1px;
+		width: 1px;
+		height: 35px;
+		background-color: #000;
+		opacity: .2;
+	}
+
+	.ui-box-item-nuestra-sede > .ui-box{
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: left;
+	}
+
+	.ui-box-dato-item-sede{
+		position: relative;
+	}
+
+		.ui-figura-item-sede{
+			position: absolute;
+			left:0;
+			top:2px;
+		}
+
+		.ui-box-dato-item-sede{
+			padding-left: 25px;
+		}
+
+		.ui-box-dato-item-sede .a{
+			font-family:"Open Sans Bold";
+			font-size: 14px;
+			opacity: .7;
+		}
+
+		.ui-box-dato-item-sede .b{
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		.owl-carousel.nuestras-sedes{			
+			padding: 0 50px;
+		}
+
+		.owl-carousel.nuestras-sedes .owl-dots{
+			display: none;
+		}
+
+		.owl-carousel.nuestras-sedes .owl-nav{
+			position: absolute;
+			top:38px;
+			left:0;
+			width: 100%;
+			visibility: hidden;
+		}
+
+		.owl-carousel.nuestras-sedes .owl-nav button{
+			border:none!important;
+			border-radius:initial;
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.owl-carousel.nuestras-sedes .owl-nav button span{
+			display: none;
+		}
+
+			.owl-carousel.nuestras-sedes .owl-nav .owl-prev{
+				float: left;
+				position: relative;
+				left:15px;
+				width: 15px;
+				height: 15px;
+				background-image: url(../img/left-sede-icon.png);
+				background-repeat: no-repeat;
+			}
+
+				.owl-carousel.nuestras-sedes .owl-nav .owl-prev:hover{
+					background-image: url(../img/left-sede-icon-hover.png);
+					opacity: 1;
+				}
+
+			.owl-carousel.nuestras-sedes .owl-nav .owl-next{
+				float: right;
+				position: relative;
+				right:15px;
+				width: 15px;
+				height: 15px;
+				background-image: url(../img/right-sede-icon.png);
+				background-repeat: no-repeat;
+			}
+
+				.owl-carousel.nuestras-sedes .owl-nav .owl-next:hover{
+					background-image: url(../img/right-sede-icon-hover.png);
+					opacity: 1;
+				}
+
+/**** mapa nosotros *****/
+.ui-section-mapa-nosotros{
+	height: 610px;
+	background-color: rgba(0,0,0,.1);
+}
+
+/**************************S*************
       pagina programa de estudios      
  ***************************************/
 
@@ -1968,6 +2262,13 @@ select{
 
 .ui-box-campos-filtros-nuestros-cursos{
 	margin-bottom: 65px;
+}
+
+.ui-box-cursos-items{
+	max-width: 1500px;
+	width: 98%;	
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .ui-filtros-nuestros-cursos{
@@ -2006,7 +2307,14 @@ select{
 			height: 40px;
 			color:#BBBEC5;	
 			font-family:"Open Sans";
-			background-color: #fff;		
+			background-color: #fff;	
+			border:1px solid #fff;					
+		}
+
+		.ui-item-filtro-nuestro-curso select{
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
 		}
 
 		.ui-item-filtro-nuestro-curso input:hover,
@@ -2426,7 +2734,13 @@ select{
 			.ui-box-item-dato-overlay-curso .a{
 				font-size: 15px;
 				line-height: 17px;
-				font-family:"Open Sans";				
+				font-family:"Open Sans";
+
+				-webkit-transform: ;
+				-moz-transform: ;
+				-ms-transform: ;
+				-o-transform: ;
+				transform: ;				
 			}
 
 			.ui-box-item-dato-overlay-curso .b{
@@ -2494,6 +2808,7 @@ select{
 		background-repeat: no-repeat;
 		background-size: contain;	
 		cursor: pointer;	
+		z-index: 1;
 	}
 
 		.ui-box-direccional-paginacion.a{
@@ -3144,6 +3459,16 @@ select{
 			margin-right: 30px;
 		}
 
+		.ac-title.acerca-del-curso .b{
+			color:#000;
+			opacity: 0.25;
+		}
+
+		.ac-pane.acerca-del-curso.active .ac-title.acerca-del-curso .b{
+			color: #003C75;
+			opacity: 1;
+		}
+
 	.ui-icon-acordeon-a{
 		position: absolute;
 		top:21px;
@@ -3465,6 +3790,7 @@ select{
 	max-width: 1114px;
 	margin-left: auto;
 	margin-right: auto;	
+	background-color: #FCFCFC;
 }	
 
 	.owl-carousel.staff-profesional .owl-nav button{	
@@ -3495,29 +3821,47 @@ select{
 		cursor: pointer;
 	}
 
-		.ui-box-imagen-staff-profesional{
-			text-align: center;
-			margin-bottom: 28px;
+		.ui-box-item-staff-profesional:hover > .ui-box-imagen-staff-profesional .ui-item-staff-profesional figure{
+			-webkit-transform:scale(1.1,1.1);
+			-moz-transform:scale(1.1,1.1);
+			-ms-transform:scale(1.1,1.1);
+			-o-transform:scale(1.1,1.1);
+			transform:scale(1.1,1.1);
 		}
 
-			.ui-item-staff-profesional{
-				width: 234px;
-				height: 234px;
+		.ui-box-imagen-staff-profesional{
+			text-align: center;
+			margin-bottom: 28px;			
+		}
+
+			.ui-item-staff-profesional{					
 				display: inline-block;
 				vertical-align: bottom;
-				border-radius: 50%;	
-				background-position: center center;
-				background-size: contain;	
-				background-repeat: no-repeat;		
-			}
+				width: 234px;
+				height: 234px;
+				border-radius: 50%;
+				overflow: hidden;	
+				-webkit-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.05);
+				-moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.05);
+				box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.05);									
+			}	
 
-				.ui-item-staff-profesional.a{
-					background-image: url(../img/staff-01.png);
-				}
+				.ui-item-staff-profesional figure{
+					width: 234px;
+					height: 234px;
+					border-radius: 50%;	
 
-				.ui-item-staff-profesional.b{
-					background-image: url(../img/staff-02.png);
-				}
+					-webkit-transition: all .2s linear ;
+					-moz-transition: all .2s linear ;
+					-ms-transition: all .2s linear ;
+					-o-transition: all .2s linear ;
+					transition: all .2s linear ;									
+				}	
+
+					.ui-item-staff-profesional figure img{						
+						display: block;						
+						width: 100%;							
+					}	
 				
 
 		.ui-dato-item-staff-profesional{
@@ -3581,10 +3925,14 @@ select{
 			margin-bottom: 50px;
 		}
 
+			.ui-box-items-clientes-logotipos.display{
+				display: none;
+			}
+
 		.ui-box-cliente-item-logotipo{
 			float: left;
 			width: 33.33%;			
-			min-height: 164px;		
+			min-height: 165px;				
 			position: relative;				
 
 			display: -webkit-flex;
@@ -3639,6 +3987,7 @@ select{
 			vertical-align: bottom;
 			width: 57px;
 			height: 57px;
+			cursor:pointer; 
 			border-radius: 50%;
 			border:1px solid rgba(0,0,0,.5);				
 			position: relative;		
@@ -3673,6 +4022,10 @@ select{
 					transform: rotate(90deg);
 					position: relative;
 					top:1px;
+				}
+
+				.ver-mas-cliente .a.active{
+					display: none;
 				}
 
 		/*testimonios*/
@@ -3965,20 +4318,25 @@ select{
 	}
 
 	.ui-box-item-comentario-blog{
-		padding: 26px 0 14px 84px;
+		padding: 35px 0 40px 84px;
 		position: relative;
 		border-bottom: 1px solid rgba(0,0,0,.1);
 	}
 
 		.ui-user-comentario-blog{
 			position: absolute;
-			top:18px;
+			top:32px;
 			left:2px;
 			width: 63px;
 			height: 63px;
-			border-radius: 50%;
-			background-color: rgba(0,0,0,.1);
+			border-radius: 50%;			
 		}
+
+			.ui-user-comentario-blog img{
+				display: block;
+				width: 100%;
+				margin: auto;
+			}
 
 	.ui-box-item-comentario-blog p{
 		font-size: 16px;
@@ -4038,16 +4396,38 @@ select{
 	.ui-box-item-blog-overlay{
 		position: relative;		
 		margin-bottom: 18px;
+		overflow: hidden;
 	}
 
 		.ui-figura-item-blog-overlay figure{
 			display: block;			
+			-webkit-transition:all .3s linear;
+			-moz-transition:all .3s linear;
+			-ms-transition:all .3s linear;
+			-o-transition:all .3s linear;
+			transition:all .3s linear;
+		}
+
+		.ui-box-item-blog-overlay:hover > .ui-figura-item-blog-overlay figure{
+			-webkit-transform: scale(1.1,1.1);
+			-moz-transform: scale(1.1,1.1);
+			-ms-transform: scale(1.1,1.1);
+			-o-transform: scale(1.1,1.1);
+			transform: scale(1.1,1.1);
 		}
 
 			.ui-figura-item-blog-overlay figure img{
 				display: block;
 				width: 100%;
 			}
+
+	.ui-box-item-blog-overlay:hover > .ui-box-texto-item-blog-overlay{
+		opacity: 0;
+	}
+
+	.ui-box-item-blog-overlay:hover > .ui-item-blog-overlay{
+		opacity: 0;
+	}
 
 	.ui-item-blog-overlay{
 		position: absolute;
@@ -4063,6 +4443,13 @@ select{
 		background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(209,209,209,0) 18%, rgba(0,0,0,.8) 100%);
 		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(209,209,209,0) 18%, rgba(0,0,0,.8) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+		
+		-webkit-transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-o-transition: all .3s linear;
+		transition: all .3s linear;
+
 	}
 
 	.ui-box-texto-item-blog-overlay{
@@ -4071,6 +4458,11 @@ select{
 		left:0;
 		height: 100%;
 		width: 100%; 
+		-webkit-transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-o-transition: all .3s linear;
+		transition: all .3s linear;
 	}
 
 	.ui-h2-item-blog-overlay{
@@ -4128,6 +4520,11 @@ select{
 	padding-right: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.ui-box-item-ultimo-blog:hover > .ui-h2-ultimo-item-blog{
+	color:#003C75;
 }
 
 	.ui-box-figura-ultimo-item-blog{
@@ -4140,6 +4537,7 @@ select{
 		font-family:"Open Sans Bold";
 		font-size: 15px;
 		line-height: 17px;
+		color:#474A4F;
 		margin-bottom: 20px;
 	}
 
@@ -4165,6 +4563,66 @@ select{
 				top:0;
 				left:0;
 			}
+
+/***** paginación blog *****/
+.ui-box-paginacion-blog{	
+	text-align: center;
+	position: relative;
+	bottom:14px;
+}
+
+	.ui-box-paginacion-blog > .ui-box{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;		
+		background-color: #fff;
+	}
+
+		.ui-box-paginacion-blog > .ui-box:before{
+			content:'';
+			position: absolute;
+			top:0;
+			left:-40px;
+			width: 40px;
+			height: 100%;
+			background-color: #fff;
+		}
+
+		.ui-box-paginacion-blog > .ui-box:after{
+			content:'';
+			position: absolute;
+			top:0;
+			right:-40px;
+			width: 40px;
+			height: 100%;
+			background-color: #fff;
+		}
+
+		.ui-paginacion-blog{
+			margin: 0;
+			padding: 0;
+			list-style: none;			
+			text-align: center;
+		}
+
+			.ui-paginacion-blog li{
+				display: inline-block;
+				margin-right: 20px;
+				vertical-align: middle;
+			}
+
+			.ui-paginacion-blog li a{
+				display: block;
+			    color: #B2B2B2;
+			    font-size: 20px;
+			    line-height: 27px;
+			    text-decoration: none;
+			    font-family: "Open Sans Bold";
+			}
+
+				.ui-paginacion-blog li a.active{
+					color: #00182E;
+				}
 
 /*************** footer ***************/
 .ui-box-footer{

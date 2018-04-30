@@ -1,3 +1,13 @@
+/**************************************
+    btn ver mas de nuestros clientes
+ **************************************/
+$(document).ready(function(){
+    $(".ui-btn-ver-mas-cliente").click(function(){
+        $("#lista-nuevos-clientes").slideToggle();
+        $('.ver-mas-cliente .a').toggle();
+    });
+});
+
 /**********************
   owl carousel alumnos
 ***********************/
@@ -31,6 +41,19 @@ $(document).ready(function(){
 *******************************/
 $(document).ready(function(){
   $(".owl-carousel.staff-profesional").owlCarousel({
+    items:4,    
+    margin:5,
+    loop:true,
+    lazyLoad:true,  
+    nav:true,           
+  });
+});
+
+/******************************
+  owl carousel nuestras sedes
+*******************************/
+$(document).ready(function(){
+  $(".owl-carousel.nuestras-sedes").owlCarousel({
     items:4,    
     margin:5,
     loop:true,
@@ -128,13 +151,32 @@ function openBlog(evt, blogName) {
     evt.currentTarget.className += " active";
 }
 
+/*********************
+     tab cad perú     
+ *********************/
+function openCad(evt, cadName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-cad-peru");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-cad-peru");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cadName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
 /*************************
     btn comienza ahora
  *************************/
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
+    if ($(this).scrollTop() > 800) {
         $('.ui-box-comienza-ahora').fadeIn();
     } else {
         $('.ui-box-comienza-ahora').fadeOut();
     }
 });
+
+
