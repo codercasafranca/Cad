@@ -8,6 +8,19 @@ $(document).ready(function(){
     });
 });
 
+/**************************************
+    btn ver lista recientes - blog
+ **************************************/
+$(document).ready(function(){
+    $(".ui-btn-lista-blog.recientes").click(function(){
+        $(".ui-extra-lista-recientes").slideToggle();        
+    });
+
+    $(".ui-btn-lista-blog.recientes").click(function(){
+        $(".ui-icon-lista-blog").toggleClass('active');        
+    });
+});
+
 /**********************
   owl carousel alumnos
 ***********************/
@@ -117,6 +130,15 @@ $('.ui-btn-abajo-porque-cad').on('click', function(e){
   $('html,body').animate({scrollTop: $(strAncla).offset().top-122}, 1500);
 });
 
+/********************************
+     ancla scroll  convenios  
+ ********************************/
+$('.ui-btn-abajo-convenios').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-108}, 1500);
+});
+
 /*********************************
     tabs servicios in company     
  *********************************/
@@ -131,6 +153,23 @@ function openCursos(evt, cursosName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(cursosName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+/*****************************
+     tab nuestros convenios     
+ *****************************/
+function openConvenios(evt, conveniosName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-convenios");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-convenios");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(conveniosName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 

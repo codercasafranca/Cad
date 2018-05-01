@@ -12,7 +12,96 @@
 
 </head>
 
-<body>		
+<body>	
+
+	<!-- comienza ahora -->
+	<button onclick="document.getElementById('modal-form-comienza-ahora').style.display='block'" class="ui-box-comienza-ahora">
+		<figure>
+			<img src="img/comienza-ahora.png" alt="">
+		</figure>
+	</button>	
+
+	<!-- modal comienza ahora -->
+	<div id="modal-form-comienza-ahora" class="ui-box-modal">
+		<div class="ui-box-modal-comienza-ahora">
+			<div class="ui-modal-comienza-ahora">
+				<div class="ui-form-slider especialidades">
+					<header class="ui-header-form-slider">
+							<h2 class="ui-h2-form-slider">
+								<span class="a">¡Recibe más</span>
+								<span class="b">Información!</span>
+							</h2>
+					</header>
+					<div class="ui-contenido-form-slider">
+							<form action="">
+								<div class="ui-fila-items-form-slider">
+										<div class="ui-izquierda ui-linea-form-slider">
+											<input type="text" placeholder="Nombre">
+										</div>
+										<div class="ui-derecha ui-linea-form-slider">
+											<input type="text" placeholder="Apellido">
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<input type="email" placeholder="Email">
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="tel" placeholder="Celular">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-izquierda ui-linea-form-slider">
+										<select name="paises">
+											<option value="País">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+										</select>
+									</div>
+									<div class="ui-derecha ui-linea-form-slider">
+										<input type="text" placeholder="Región / Ciudad">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
+								</div>
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-box-textarea">
+										<div class="ui-box-icon-textarea">
+											<figure>
+												<img src="" alt="">
+											</figure>
+										</div>								
+										<textarea class="ui-textarea-slider" placeholder="Mensaje"></textarea>
+									</div>
+								</div>
+								<div class="ui-fila-items-form-slider btn-enviar">
+									<input class="ui-btn-enviar-form-slider" type="submit" value="enviar">
+								</div>
+							</form>
+					</div>
+					<div class="ui-icon-close" 
+						onclick="document.getElementById('modal-form-comienza-ahora').style.display='none'">
+						<figure>
+							<img src="img/close-modal-form.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- header top -->
 	<header class="ui-header-top">
@@ -70,7 +159,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="servicios-in-company.html">Servicios in company</a>
+									<a href="servicios-in-company.html" class="ui-menu-active">Servicios in company</a>
 								</li>
 								<li>
 									<a href="convenios.html">Convenios</a>
@@ -113,62 +202,60 @@
 					</header>
 					<div class="ui-contenido-form-slider">
 						<form action="">
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda ui-linea-form-slider-01">
-									<input class="ui-input-form-slider" type="text" placeholder="Nombre">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-bloque-item-form">				
+										<input type="text" placeholder="Nombre">
+									</div>
+									<div class="ui-bloque-item-form">				
+										<input type="text" placeholder="Apellido">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
-								<div class="ui-derecha ui-linea-form-slider-01">
-									<input class="ui-input-form-slider" type="text" placeholder="Apellido">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-bloque-item-form">				
+										<input type="email" placeholder="Email">
+									</div>
+									<div class="ui-bloque-item-form">				
+										<input type="tel" placeholder="Celular">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda ui-linea-form-slider-01">
-									<input class="ui-input-form-slider" type="email" placeholder="Email">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-bloque-item-form">				
+										<select name="paises">
+											<option value="País">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+											<option value="Pais">País</option>
+										</select>
+									</div>
+									<div class="ui-bloque-item-form">					
+										<input type="text" placeholder="Región / Ciudad">
+									</div>
+									<!-- clear -->
+									<div class="ui-clear"></div>
 								</div>
-								<div class="ui-derecha ui-linea-form-slider-01">
-									<input class="ui-input-form-slider" type="tel" placeholder="Celular">
+								<div class="ui-fila-items-form-slider">
+									<div class="ui-bloque-item-form-completo">			
+										<textarea placeholder="Mensaje"></textarea>
+									</div>
 								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider">
-								<div class="ui-izquierda ui-linea-form-slider-01 select">
-									<select class="ui-select-form-slider" name="paises">
-										<option value="País">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-										<option value="Pais">País</option>
-									</select>
+								<div class="ui-fila-items-form-slider btn">
+									<div class="ui-bloque-item-form-btn">
+										<input type="submit" value="enviar">
+									</div>
 								</div>
-								<div class="ui-derecha ui-linea-form-slider-01">
-									<input class="ui-input-form-slider" type="text" placeholder="Región / Ciudad">
-								</div>
-								<!-- clear -->
-								<div class="ui-clear"></div>
-							</div>
-							<div class="ui-fila-items-form-slider textarea">
-								<div class="ui-box-textarea ui-linea-form-slider-02 in-company">
-									<div class="ui-box-icon-textarea in-company">
-										<figure>
-											<img src="" alt="">
-										</figure>
-									</div>								
-									<textarea class="ui-textarea-slider" placeholder="Mensaje"></textarea>
-								</div>
-							</div>
-							<div class="ui-fila-items-form-slider btn-enviar">
-								<input class="ui-btn-enviar-form-slider" type="submit" value="enviar">
-							</div>
+							</form>
 						</form>
 					</div>
 				</div>
