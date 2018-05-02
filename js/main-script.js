@@ -1,4 +1,55 @@
 
+/***********************************
+    acordeon contenido del curso
+ ***********************************/
+$(function() {
+  'use strict';
+  
+  var selector = $('.ac-title-acerca-del-curso');
+
+  $('.accordion-wrapper').each(function() {
+    if ($(this).find('.ac-pane-acerca-del-curso').hasClass('active')) {
+      $('.ac-pane-acerca-del-curso.active .ac-content-acerca-del-curso').css('display', 'block');
+    }
+  });
+  
+  selector.on('click', function(event) {
+    event.preventDefault();
+
+    // get the attr value
+    var attr = selector.attr('data-accordion-acerca-curso');
+    var getparent = $(this).closest('.accordion-wrapper.acerca-del-curso');
+
+    if ( $(this).attr('data-accordion-acerca-curso') == 'true' ) {
+
+        if ($(this).next('.ac-content-acerca-del-curso').is(':visible')) {
+          return false;
+        }else {
+
+          getparent.find('.ac-content-acerca-del-curso').slideUp();
+          $(this).next('.ac-content-acerca-del-curso').slideDown();
+          getparent.find('.ac-pane-acerca-del-curso').removeClass('active');
+          $(this).parent().addClass('active');
+        }
+
+    } else {
+        $(this).next('.ac-content-acerca-del-curso').slideToggle();
+        $(this).parent().toggleClass('active');
+    }
+    
+  });
+});
+
+
+
+function cerrarModal() {
+    document.getElementById("modal-resumen-pedido").style.display = "none";
+}
+
+function btnCursoRecomendado() {
+    document.getElementById("modal-resumen-pedido").style.display = "block";
+}
+
 /**************************************
     btn ver mas de nuestros clientes
  **************************************/
@@ -6,6 +57,15 @@ $(document).ready(function(){
     $(".ui-btn-ver-mas-cliente").click(function(){
         $("#lista-nuevos-clientes").slideToggle();
         $('.ver-mas-cliente .a').toggle();
+    });
+});
+
+/*********************************************
+    btn ver mas instructor detalle de curso
+ *********************************************/
+$(document).ready(function(){
+    $(".ui-box-texto-ver-mas .ui-box").click(function(){
+        $("#mas-info-instructor").slideToggle();               
     });
 });
 
@@ -135,6 +195,15 @@ $('.ui-btn-abajo-porque-cad').on('click', function(e){
      ancla scroll  convenios  
  ********************************/
 $('.ui-btn-abajo-convenios').on('click', function(e){
+  e.preventDefault();
+  var strAncla = '#' + $(this).data('ancla');
+  $('html,body').animate({scrollTop: $(strAncla).offset().top-108}, 1500);
+});
+
+/************************************
+     ancla scroll  video nosotros  
+ ************************************/
+$('.ui-btn-abajo-nosotros').on('click', function(e){
   e.preventDefault();
   var strAncla = '#' + $(this).data('ancla');
   $('html,body').animate({scrollTop: $(strAncla).offset().top-108}, 1500);

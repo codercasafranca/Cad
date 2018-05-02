@@ -1,9 +1,4 @@
 @media screen and (max-width: 1600px){
 	/************ sección nuestras especialidades ************/
-	.ui-box-especialidades{		
-		max-width: 1330px;
-		width: 95%;		
-		margin-left: auto;
-		margin-right: auto;		
-	}
+	
 }
