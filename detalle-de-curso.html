@@ -537,7 +537,8 @@
 					</div>				
 				</div>
 				<div class="ui-derecha">
-					<div class="ui-box-comprar-curso-recomendado">
+					<div class="ui-box-comprar-curso-recomendado"
+						onclick="document.getElementById('modal-resumen-pedido').style.display = 'block'">
 						<div class="ui-box">
 							<span class="a">
 								<del>s/.500</del>
@@ -603,9 +604,9 @@
 								<p>
 									Hola, estoy interesado en DIPLOMA DE MASTER OFICIAL en Alta Dirección y Marketing Digital & Comunicación y me gustaría recibir más información al respecto, Saludos.
 								</p>								
-								<!-- <div class="ui-box-input-politica">
+								<div class="ui-box-input-politica">
 									<input type="text">	
-								</div> -->			
+								</div>		
 							</div>
 							<div class="ui-box-texto-terminos-detalle-curso">
 								<p>
@@ -1089,6 +1090,527 @@
 			</div>	
 		</div>
 	</section>
+
+	<!-- modal resumen de pedido -->
+	<div id="modal-resumen-pedido" class="ui-box-modal-resumen-pedido">
+		<div class="ui-box">
+			<div class="ui-modal-resumen-pedido">
+				<div class="ui-izquierda">
+					<div class="ui-box-programa-de-estudio">
+						<header class="ui-header-programa-de-estudio">
+							<h2 class="ui-h2-programa-de-estudio">
+								<span class="a">Programa de Estudio</span>
+								<div class="b"></div>
+							</h2>
+						</header>
+						<div class="ui-box-items-programa-de-estudio">
+							<div class="ui-izquierda">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-titulo-programa-de-estudio">
+											<span>Nombre del Curso</span>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-box-info-programa-de-estudio">
+											<p>
+												Máster en Administración y Dirección de Empresas
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-items-datos-programa-de-estudio">
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Cantidad</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Precio</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Descuento</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Total</span>
+											</div>
+											<!-- clear -->
+											<div class="ui-clear"></div>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>
+												<form action="">
+													<div class="ui-select-item-dato-programa-de-estudio">
+														<select>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+												</form>
+											</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>(s/0.00)</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+									</div>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+					<div class="ui-box-programa-de-estudio">
+						<header class="ui-header-programa-de-estudio">
+							<h2 class="ui-h2-programa-de-estudio">
+								<span class="a">Certificación</span>
+								<div class="b"></div>
+							</h2>
+						</header>
+						<div class="ui-box-items-programa-de-estudio">
+							<div class="ui-izquierda">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-titulo-programa-de-estudio">
+											<span>Opciones</span>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-box-info-programa-de-estudio">
+											<p>
+												Máster en Administración y Dirección de Empresas
+											</p>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-box-info-programa-de-estudio">
+											<p>
+												Máster en Administración y Dirección de Empresas
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-items-datos-programa-de-estudio">
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Cantidad</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Precio</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Descuento</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Total</span>
+											</div>
+											<!-- clear -->
+											<div class="ui-clear"></div>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>
+												<form action="">
+													<div class="ui-select-item-dato-programa-de-estudio">
+														<select>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+												</form>
+											</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>(s/0.00)</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>
+												<form action="">
+													<div class="ui-select-item-dato-programa-de-estudio">
+														<select>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+												</form>
+											</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>(s/0.00)</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+									</div>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+					<div class="ui-box-programa-de-estudio no-margin-bottom">
+						<header class="ui-header-programa-de-estudio">
+							<h2 class="ui-h2-programa-de-estudio">
+								<span class="a">Doble Certificación</span>
+								<div class="b"></div>
+							</h2>
+						</header>
+						<div class="ui-box-items-programa-de-estudio">
+							<div class="ui-izquierda">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-titulo-programa-de-estudio">
+											<span>Mención en Master en Administración y Dirección de Empresa</span>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-box-info-programa-de-estudio">
+											<p>
+												Máster en Administración y Dirección de Empresas
+											</p>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-box-info-programa-de-estudio">
+											<p>
+												Máster en Administración y Dirección de Empresas
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-box-filas-items-programa-de-estudio">
+									<div class="ui-fila-item-programa-de-estudio-a">
+										<div class="ui-items-datos-programa-de-estudio">
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Cantidad</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Precio</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Descuento</span>
+											</div>
+											<div class="ui-item-dato-programa-de-estudio a">
+												<span>Total</span>
+											</div>
+											<!-- clear -->
+											<div class="ui-clear"></div>
+										</div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>
+												<form action="">
+													<div class="ui-select-item-dato-programa-de-estudio">
+														<select>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+												</form>
+											</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>(s/0.00)</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+									</div>
+									<div class="ui-fila-item-programa-de-estudio-b">
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>
+												<form action="">
+													<div class="ui-select-item-dato-programa-de-estudio">
+														<select>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+												</form>
+											</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>(s/0.00)</span>
+										</div>
+										<div class="ui-item-dato-programa-de-estudio b">
+											<span>s/1500</span>
+										</div>
+										<!-- clear -->
+										<div class="ui-clear"></div>
+									</div>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui-derecha">
+					<header class="ui-header-programa-de-estudio">
+						<h2 class="ui-h2-programa-de-estudio">
+							<span class="a">Programa de Estudio</span>							
+						</h2>
+					</header>
+					<div class="ui-box-items-resumen-pedido">
+						<div class="ui-item-resumen-pedido">
+							<div class="ui-izquierda">
+								<div class="ui-titulo-resumen-pedido">
+									<span>Máster en Administración y</span> 
+									<span>Dirección de Empresas</span>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-precio-mes-resumen-pedido">
+									<span class="a">S/ 1500</span>
+									<span class="b">24 meses</span>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+						<div class="ui-item-resumen-pedido">
+							<div class="ui-izquierda">
+								<div class="ui-titulo-resumen-pedido">
+									<span>Máster en Administración y</span> 
+									<span>Dirección de Empresas</span>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-precio-mes-resumen-pedido">
+									<span class="a">S/ 1500</span>
+									<span class="b">24 meses</span>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+						<div class="ui-item-resumen-pedido">
+							<div class="ui-izquierda">
+								<div class="ui-titulo-resumen-pedido">
+									<span>Máster en Administración y </span>
+									<span>Dirección de Empresas</span>
+								</div>
+							</div>
+							<div class="ui-derecha">
+								<div class="ui-precio-mes-resumen-pedido">
+									<span class="a">S/ 1500</span>
+									<span class="b">24 meses</span>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+					<div class="ui-box-btn-continuar">
+						<form action="">
+							<div class="ui-btn-continuar">
+								<button type="button" 
+									onclick="document.getElementById('modal-revision-pedido').style.display = 'block' ">Continuar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- clear -->
+				<div class="ui-clear"></div>
+
+				<!-- boton cerrar modal -->
+				<figure class="ui-btn-cerrar-modal-pago" 
+						onclick="document.getElementById('modal-resumen-pedido').style.display = 'none'">
+					<img src="img/close-modal.png" alt="">
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal revision de pedido -->
+	<div id="modal-revision-pedido" class="ui-box-modal-revision-pedido">
+		<div class="ui-box">
+			<div class="ui-modal-revision-pedido">
+				<div class="ui-izquierda">
+					<header class="ui-header-revision-pedido">
+						<h2 class="ui-h2-revision-pedido">
+							¡La promoción se aplicó a su carrito!
+						</h2>
+					</header>
+					<div class="ui-box-direccion-facturacion">
+						<header class="ui-header-direccion-facturacion">
+							<h3 class="ui-h3-direccion-facturacion">
+								Dirección de facturación
+							</h3>
+						</header>
+						<div class="ui-box-form-direccion-facturacion">
+							<div class="ui-box-fila-item-direccion-facturacion">
+								<div class="ui-item-direccion-facturacion">
+									<input type="text" placeholder="Nombre*">
+								</div>
+								<div class="ui-item-direccion-facturacion">
+									<input type="text" placeholder="Apellidos*">
+								</div>
+								<!-- clear -->
+								<div class="ui-clear"></div>
+							</div>
+							<div class="ui-box-fila-item-direccion-facturacion">
+								<div class="ui-item-direccion-facturacion">
+									<input type="text" placeholder="E-mail*">
+								</div>
+								<div class="ui-item-direccion-facturacion">
+									<input type="text" placeholder="Celular*">
+								</div>
+								<!-- clear -->
+								<div class="ui-clear"></div>
+							</div>
+							<div class="ui-box-fila-item-direccion-facturacion">
+								<div class="ui-item-direccion-facturacion select">
+									<select>
+										<option value="RUC/DNI">RUC/DNI</option>
+										<option value="RUC/DNI">RUC/DNI</option>
+										<option value="RUC/DNI">RUC/DNI</option>
+										<option value="RUC/DNI">RUC/DNI</option>
+									</select>
+								</div>
+								<div class="ui-item-direccion-facturacion">
+									<input type="text" placeholder="N°*">
+								</div>
+								<!-- clear -->
+								<div class="ui-clear"></div>
+							</div>
+							<div class="ui-box-fila-item-direccion-facturacion">
+								<div class="ui-item-direccion-facturacion-one">
+									<input type="text" placeholder="¿Como se entero del curso?">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-box-form-ajustar-cuotas">
+						<header class="ui-header-direccion-facturacion">
+							<h3 class="ui-h3-direccion-facturacion">
+								Ajustar Cuotas
+							</h3>
+						</header>
+						<div class="ui-box-periodo-cuotas">
+							<div class="ui-box-item-periodo-cuotas">
+								<div class="ui-box">
+									<div class="ui-box-item-periodo-cuotas-a">
+										<span>Periodo</span>
+									</div>
+									<div class="ui-box-item-periodo-cuotas-b select">
+										<form action="">
+											<select>
+												<option value="24 meses">24 meses</option>
+												<option value="24 meses">24 meses</option>
+												<option value="24 meses">24 meses</option>
+												<option value="24 meses">24 meses</option>
+												<option value="24 meses">24 meses</option>
+											</select>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="ui-box-item-periodo-cuotas">
+								<div class="ui-box">
+									<div class="ui-box-item-periodo-cuotas-a">
+										<span>Precio Unitario</span>
+									</div>
+									<div class="ui-box-item-periodo-cuotas-b">
+										<span>S/.462.97</span>
+									</div>
+								</div>
+							</div>
+							<div class="ui-box-item-periodo-cuotas">
+								<div class="ui-box">
+									<div class="ui-box-item-periodo-cuotas-a">
+										<span>Subtotal</span>
+									</div>
+									<div class="ui-box-item-periodo-cuotas-b">
+										<span>S/.11.111</span>
+									</div>
+								</div>
+							</div>
+							<!-- clear -->
+							<div class="ui-clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui-derecha">
+					
+				</div>
+				<!-- clear -->
+				<div class="ui-clear"></div>
+
+				<!-- boton cerrar modal -->
+				<figure class="ui-btn-cerrar-modal-pago" 
+						onclick="document.getElementById('modal-revision-pedido').style.display = 'none'">
+					<img src="img/close-modal.png" alt="">
+				</figure>
+			</div>
+		</div>
+	</div>
 
 	<!-- footer -->
 	<footer class="ui-box-footer">
