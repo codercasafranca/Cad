@@ -174,11 +174,24 @@
 			margin: 15px 0;
 			padding: 15px 30px;
 			border: none;
-			box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+			box-shadow: 0 0 5px rgba(0, 0, 0, .2);
 			border-radius: 5px;
-			color: #023d76;
 			font-weight: normal;
 			width: 100%;
+			outline: none;
+			font-size: 16px;
+			font-family: "Open Sans";
+		}
+
+		#claims-book select{
+			-moz-appearance: none;
+		    -webkit-appearance: none;
+		    appearance: none;
+		    padding: 15px 40px 15px 30px;
+		    background-image: url(../img/icon-gris-select-curso.png);
+		    background-repeat: no-repeat;
+		    background-position: center right 10px;
+		    color: #b6b6b6;
 		}
 
 		#claims-book input:focus,
@@ -219,7 +232,7 @@
 			border-radius: 5px;
 			margin: 15px;
 			padding: 0 0 0 15px;
-			box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+			box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 			width: auto;
 			color: #bbbec5;
 		}

@@ -40,14 +40,24 @@ $(function() {
   });
 });
 
-
-
+/**********************************
+       Modales comprar curso      
+ **********************************/
 function cerrarModal() {
     document.getElementById("modal-resumen-pedido").style.display = "none";
 }
 
 function btnCursoRecomendado() {
     document.getElementById("modal-resumen-pedido").style.display = "block";
+}
+
+function abrirRevisionPedido() {
+    document.getElementById("modal-revision-pedido").style.display = "block";
+    document.getElementById("modal-resumen-pedido").style.display = "none";
+}
+
+function cerrarRevisionPedido() {
+   document.getElementById("modal-revision-pedido").style.display = "none";
 }
 
 /**************************************

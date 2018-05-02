@@ -1485,7 +1485,10 @@
 					<div class="ui-box-btn-continuar">
 						<form action="">
 							<div class="ui-btn-continuar">
-								<button type="button">Continuar</button>
+								<button type="button"
+										onclick="abrirRevisionPedido()">
+									Continuar
+								</button>
 							</div>
 						</form>
 					</div>
@@ -1617,7 +1620,7 @@
 				<div class="ui-clear"></div>
 
 				<!-- boton cerrar modal -->
-				<figure class="ui-btn-cerrar-modal-pago">
+				<figure onclick="cerrarRevisionPedido()" class="ui-btn-cerrar-modal-pago">
 					<img src="img/close-modal.png" alt="">
 				</figure>
 			</div>
