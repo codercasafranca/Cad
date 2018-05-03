@@ -4090,6 +4090,8 @@ p{
 
  					.ui-item-direccion-facturacion.select{
  						border-bottom: none;
+ 						height: 48px;
+ 						border-radius: 30px;
  					}
 
  						.ui-item-direccion-facturacion.select select{
@@ -4099,6 +4101,7 @@ p{
  							width: 100%;
  							height: 100%;
  							background-color: #fff; 
+ 							outline: none;
  							border: 1px solid rgba(0,0,0,.2);
  							height: 48px;
  							border-radius: 30px;
@@ -4107,6 +4110,9 @@ p{
 						   	appearance: none;
 						   	padding-left: 12px;
 						   	font-size: 15px;
+						   	background-image: url(../img/icon-select-pago-01.png);
+						   	background-repeat: no-repeat;
+						   	background-position: center right 12px;
 						   	color: rgba(0,0,0,0.4);
 						   	line-height: 17px;
 						   	font-family:"Open Sans Semibold";
@@ -4174,6 +4180,9 @@ p{
  				border: 1px solid rgba(0,0,0,.2);
  				border-radius: 30px;
  				width: 100%;
+ 				background-image: url(../img/icon-select-pago-01.png);
+				background-repeat: no-repeat;
+				background-position: center right 12px;
  				height: 100%;
  				background-color: #fff;
  				outline: none;
@@ -4185,6 +4194,491 @@ p{
 				appearance: none;
  				color: rgba(0,0,0,0.6);
  			}
+
+ 	.ui-header-item-revision-pedido{
+ 		padding-bottom: 22px;
+ 		border-bottom: .5px solid #D9D9D9;
+ 	}
+
+ 		.ui-h2-item-revision-pedido{
+ 			font-family:"Open Sans Bold";
+ 			font-size: 25px;
+ 			color:#003C75;
+ 			opacity: 0.7;
+ 		}
+
+ 		.ui-box-columna-item-revision-pedido{
+ 			float: left; 		 			
+ 		}
+
+ 			.ui-box-columna-item-revision-pedido.a{
+ 				width: 60%;
+ 			}
+				
+				.item-revision-pedido-a{
+					height: 46px;		
+					border-bottom: 1px solid rgba(0,0,0,.1);				
+
+					display: -webkit-flex;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+					.item-revision-pedido-a.no-margin-bottom{
+						border-bottom: 1px solid #fff;
+					}			
+
+					.item-revision-pedido-a span{
+						width: 100%;						
+					}	
+
+					.ui-titulo-dato-item-revision-pedido span{
+						display: block;
+						font-family:"Open Sans";
+						font-size: 16px;
+						line-height: 19px;
+						color: rgba(0,0,0,0.45);
+					}
+
+		.item-revision-pedido-a .a{
+			font-family:"Open Sans Bold";
+			font-size: 16px;
+			line-height: 19px;
+			color:rgba(0,0,0,0.40);
+		}
+					
+
+ 			.ui-box-columna-item-revision-pedido.b{
+ 				width: 20%;
+ 			}
+
+ 			.ui-item-revision-pedido-b{
+ 				height: 69px; 							
+ 				width: 100%; 
+ 				border-bottom: 1px solid rgba(0,0,0,.1);
+ 				display: block;	 							
+ 				display: -webkit-flex;
+ 				display: flex;
+ 				align-items: center;
+ 				justify-content: flex-start; 				 
+ 			}
+
+ 			.item-revision-pedido-b{
+ 				width: 100%;
+ 			}
+
+ 			.ui-titulo-dato-item-revision-pedido .ui-texto-negrita-revision-pedido{
+ 				font-family:"Open Sans Bold";
+ 				font-size: 16px;
+ 				line-height: 19px;
+ 				color:rgba(0,0,0,0.45);
+ 			}
+
+ 		.ui-dato-subtotal-item-revision-pedido{
+ 			width: 100%;
+ 		}
+
+		.ui-dato-subtotal-item-revision-pedido span{
+			display: block;
+			text-align: right;
+			width: 100%;
+			padding-right: 35px;
+		}
+
+			.ui-dato-subtotal-item-revision-pedido .a{
+				font-family:"Open Sans";
+				font-size: 20px;
+				line-height: 23px;
+				color:rgba(0,0,0,0.45);
+			}
+
+			.ui-dato-subtotal-item-revision-pedido .b{
+				font-family:"Open Sans";
+				font-size: 13px;
+				line-height: 15px;
+				color:rgba(0,0,0,0.45);
+			}
+
+			.ui-dato-cantidad-item-revision-pedido{
+				width: 100%;
+				text-align: center;
+			}
+
+				.ui-dato-cantidad-item-revision-pedido span{
+					display: block;
+					width: 100%;
+					font-family:"Open Sans";
+					font-size: 18px;	
+					line-height: 21px;
+					color:rgba(0,0,0,0.45);			
+				}
+
+				.ui-total-item-pedido{
+					font-family:"Open Sans Bold";
+					font-size: 18px;
+					line-height: 21px;
+					color:rgba(0,0,0,.4);
+				}
+
+				.ui-box-terminos-revision-pedido .a{
+					font-family:"Open Sans";
+					font-size: 16px;
+					line-height: 19px;
+					color:rgba(0,0,0,.4);
+				}
+
+				.ui-box-terminos-revision-pedido .b{
+					font-family:"Open Sans Bold";
+				}
+
+				.ui-box-realizar-pago-revision-pedido{
+					text-align: center;
+					margin-top: 50px;
+				}
+
+				.ui-btn-realizar-pago-revision-pedido{
+					display: inline-block;
+					vertical-align: bottom;
+					text-align: center;
+					max-width: 363px;
+					width: 99.99%;
+					height: 75px;
+					border-radius: 50px;
+					background-color:#003C75;
+					color:#fff;
+					cursor: pointer;
+					font-size: 22px;
+					line-height: 25px;
+					border:none;
+					outline: none; 
+					font-family:"Open Sans Bold";
+				}
+
+/************* modal realiza tu pago - tarjeta de credito *************/
+.ui-box-modal-pago-tarjeta-credito{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: block;
+	background-color: rgba(0,0,0,.8);
+}
+
+	.ui-box-modal-pago-tarjeta-credito > .ui-box{
+		position: absolute;
+		top:0;
+		left:0;
+		height: 100%;
+		width: 100%; 
+
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.ui-modal-pago-tarjeta-credito{
+			background-color: #fff;
+			border-radius: 35px; 
+			padding: 60px;
+			max-width: 893px;
+			width: 99.99%;
+			position: relative;
+		}
+
+		.ui-header-pago-tarjeta-credito{
+			margin-bottom: 37px;
+			text-align: center;
+		}
+
+			.ui-header-pago-tarjeta-credito > .ui-box{
+				display: inline-block;
+				vertical-align: top;
+				max-width: 390px;
+				width: 99.99%;
+			}
+
+			.ui-h2-pago-tarjeta-credito{
+				margin-bottom: 22px;
+			}
+
+				.ui-h2-pago-tarjeta-credito span{
+					color: #003C75;
+					font-size: 35px;
+					line-height: 35px;
+					font-family:"Open Sans Light";
+				}
+
+					.ui-h2-pago-tarjeta-credito span.b{
+						font-family:"Open Sans Semibold";
+					}
+
+				.ui-precio-pago-tarjeta-credito{
+					margin-bottom: 21px;
+				}
+
+					.ui-precio-pago-tarjeta-credito span{
+						font-family:"Open Sans Bold";
+						font-size: 55px;
+						line-height: 64px;
+						color:#003C75;
+					}
+
+				.ui-texto-pago-tarjeta-credito p{
+					font-size: 18px;
+					line-height: 20px;
+					font-family:"Open Sans Light";
+					color:rgba(0,0,0,0.4);
+				}
+
+.tab-pago-tarjeta-credito {
+    overflow: hidden;  
+    padding: 0 2.5%; 
+}
+
+.tab-pago-tarjeta-credito button.tablinks-pago-tarjeta-credito {
+    background-color: inherit;
+    float: left;
+    width: 33.33%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 60px;
+    padding: 14px 5px;
+    transition: 0.3s;
+    font-family:"Open Sans Light";
+    font-size: 16px;
+    line-height: 19px;
+    color:rgba(0,0,0,.4);
+    border-radius: 50px;
+}
+
+.tab-pago-tarjeta-credito button.tablinks-pago-tarjeta-credito.active {
+    background-color: #003C75;
+    color:#fff;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tabcontent-pago-tarjeta-credito {
+    display: none;
+    padding: 20px 12px;    
+    border-top: none;
+}
+
+	.tabcontent-pago-tarjeta-credito.active{
+		display: block;
+	}
+
+	.ui-col-tarjeta-a {
+		float: left;
+		width: 64.66%;
+		margin: 1%;
+	} 
+
+	.ui-col-tarjeta-b {
+		float: right;
+		width: 31.33%;
+		margin: 1%;
+	} 
+
+	.ui-fila-tarjeta{
+		margin-bottom: 2%;
+	}
+
+		.ui-item-tarjeta{
+			height: 60px;
+			position: relative;
+		}
+
+			.ui-item-tarjeta input{
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+				outline: none;
+				padding: 8px 15px;			
+				background-color: #fff;
+				border:1px solid rgba(0,0,0,.1);
+				color:rgba(0,0,0,.4);
+			}
+				
+				.ui-item-tarjeta input::placeholder{
+					color:rgba(0,0,0,.4);
+				}
+
+
+	.ui-sub-item-tarjeta-a{
+		float: left;
+		width: 65.66%;
+		position: relative;
+		height: 60px;
+		margin-right: 1%;
+	}
+
+	.ui-sub-item-tarjeta-b{
+		float: right;
+		width: 33.33%;
+		position: relative;
+		height: 60px;
+	}
+
+		.ui-sub-item-tarjeta-a select,
+		.ui-sub-item-tarjeta-b select{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			font-family:"Open Sans";
+			border-radius: 30px;
+			outline: none;
+			font-size: 15px;
+			line-height: 17px;
+			padding: 8px 15px;
+			background-color: #fff;
+			border:1px solid rgba(0,0,0,.1);
+			color:rgba(0,0,0,.4);
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			background-image: url(../img/icon-select-credito.png);
+			background-position: center right 12px;
+			background-repeat: no-repeat;
+		}
+
+		.ui-box-titular-tarjeta{
+			position: relative;
+			height: 55px;
+			margin: 0 3% 2%;
+			border-bottom:1px solid rgba(0,0,0,.1);
+		}
+
+			.ui-box-titular-tarjeta input{
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				outline: none;
+				font-family:"Open Sans Light";
+				border: none;
+				font-size: 16px;
+				color:rgba(0,0,0,.4);
+				line-height: 19px;
+				background-color: #fff;
+			}
+
+			.ui-box-texto-obligatorio{
+				margin:0 4% 60px;
+			}
+
+			.ui-box-texto-obligatorio span{
+				font-size: 14px;
+				color:rgba(0,0,0,.5);
+				line-height: 16px;
+				font-family:"Open Sans Light";
+			}
+
+			.ui-btn-confirmar-pago{
+				text-align: center;
+				margin-bottom: 60px;
+			}
+
+				.btn-confirmar-pago{
+					display: inline-block;
+					vertical-align: bottom;
+					max-width: 450px;
+					width: 99.99%;
+					outline: none;
+					border:none;
+					cursor: pointer;
+					height: 80px;
+					background-color: #003C75;
+					border-radius: 50px;
+					color: #fff;
+					font-family:"Open Sans Light";
+					font-size: 25px;
+					text-align: center;
+				}
+
+					.btn-confirmar-pago .b{
+						font-family:"Open Sans Semibold";
+					}
+
+			.ui-box-metodos-de-pago{
+				padding-left: 200px;
+				position: relative;
+			}
+
+					.ui-texto-metodo-de-pago{
+						font-family:"Open Sans Light";
+						font-size: 14px;
+						color:rgba(0,0,0,.7);
+						line-height: 19px;
+						position: absolute;
+						top:22px;
+						left:50px;
+					}
+
+					.ui-logotipo-tarjeta{
+						margin: 0 2%;
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+				.ui-box-transferencia-tarjetas{
+					margin-bottom: 30px;
+				}
+
+					.ui-item-transferencia-tarjeta{
+						float: left;
+						text-align: center;
+						width: 47.99%;
+						margin: 1%;
+					}
+						
+						.ui-tarjeta-logotipo{
+							height: 80px;
+							display: -webkit-flex;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+
+						.ui-codigo-transferencia-tarjeta span{
+							display: block;
+							font-family:"Open Sans Light";
+							font-size: 15px;
+							line-height: 19px;
+							color:#949494;
+						}
+
+						.ui-box-acercate-a-agente{
+							text-align: center;
+							max-width: 661px;
+							width: 99.99%;
+							margin-right: auto;
+							margin-left: auto;
+						}
+
+							.ui-box-acercate-a-agente p{
+								font-family:"Open Sans Light";
+								font-size: 15px;
+								line-height: 19px;
+							}
+
+								.ui-box-acercate-a-agente p span{
+									font-family:"Open Sans Bold";
+									color: #003C75;
+									font-size: 16px;
+								}
 
 /********************************
    pagina servicios in company  

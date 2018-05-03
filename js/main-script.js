@@ -43,6 +43,11 @@ $(function() {
 /**********************************
        Modales comprar curso      
  **********************************/
+function realizaPago() {
+   document.getElementById("realiza-tu-pago").style.display = "block";
+   document.getElementById("modal-revision-pedido").style.display = "none";
+}
+
 function cerrarModal() {
     document.getElementById("modal-resumen-pedido").style.display = "none";
 }
@@ -59,6 +64,7 @@ function abrirRevisionPedido() {
 function cerrarRevisionPedido() {
    document.getElementById("modal-revision-pedido").style.display = "none";
 }
+
 
 /**************************************
     btn ver mas de nuestros clientes
@@ -284,6 +290,23 @@ function openCad(evt, cadName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(cadName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+/*********************************
+     tab pago tarjeta credito    
+ *********************************/
+function openPago(evt, pagoName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-pago-tarjeta-credito");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-pago-tarjeta-credito");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(pagoName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 

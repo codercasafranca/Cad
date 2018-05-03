@@ -1614,13 +1614,310 @@
 					</div>
 				</div>
 				<div class="ui-derecha">
-					
+					<header class="ui-header-item-revision-pedido">
+						<h2 class="ui-h2-item-revision-pedido">
+							Revisión del Pedido
+						</h2>
+					</header>
+					<div class="ui-box-columnas-items-revision-pedido">
+						<div class="ui-box-columna-item-revision-pedido a">
+							<div class="item-revision-pedido-a">
+								<span class="a">Producto</span>
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-titulo-dato-item-revision-pedido">
+									<span>Máster en Administración y</span> 
+									<span>Dirección de Empresas</span>
+								</div>	
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-titulo-dato-item-revision-pedido">
+									<span class="ui-texto-negrita-revision-pedido">
+										Certificación
+									</span> 
+									<span>Corporación Americana de Desarrollo</span>
+								</div>	
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-titulo-dato-item-revision-pedido">
+									<span class="ui-texto-negrita-revision-pedido">
+										Doble Certificación
+									</span> 
+									<span>Universidad de Palermo</span>
+								</div>	
+							</div>
+							<div class="item-revision-pedido-a no-margin-bottom">
+								<span class="ui-total-item-pedido">Total</span>
+							</div>
+						</div>
+						<div class="ui-box-columna-item-revision-pedido b">
+							<div class="item-revision-pedido-a">
+								<span class="a">Cantidad</span>
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="item-revision-pedido-b">
+									<div class="ui-dato-cantidad-item-revision-pedido">
+										<span>1</span> 									
+									</div>	
+								</div>
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="item-revision-pedido-b">
+									<div class="ui-dato-cantidad-item-revision-pedido">
+										<span>1</span> 									
+									</div>	
+								</div>
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="item-revision-pedido-b">
+									<div class="ui-dato-cantidad-item-revision-pedido">
+										<span>1</span> 									
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="ui-box-columna-item-revision-pedido b">
+							<div class="item-revision-pedido-a">
+								<span class="a">Subtotal</span>
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-dato-subtotal-item-revision-pedido">
+									<span class="a">S/1500</span> 
+									<span class="b">24 meses</span>									
+								</div>	
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-dato-subtotal-item-revision-pedido">
+									<span class="a">S/ 0.00</span>											
+								</div>	
+							</div>
+							<div class="ui-item-revision-pedido-b">
+								<div class="ui-dato-subtotal-item-revision-pedido">
+									<span class="a">S/2.500</span> 
+									<span class="b">24 meses</span>									
+								</div>	
+							</div>
+							<div class="item-revision-pedido-a no-margin-bottom">
+								<span class="ui-total-item-pedido">s/ 4000</span>
+							</div>
+						</div>
+						<!-- clear -->
+						<div class="ui-clear"></div>		
+					</div>
+					<div class="ui-box-terminos-de-uso">
+						<form action="">
+							<div class="ui-box-terminos-revision-pedido">
+								<input type="checkbox"> 
+								<span class="a">Acepto los <span class="b">terminos de uso</span></span>
+							</div>
+							<div class="ui-box-realizar-pago-revision-pedido">
+								<input class="ui-btn-realizar-pago-revision-pedido" value="Realizar pago"
+								 		onclick="realizaPago()" >								
+							</div>
+						</form>
+					</div>
 				</div>
 				<!-- clear -->
 				<div class="ui-clear"></div>
 
 				<!-- boton cerrar modal -->
 				<figure onclick="cerrarRevisionPedido()" class="ui-btn-cerrar-modal-pago">
+					<img src="img/close-modal.png" alt="">
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal realiza tu pago - tarjeta de credito -->
+	<div id="realiza-tu-pago" class="ui-box-modal-pago-tarjeta-credito">
+		<div class="ui-box">
+			<div class="ui-modal-pago-tarjeta-credito">
+				<header class="ui-header-pago-tarjeta-credito">
+					<div class="ui-box">
+						<h2 class="ui-h2-pago-tarjeta-credito">
+							<span class="a">¡ Realiza</span>
+							<span class="b">tu pago !</span>
+						</h2>
+						<div class="ui-precio-pago-tarjeta-credito">
+							<span>s/ 950</span>
+						</div>
+						<div class="ui-texto-pago-tarjeta-credito">
+							<p>Gestión de las contrataciones del Estado  sede / certificado / Online</p>
+						</div>
+					</div>
+				</header>
+				<div class="ui-box-tabs-pago-tarjeta-credito">
+					<div class="tab-pago-tarjeta-credito">
+					  	<button class="tablinks-pago-tarjeta-credito active" 
+					  			onclick="openPago(event, 'tarjeta')">
+					  		Tarjeta de Crédito/Débito
+					  	</button>
+					  	<button class="tablinks-pago-tarjeta-credito" 
+					  			onclick="openPago(event, 'sin-tarjeta')">
+						  	Pagar sin Tarjeta
+						 </button>
+					  	<button class="tablinks-pago-tarjeta-credito" 
+					  			onclick="openPago(event, 'transferencia')">
+						  	Transferencia Bancaria
+						</button>
+					</div>
+
+					<div id="tarjeta" class="tabcontent-pago-tarjeta-credito active">
+					  	<div class="ui-box-form-tarjeta">
+					  		<form action="">
+					  			<div class="ui-box-cols-tarjeta-credito">
+					  				<div class="ui-col-tarjeta-a">
+					  					<div class="ui-fila-tarjeta">
+					  						<div class="ui-item-tarjeta">
+					  							<input type="text" placeholder="### ### ###">
+					  						</div>
+					  					</div>
+					  					<div class="ui-fila-tarjeta">
+					  						<div class="ui-items-tarjeta">
+					  							<div class="ui-sub-item-tarjeta-a">
+					  								<select name="" id="">
+					  									<option value="Fecha de Vencimiento">Fecha de Vencimiento</option>
+					  									<option value="Fecha de Vencimiento">Fecha de Vencimiento</option>
+					  									<option value="Fecha de Vencimiento">Fecha de Vencimiento</option>
+					  									<option value="Fecha de Vencimiento">Fecha de Vencimiento</option>
+					  									<option value="Fecha de Vencimiento">Fecha de Vencimiento</option>
+					  								</select>
+					  							</div>
+					  							<div class="ui-sub-item-tarjeta-b">
+					  								<select name="" id="">
+					  									<option value="Año">Año</option>
+					  									<option value="Año">Año</option>
+					  									<option value="Año">Año</option>
+					  									<option value="Año">Año</option>
+					  									<option value="Año">Año</option>
+					  								</select>
+					  							</div>
+					  							<!-- clear -->
+					  							<div class="ui-clear"></div>
+					  						</div>
+					  					</div>
+					  				</div>
+					  				<div class="ui-col-tarjeta-b">
+					  					<div class="ui-fila-tarjeta">
+					  						<div class="ui-item-tarjeta">
+					  							<input type="text" placeholder="DNI">
+					  						</div>
+					  					</div>
+					  					<div class="ui-fila-tarjeta">
+					  						<div class="ui-item-tarjeta">
+					  							<input type="text" placeholder="CVC">
+					  						</div>
+					  					</div>
+					  				</div>
+					  				<!-- clear -->
+					  				<div class="ui-clear"></div>		
+					  			</div>	 
+					  			<div class="ui-box-titular-tarjeta">
+					  				<input type="text" placeholder="Nombre y Apellido del Titular de la Tarjeta">
+					  			</div> 	
+					  			<div class="ui-box-texto-obligatorio">
+					  				<span>*Todos los campos son obligatorios</span>
+					  			</div>		
+					  			<div class="ui-btn-confirmar-pago">
+					  				<button class="btn-confirmar-pago">
+						  				<span class="a">Confirmar</span> 
+						  				<span class="b">Pago</span>
+						  			</button>
+					  			</div>
+					  			<div class="ui-box-metodos-de-pago">
+					  				<span class="ui-texto-metodo-de-pago">Metodos de pago</span>
+					  				<div class="ui-logotipo-tarjeta">
+					  					<figure>
+					  						<img src="img/tarjeta-01.png" alt="">
+					  					</figure>
+					  				</div>
+					  				<div class="ui-logotipo-tarjeta">
+					  					<figure>
+					  						<img src="img/tarjeta-02.png" alt="">
+					  					</figure>
+					  				</div>
+					  				<div class="ui-logotipo-tarjeta">
+					  					<figure>
+					  						<img src="img/tarjeta-03.png" alt="">
+					  					</figure>
+					  				</div>
+					  				<div class="ui-logotipo-tarjeta">
+					  					<figure>
+					  						<img src="img/tarjeta-04.png" alt="">
+					  					</figure>
+					  				</div>					  				
+					  			</div>
+					  		</form>
+					  	</div>
+					</div>
+
+					<div id="sin-tarjeta" class="tabcontent-pago-tarjeta-credito">
+					  	<h3>Sin tarjeta</h3>					  
+					</div>
+
+					<div id="transferencia" class="tabcontent-pago-tarjeta-credito">
+					  	<div class="ui-box-transferencia-tarjetas">
+					  		<div class="ui-item-transferencia-tarjeta">
+					  			<div class="ui-tarjeta-logotipo">
+					  				<figure>
+					  					<img src="img/transferencia-marca-01.png" alt="">
+					  				</figure>
+					  			</div>
+					  			<div class="ui-codigo-transferencia-tarjeta">
+					  				<span>Cuenta 193-2280456-0-07</span>
+					  				<span>CCI 00219300228045600710</span>
+					  				<span>CAD Perù S.A.</span>
+					  			</div>
+					  		</div>
+					  		<div class="ui-item-transferencia-tarjeta">
+					  			<div class="ui-tarjeta-logotipo">
+					  				<figure>
+					  					<img src="img/transferencia-marca-02.png" alt="">
+					  				</figure>
+					  			</div>
+					  			<div class="ui-codigo-transferencia-tarjeta">
+					  				<span>Cuenta 193-2280456-0-07</span>
+					  				<span>CCI 00219300228045600710</span>
+					  				<span>CAD Perù S.A.</span>
+					  			</div>
+					  		</div>
+					  		<div class="ui-item-transferencia-tarjeta">
+					  			<div class="ui-tarjeta-logotipo">
+					  				<figure>
+					  					<img src="img/transferencia-marca-03.png" alt="">
+					  				</figure>
+					  			</div>
+					  			<div class="ui-codigo-transferencia-tarjeta">
+					  				<span>Cuenta 193-2280456-0-07</span>
+					  				<span>CCI 00219300228045600710</span>
+					  				<span>CAD Perù S.A.</span>
+					  			</div>
+					  		</div>
+					  		<div class="ui-item-transferencia-tarjeta">
+					  			<div class="ui-tarjeta-logotipo">
+					  				<figure>
+					  					<img src="img/transferencia-marca-04.png" alt="">
+					  				</figure>
+					  			</div>
+					  			<div class="ui-codigo-transferencia-tarjeta">
+					  				<span>Cuenta 193-2280456-0-07</span>
+					  				<span>CCI 00219300228045600710</span>
+					  				<span>CAD Perù S.A.</span>
+					  			</div>
+					  		</div>
+					  		<!-- clear -->
+					  		<div class="ui-clear"></div>
+					  	</div>
+					  	<div class="ui-box-acercate-a-agente">
+					  		<p>
+					  			<span>Acércate a Cualquier Agente o Agencia</span> Puedes depositarnos o hacernos una transferencia a nuestra Cuenta Corriente en el BCP y luego nos envías el voucher al mail contacto@netzun.com para validar la compra.
+					  		</p>
+					  	</div>
+					</div>
+				</div>
+				<!-- boton cerrar modal -->
+				<figure class="ui-btn-cerrar-modal-pago"
+						onclick="document.getElementById('realiza-tu-pago').style.display = 'none'">
 					<img src="img/close-modal.png" alt="">
 				</figure>
 			</div>
