@@ -66,13 +66,20 @@ function cerrarRevisionPedido() {
 }
 
 
-/**************************************
-    btn ver mas de nuestros clientes
- **************************************/
+/********************************
+    btn ver mas de convenios
+ ********************************/
 $(document).ready(function(){
-    $(".ui-btn-ver-mas-cliente").click(function(){
-        $("#lista-nuevos-clientes").slideToggle();
-        $('.ver-mas-cliente .a').toggle();
+    $(".ui-btn-ver-mas-cliente.btn-a").click(function(){
+        $("#lista-nuevos-clientes-a").slideToggle();
+          $('.ver-mas-cliente .a').toggle();
+    });
+});
+
+$(document).ready(function(){
+    $(".ui-btn-ver-mas-cliente.btn-b").click(function(){
+        $("#lista-nuevos-clientes-b").slideToggle();
+          $('.ver-mas-cliente .a').toggle();
     });
 });
 
@@ -321,4 +328,17 @@ $(window).scroll(function () {
     }
 });
 
-
+/************************
+ *    mapa nosotros     *
+ ************************/
+function initMap() {
+  var uluru = {lat: -9.130, lng: -79.580};
+    var map = new google.maps.Map(document.getElementById('mapa-nosotros'), {
+      zoom: 6,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+  });
+}
