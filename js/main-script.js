@@ -65,6 +65,41 @@ function cerrarRevisionPedido() {
    document.getElementById("modal-revision-pedido").style.display = "none";
 }
 
+/*************************************** 
+       modal servicios in company      
+ ***************************************/
+function openModal01() {
+  document.getElementById('staff-modal-01').style.display = 'block';
+  $("body").css("overflow", "hidden");
+}
+
+function closeModal01(){
+  document.getElementById('staff-modal-01').style.display = 'none';
+  $("body").css("overflow", "auto");
+}
+
+function openModal02() {
+  document.getElementById('staff-modal-02').style.display = 'block';
+  $("body").css("overflow", "hidden");
+}
+
+function closeModal02(){
+  document.getElementById('staff-modal-02').style.display = 'none';
+  $("body").css("overflow", "auto");
+}
+
+/***********************************
+    modal Consultoria in company   
+ ***********************************/
+function openModalConsultoria01(){
+  document.getElementById('modal-consultoria-a').style.display = 'block';
+  $("body").css("overflow", "hidden");
+}
+
+function closeModalConsultoria01(){
+  document.getElementById('modal-consultoria-a').style.display = 'none';
+  $("body").css("overflow", "auto");
+}
 
 /********************************
     btn ver mas de convenios
@@ -79,6 +114,17 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".ui-btn-ver-mas-cliente.btn-b").click(function(){
         $("#lista-nuevos-clientes-b").slideToggle();
+          $('.ver-mas-cliente .a').toggle();
+    });
+});
+
+
+/****************************
+    btn ver mas clientes
+ ****************************/
+$(document).ready(function(){
+    $(".ui-btn-ver-mas-cliente.btn-c").click(function(){
+        $("#lista-nuevos-clientes-c").slideToggle();
           $('.ver-mas-cliente .a').toggle();
     });
 });
@@ -123,7 +169,7 @@ $(document).ready(function(){
 ***********************/
 $(document).ready(function(){
   $(".owl-carousel.clientes").owlCarousel({
-    items:5,    
+    items:6,    
     margin:5,
     loop:true,
     lazyLoad:true,  
@@ -169,7 +215,26 @@ $(window).load(function() {
     slideshow: true,
     slideshowSpeed: 4000,    
   });
+
+  circularAnimation();
+  setInterval(circularAnimation, 4000);
+
 });
+
+function circularAnimation() {
+    $('.flexslider.home .flex-control-paging li a').circleProgress({
+        value: 0,
+        size: 50,
+        animation: { duration: 4000 },
+        thickness: 2,
+        fill: { color: '#FFF' },
+        emptyFill: 'rgba(0, 0, 0, 0)'
+    });
+    $('.flexslider.home .flex-control-paging li a.flex-active').circleProgress({
+        value: 1.0,
+    });
+}
+
 
 
 /*************

@@ -6,10 +6,9 @@
 	<title>CAD Perú | Corporación Americana de Desarrollo</title>
 	<link rel="stylesheet" href="css/style-monkey.css">
 	<link rel="stylesheet" href="css/style-monkey-responsive.css">
-	<!-- owlCarouel -->
+	<!-- owlCarouel -->	
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">	
-
 </head>
 
 <body>	
@@ -190,7 +189,7 @@
 		<div class="ui-box-overlay-servicios-in-company"></div>
 		<div class="ui-box-container-principal">
 			<div class="ui-box-servicios-in-company">
-				<div class="ui-form-slider">
+				<div class="ui-form-slider company">
 					<header class="ui-header-form-slider">
 						<h2 class="ui-h2-form-slider">
 							<span class="a">¡Recibe más</span>
@@ -308,9 +307,8 @@
 				<div class="ui-box-tab-content-b">
 					<div id="Consultorias" class="tabcontent-in-company">
 						<div class="ui-box-consultorias-tab-items">
-							<div class="ui-item-consultoria-tab" 
-								onclick="document.getElementById('modal-consultoria-a').style.display = 'block'">
-								<div class="ui-item-figura-consultoria-tab">
+							<div class="ui-item-consultoria-tab">
+								<div onclick="openModalConsultoria01()" class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-01.jpg" alt="">
 									</figure>
@@ -322,8 +320,7 @@
 									</p>
 								</div>
 							</div>	
-							<div class="ui-item-consultoria-tab"
-								onclick="document.getElementById('modal-consultoria-a').style.display = 'block'">
+							<div class="ui-item-consultoria-tab">
 								<div class="ui-item-figura-consultoria-tab">
 									<figure>
 										<img src="img/tab-consultoria-02.jpg" alt="">
@@ -441,9 +438,8 @@
 				<div class="ui-box-carousel-servicios-in-company">
 					<div class="owl-carousel staff-profesional">
 					  	<div>
-							<div class="ui-box-item-staff-profesional" 
-								onclick="document.getElementById('modal-staff-b').style.display='block'">
-								<div class="ui-box-imagen-staff-profesional">
+							<div class="ui-box-item-staff-profesional">
+								<div onclick="openModal01()" class="ui-box-imagen-staff-profesional">
 									<div class="ui-item-staff-profesional">
 										<figure>
 											<img src="img/staff-01.png" alt="">
@@ -457,9 +453,8 @@
 							</div>
 					  	</div>	
 					  	<div>
-							<div class="ui-box-item-staff-profesional" 
-								onclick="document.getElementById('modal-staff-b').style.display='block'">
-								<div class="ui-box-imagen-staff-profesional">
+							<div class="ui-box-item-staff-profesional">
+								<div onclick="openModal02()" class="ui-box-imagen-staff-profesional">
 									<div class="ui-item-staff-profesional">
 										<figure>
 											<img src="img/staff-02.png" alt="">
@@ -483,7 +478,7 @@
 					</h2>
 				</header>
 				<div class="ui-box-clientes-logotipos">
-					<div class="ui-box-items-clientes-logotipos">
+					<div class="ui-box-items-clientes-logotipos no-margin">
 						<div class="ui-box-cliente-item-logotipo">
 							<figure>
 								<img src="img/cliente-logotipo-01.jpg" alt="">
@@ -533,7 +528,7 @@
 						<div class="ui-clear"></div>
 					</div>
 
-					<div id="lista-nuevos-clientes" class="ui-box-items-clientes-logotipos display">
+					<div id="lista-nuevos-clientes-c" class="ui-box-items-clientes-logotipos display">
 						<div class="ui-box-cliente-item-logotipo">
 							<figure>
 								<img src="img/cliente-logotipo-01.jpg" alt="">
@@ -584,7 +579,7 @@
 					</div>
 
 					<div class="ui-box-btn-ver-mas-clientes">
-						<div class="ui-btn-ver-mas-cliente">
+						<div class="ui-btn-ver-mas-cliente btn-c">
 							<div class="btn-ver-mas-cliente">
 								<div class="ver-mas-cliente">
 									<span class="a"></span>
@@ -665,8 +660,7 @@
 					<figure class="ui-figura-modal-consultoria">
 						<img src="img/figura-modal-consultoria-01.jpg" alt="">
 					</figure>
-					<div class="ui-box-close-modal-consultoria-tab" 
-						onclick="document.getElementById('modal-consultoria-a').style.display = 'none'">
+					<div onclick="closeModalConsultoria01()" class="ui-box-close-modal-consultoria-tab">
 						<figure>
 							<img src="img/close-modal-consultoria-tab.png" alt="">
 						</figure>
@@ -688,17 +682,17 @@
 	</div>
 
 	<!-- modal staff profesional -->
-	<div id="modal-staff-a" class="ui-box-contenedor-modal">
+	<div id="staff-modal-01" class="ui-box-contenedor-modal">
 		<div class="ui-box">
 			<div class="ui-box-user-staff-profesional">
-				<div onclick="document.getElementById('modal-staff-a').style.display='none'" class="ui-box-icon-cerrar-modal">
+				<div onclick="closeModal01()" class="ui-box-icon-cerrar-modal">
 					<figure>
 						<img src="img/close-modal.png" alt="">
 					</figure>
 				</div>
 				<div class="ui-figura-user-staff-modal">
 					<figure>
-						<img src="img/staff-02.png" alt="">
+						<img src="img/staff-01.png" alt="">
 					</figure>
 				</div>
 				<div class="ui-datos-user-staff">
@@ -714,17 +708,17 @@
 		</div>
 	</div>
 
-	<div id="modal-staff-b" class="ui-box-contenedor-modal">
+	<div id="staff-modal-02" class="ui-box-contenedor-modal">
 		<div class="ui-box">
 			<div class="ui-box-user-staff-profesional">
-				<div onclick="document.getElementById('modal-staff-b').style.display='none'" class="ui-box-icon-cerrar-modal">
+				<div onclick="closeModal02()" class="ui-box-icon-cerrar-modal">
 					<figure>
 						<img src="img/close-modal.png" alt="">
 					</figure>
 				</div>
 				<div class="ui-figura-user-staff-modal">
 					<figure>
-						<img src="img/staff-01.png" alt="">
+						<img src="img/staff-02.png" alt="">
 					</figure>
 				</div>
 				<div class="ui-datos-user-staff">
@@ -750,27 +744,33 @@
 					</figure>
 				</div>	
 				<div class="ui-fila-footer-a-item b">
-					<div class="ui-dato-contacto-footer">
-						<div class="ui-dato-footer">
-							<figure class="ui-icon-footer">
-								<img src="img/icon-footer-01.png">
-							</figure>
-							<div class="ui-texto-dato-footer">
-								<p><strong>OFICINA CENTRAL:</strong></p>
-								<p>Av. General Garzón Nº 613 Oficina 301 - Lima 11 Perú</p>
-							</div>
-						</div>
+					<div class="ui-box-oficina-informes-a">	
+						<figure>
+							<img src="img/icon-footer-a.png" alt="">
+						</figure>					
+						<span class="a">Oficina Central</span>
+						<span class="b">Av. General Garzón Nº 613 Oficina 301 - Lima 11 Perú</span>
 					</div>
-					<div class="ui-dato-contacto-footer">
-						<div class="ui-dato-footer">
-							<figure class="ui-icon-footer">
-								<img src="img/icon-footer-02.png">
-							</figure>
-							<div class="ui-texto-dato-footer">
-								<p><strong>Central Telefónica:</strong> (+511) 425 0849 - 330 2243</p>
-								<p>info@cadperu.com</p>
-							</div>
+					<div class="ui-box-oficina-informes-b">
+						<div class="ui-informe-footer-a">
+							<span class="a">Oficina Central</span>
+							<span class="b">
+								<figure>
+									<img src="img/icon-footer-b.png" alt="">
+								</figure>
+								(+511) 425 0849 - 330 2243
+							</span>
 						</div>
+						<div class="ui-informe-footer-b">
+							<span class="a">
+								<figure>
+									<img src="img/icon-footer-c.png" alt="">
+								</figure>
+								info@cadperu.com
+							</span>
+						</div>
+						<!-- clear -->
+						<div class="ui-clear"></div>
 					</div>
 					<!-- clear -->
 					<div class="ui-clear"></div>
@@ -817,6 +817,7 @@
 	<!-- scripts -->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main-script.js"></script>	
-	<script src="js/owl.carousel.min.js"></script>	
+	<script src="js/owl.carousel.min.js"></script>		
+
 </body>	
 </html>

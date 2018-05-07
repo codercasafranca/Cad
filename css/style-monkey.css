@@ -11,7 +11,7 @@
 
 body{
 	font-family:"Open Sans";
-	position: relative;	
+	position: relative;		
 }
 
 p{
@@ -86,7 +86,7 @@ p{
 .ui-box-comienza-ahora{
 	position: fixed;
 	right:0;
-	bottom:0; 	
+	bottom:-16px; 	
 	z-index: 99;
 	display: none;
 	cursor: pointer;
@@ -123,7 +123,7 @@ p{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,.8);
-	z-index: 1000;
+	z-index: 99999;
 	display: none;
 }
 
@@ -162,7 +162,7 @@ p{
 		float: left;
 		padding-top: 19px;		
 		min-height: 122px;
-		margin-left: 10%;
+		margin-left: 9%;
 	}
 
 	.ui-header-principal > .ui-derecha{
@@ -557,7 +557,9 @@ p{
 
 					.ui-texto-slide-contenido{
 						max-width: 516px;
-						margin-left: 10%;						
+						margin-left: 10%;	
+						position: relative;
+						top:100px;					
 					}
 
 						.ui-h2-slide{							
@@ -664,7 +666,7 @@ p{
 
 		.flexslider.home .flex-control-nav{
 			position: absolute;
-			bottom:36%;
+			bottom:29%;
 			left:10%;
 			width: auto;
 			height: 4px;			
@@ -699,10 +701,10 @@ p{
 			.flexslider.home .flex-control-paging li a.flex-active{		
 				border:2px solid transparent;	
 				font-size: 18px;	
-				font-family:"Open Sans Extrabold";	
+				/*font-family:"Open Sans Extrabold";*/
 			}
 
-					.flexslider.home .flex-control-paging li a.flex-active:before{
+					/*.flexslider.home .flex-control-paging li a.flex-active:before{
 						content:'';
 						position: absolute;
 						top:-2px;
@@ -717,6 +719,11 @@ p{
 						-ms-animation:btn-slide .8s infinite linear;
 						-o-animation:btn-slide .8s infinite linear;
 						animation:btn-slide .8s infinite linear;			
+					}*/
+					.flexslider.home .flex-control-paging li a canvas {
+						position: absolute;
+						top: 0;
+						left: 0;
 					}
 
 					@-webkit-keyframes btn-slide {
@@ -783,12 +790,14 @@ p{
 
 	.ui-form-slider{
 		visibility: visible;
-		width: 557px;
-		height: 506px;
+		width: 449px;
+		height: 425px;
 		background-color: #fff;
 		border-radius:10px;
-		padding: 54px;
+		padding: 22px;
 		position: relative;
+		top:96px;
+		right: 21px;
 		visibility: visible;
 		
 		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -808,7 +817,7 @@ p{
 
 				.ui-h2-form-slider .a{
 					font-size: 20px;
-					color:#B0E519;
+					color:#FA8900;
 					font-family:"Open Sans";
 					line-height: 25px;
 				}
@@ -859,7 +868,7 @@ p{
 				border:none;	
 				font-family:"Open Sans";
 				outline: none;	
-				color:#003C75;	
+				color:rgba(0,0,0,.5);	
 			}		
 
 				.ui-bloque-item-form input::placeholder{
@@ -886,6 +895,11 @@ p{
 				background-image: url(../img/icon-select-slider.png);
 				background-repeat: no-repeat;	
 				background-position: center right;			
+			}
+
+			.ui-bloque-item-form select option{
+				border:1px solid rgba(0,0,0,.5);
+				outline: none;
 			}
 
 				.ui-bloque-item-form-completo{
@@ -954,7 +968,7 @@ p{
 				}
 
 					.ui-bloque-item-form-btn input{
-						background-color: #B0E519;
+						background-color: #FA8900;
 						height: 69px;
 						width: 243px;
 						color:#fff;
@@ -982,7 +996,7 @@ p{
 					}
 
 				.ui-fila-items-form-slider.btn{
-					margin-top: 54px;
+					margin-top: 32px;
 				}
 				
 
@@ -997,8 +1011,8 @@ p{
 .ui-box-especialidades{
 	padding-bottom: 64px;
 	padding-top: 82px;
-	padding-left: 9%;
-	padding-right: 9%;
+	padding-left: 4%;
+	padding-right: 4%;
 	position: relative;	
 }
 
@@ -1009,12 +1023,12 @@ p{
 
 		.ui-h2{					
 			line-height: 44px;
-			font-family:"Open Sans";
-			font-size: 37px;						
+			font-family:"Open Sans Bold";
+			font-size: 40px;						
 		}
 
 			.ui-h2 .a{
-				color: #B0E519;				
+				color: rgba(130, 187, 39, 0.8);				
 			}
 
 			.ui-h2 .b{
@@ -1022,7 +1036,7 @@ p{
 			}
 
 .ui-item-curso{
-	width: 31.33%;
+	width: 22.99%;
 	float: left;
 	margin:1%;
 	overflow: hidden;	
@@ -1097,15 +1111,16 @@ p{
 
 .ui-texto-boton-curso{	
 	height: 115px;
-	padding: 43px 53px;
+	padding: 43px 53px 43px 35px;
 	background-color: #fff;
 	position: relative;
 }
 
 .ui-nombre-curso{		
-	font-family:"Open Sans Bold";
-	line-height: 25px;
+	font-family:"Open Sans";
+	line-height: 27px;
 	font-size: 23px;	
+	color: rgba(0, 0, 0, 0.5);
 
 	-webkit-transition:all .1s linear;
 	-moz-transition:all .1s linear;
@@ -1118,76 +1133,87 @@ p{
 		font-size: 24px;
 	}
 
-	.ui-nombre-curso.a{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.a{
 		color: #FBBB33;
+		font-size: 30px;
+		font-family:"Open Sans Bold";
 	}
 
-	.ui-nombre-curso.b{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.b{
 		color: #593683;
+		font-size: 30px;
+		font-family:"Open Sans Bold";
 	}
 
-	.ui-nombre-curso.c{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.c{
 		color: #E94F44;
+		font-size: 30px;
+		font-family:"Open Sans Bold";
 	}
 
-	.ui-nombre-curso.d{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.d{
 		color: #F18832;
+		font-size: 30px;
+		font-family:"Open Sans Bold";
 	}
 
-	.ui-nombre-curso.e{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.e{
 		color: #00B2BB;
-		font-size: 25px;
+		font-family:"Open Sans Bold";
+		font-size: 30px;
 	}
 
-	.ui-nombre-curso.f{
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-nombre-curso.f{
 		color: #A1AB20;
-		font-size: 25px;
+		font-family:"Open Sans Bold";
+		font-size: 30px;
 	}
 
 .ui-triangulo-derecha{
-	width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-left: 12px solid #000;
-    border-bottom: 12px solid transparent;    
+	width: 23px;
+    height: 19px;
+    background-image: url(../img/icon-especialidad-home-gris.png); 
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;       
     position: absolute;
     top:45px;
     right:32px;  
-
+    
     -webkit-transition: all .1s linear ;
-      -moz-transition: all .1s linear ;
-      -ms-transition: all .1s linear ;
-      -o-transition: all .1s linear ;
-      transition: all .1s linear ;  
+    -moz-transition: all .1s linear ;
+    -ms-transition: all .1s linear ;
+    -o-transition: all .1s linear ;
+    transition: all .1s linear ;  
 }
 
 	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha{
 		right: 28px;
 	}
 
-	.ui-triangulo-derecha.a{
-		border-left: 12px solid #FBBB33;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.a{
+		background-image: url(../img/icon-especialidad-home-hover-a.png); 
 	}
 
-	.ui-triangulo-derecha.b{
-		border-left: 12px solid #593683;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.b{
+		background-image: url(../img/icon-especialidad-home-hover-b.png); 
 	}
 
-	.ui-triangulo-derecha.c{
-		border-left: 12px solid #E94F44;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.c{
+		background-image: url(../img/icon-especialidad-home-hover-c.png); 
 	}
 
-	.ui-triangulo-derecha.d{
-		border-left: 12px solid #F18832;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.d{
+		background-image: url(../img/icon-especialidad-home-hover-d.png); 
 	}
 
-	.ui-triangulo-derecha.e{
-		border-left: 12px solid #00B2BB;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.e{
+		background-image: url(../img/icon-especialidad-home-hover-e.png); 
 		font-size: 25px;
 	}
 
-	.ui-triangulo-derecha.f{
-		border-left: 12px solid #A1AB20;
+	.ui-item-curso:hover > .ui-texto-boton-curso .ui-triangulo-derecha.f{
+		background-image: url(../img/icon-especialidad-home-hover-f.png); 
 		font-size: 25px;
 	}
 
@@ -1291,6 +1317,7 @@ p{
 						font-size: 60px;
 						line-height: 65px;
 						color: #003C75;
+						text-transform: uppercase;
 					}
 
 					.ui-conocenos-enlace-porque-cad{
@@ -1419,7 +1446,7 @@ p{
 				.ui-h2-porque-cad{
 					font-size: 30px;
 					font-family:"Open Sans Semibold";
-
+					color: rgba(0,0,0,.5);
 					-webkit-transition: all .2s linear;
 					-moz-transition: all .2s linear;
 					-ms-transition: all .2s linear;
@@ -1428,7 +1455,7 @@ p{
 				}
 		
 					.ui-item-porque-cad:hover > .ui-item-contenido-porque-cad .ui-h2-porque-cad{
-						color: #B0E519;
+						color: #82BB27;
 					}
 
 .ui-box-btn-abajo-slider{
@@ -1442,17 +1469,17 @@ p{
 }
 
 .ui-curva-a{
-	width: 20px;
-	height: 20px;
-	display: none;
-	position: absolute;
-	top:15px;
-	left:-10px;	
-	background-image: url(../img/curva.png);
-	background-position: center center;
-	background-size: contain;
-	background-repeat: no-repeat;
+	width: 25px;
+	position: absolute;	
+	top:10px;
+	left:-11px;	
+	display: none;		
 }
+
+		.ui-curva-a figure img{
+			display: block;
+			width: 100%;
+		}
 
 	.ui-btn-abajo-slider{
 		width: 102px;
@@ -1884,18 +1911,35 @@ p{
 /************* seccion clientes *************/
 .ui-box-clientes{	
 	position: relative;
+}	
+
+.ui-box-instituciones-que-confian{	
+	text-align: center;
+	padding: 19px 10px;
+	position: relative;
+	overflow: hidden;
 }
- 
-	.ui-box-clientes > .ui-izquierda{
-		position: absolute;
-		top:0;
-		left:0;
-		width:16.66%;		
+
+	.ui-box-instituciones-que-confian span{
+		display: inline-block;
+		vertical-align: bottom;		
+		font-family:"Open Sans";
+		font-size: 17px;
+		line-height: 20px;
+		color: rgba(0,0,0,0.5);
+		position: relative;
+		z-index: 1;
+		background-color: #fff;
+		padding: 0 20px;		
 	}
 
-	.ui-box-clientes > .ui-derecha{
-		float: right;
-		width:83.33%;		
+	.ui-linea-clientes{
+		width: 100%;
+		height: 1px;
+		background-color: rgba(0,0,0,.1);
+		position: absolute;
+		top:50%;
+		left:0;
 	}
 
 	.ui-h2-nuestros-clientes{		
@@ -2016,8 +2060,8 @@ p{
 	    bottom: -95px;
 	    left: 0;
 	    width: 100%;
-	   	visibility: hidden;
-	    height: 20px;
+	   	/*visibility: hidden;*/
+	    height: .1px;	   
 	    z-index: 99;
 	    text-align: center;    
 	}	
@@ -2086,6 +2130,7 @@ p{
 
 	.ui-header-cad-peru{
 		margin-bottom: 28px;
+		display: none;
 	}
 
 		.ui-h2-cad-peru{
@@ -2193,19 +2238,20 @@ p{
     width: 197px;
     height: 60px;
     font-family:"Open Sans Bold";
-    font-size: 25px;
-    opacity: 0.3;
-    color:#000;
+    font-size: 25px;    
+    color:rgba(0,0,0,.3);
+    border:1px solid #003C75;
 
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
 }
 
 .tab-cad-peru button.tablinks-cad-peru.active {
     background-color: #326290;
     color:#fff;        
     opacity: 1;
+    border:1px solid #326290;
 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -2425,7 +2471,7 @@ p{
 			}
 
 				.ui-filtro-curso input::placeholder{
-					color:rgba(0,0,0,0.40);
+					color:rgba(0,0,0,0.5);
 				}
 
 			.ui-filtro-curso select{
@@ -2441,12 +2487,13 @@ p{
 				moz-appearance: none;
 			    -webkit-appearance: none;
 			    appearance: none;
-			    color: #BBBEC5;
+			    color: rgba(0,0,0,.5);
 			    font-size: 20px;
 			    line-height: 23px;
 			    background-image:url(../img/icon-gris-select-curso.png);
 			    background-repeat: no-repeat;
 			    background-position: center right;
+			    font-family:"Open Sans";
 			}
 
 				.ui-filtro-curso select:hover{
@@ -2534,7 +2581,7 @@ p{
 			position: absolute;
 			left:0;
 			top:0;
-			background-color: #C0EA47;
+			background-color: #FA8900;
 			color: #fff;
 			padding: 14px 30px 14px 20px;
 			display: block;
@@ -2632,6 +2679,17 @@ p{
 			.ui-box-precio-item-curso .b{
 				font-family:"Open Sans Extrabold";
 				font-size: 40px;		
+			}
+
+			.ui-box-texto-consulta-descuento{
+				text-align: center;
+				padding: 0 20px;
+			}
+
+			.ui-box-texto-consulta-descuento p{
+				font-family:"Open Sans Bold";
+				font-size: 15px;
+				color:#fff;
 			}
 
 .ui-box-promocion-valida{
@@ -2746,6 +2804,8 @@ p{
 	height: 100%;
 	background-color: #001C36;
 	color: #fff;
+	display: block;
+	z-index: 1;
 	text-decoration: none;
 	padding: 50px 30px;		
 
@@ -2880,7 +2940,7 @@ p{
 		transition:all .4s linear .2s;
 	}
 
-		.ui-box-overlay-nivel-post-grado:hover > .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.a{
+		.ui-box-item-nuestro-curso:hover  .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.a{
 			right: 0%;
 		}
 
@@ -2895,7 +2955,7 @@ p{
 		transition:all .4s linear .4s;
 	}
 
-		.ui-box-overlay-nivel-post-grado:hover > .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.b{
+		.ui-box-item-nuestro-curso:hover  .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.b{
 			right: 0%;
 		}
 
@@ -2910,7 +2970,7 @@ p{
 		transition:all .4s linear .6s;
 	}
 
-		.ui-box-overlay-nivel-post-grado:hover > .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.c{
+		.ui-box-item-nuestro-curso:hover  .ui-overlay-post-grado .ui-box-item-dato-overlay-curso.c{
 			right: 0%;
 		}
 		
@@ -3213,30 +3273,7 @@ p{
 
 	.ui-box-bloque-texto-acerca-del-curso{
 		margin-bottom: 40px;
-	}
-
-		.ui-box-bloque-texto-acerca-del-curso.escudos{
-			position: relative;
-			padding-right: 340px;
-		}
-
-			.ui-box-escudos{
-				position: absolute;
-				top:50px;
-				right:10px;
-			}
-
-			.ui-item-escudo{
-				display: inline-block;
-				vertical-align: middle;				
-				width: 86px; 
-				margin: 0 15px;				
-			}
-
-				.ui-item-escudo img{
-					display: block;
-					width: 100%;
-				}
+	}				
 
 		.ui-box-bloque-texto-acerca-del-curso p{
 			font-size: 20px;
@@ -3337,20 +3374,11 @@ p{
 			color: #003C75;
 		}
 
-		.ui-item-curso-recomendado{
-			margin-bottom: 30px;
-			border-radius: 5px;
-			overflow: hidden;
-			-webkit-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
-			-moz-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
-			-ms-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
-			-o-box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
-			box-shadow:3px 5px 10px rgba(0, 0, 0, 0.06);
+		.ui-box-item-nuestro-curso.recomendado{
+			display: block;
+			width:initial;
+			margin-bottom: 40px;
 		}
-
-.ui-item-curso-recomendado:hover > .ui-box-imagen-item-nuestro-curso .ui-box-overlay-nivel-post-grado{
-	top:0%;
-}
 
 .ui-box-comprar-curso-recomendado{
 	background-color:  #003C75;
@@ -3372,7 +3400,7 @@ p{
 }
 
 	.ui-box-comprar-curso-recomendado:hover{
-		background-color: #B0E519;
+		background-color: #FA8900;
 	}
 
 .ui-box-comprar-curso-recomendado span{
@@ -3461,6 +3489,22 @@ p{
 				border-bottom: 1px solid rgba(0,0,0,0.2);
 			}
 
+				.ui-bloque-form-detalle-curso:before{
+					content: '';
+				    position: absolute;
+				    bottom: -1.2px;
+				    right: -3.6px;
+				    width: 1px;
+				    height: 9px;
+				    z-index: 1;
+				    background-color: rgba(0,0,0,0.2);
+				    -webkit-transform: rotate(45deg);
+				    -moz-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    -o-transform: rotate(45deg);
+				    transform: rotate(45deg);					
+				}
+
 				.ui-bloque-form-detalle-curso input{
 					position: absolute;
 					top:0;
@@ -3476,39 +3520,32 @@ p{
 				}
 
 					.ui-bloque-form-detalle-curso input::placeholder{
-						color:rgba(0,0,0,.4);
-					}
+						color:rgba(0,0,0,.5);
+					}			
 
-				.ui-bloque-form-detalle-curso-entero{
-					height: 35px;
-					margin: 1% 2%;
-					position: relative;
-					border-bottom: 1px solid rgba(0,0,0,.2);
-				}
-
-					.ui-bloque-form-detalle-curso-entero input{
-						position: absolute;
-						top:0;
-						left:0;
-						width: 100%;
-						font-family: "Open Sans";
-						height: 100%;
-						padding: 8px;
-						font-size: 18px;					
-						border: none;
-						outline: none;
-						background-color: #fff; 
-					}
-
-					.ui-bloque-form-detalle-curso-entero input::placeholder{
-						color:rgba(0,0,0,.4);
-					}
 
 			.ui-bloque-form-detalle-curso-select{			
 				position: relative;
 				height: 60px; 
-				margin:1% 2% 3%;
+				margin:1% 2% 3%;				
+				border-bottom: 1px solid rgba(0,0,0,0.2);
 			}	
+
+			.ui-bloque-form-detalle-curso-select:before{
+				content: '';
+			    position: absolute;
+			    bottom: -1.2px;
+			    right: -3.6px;
+			    width: 1px;
+			    height: 9px;
+			    z-index: 1;
+			    background-color: rgba(0,0,0,0.2);
+			    -webkit-transform: rotate(45deg);
+			    -moz-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
 
 				.ui-bloque-form-detalle-curso-select select{
 					position: absolute;
@@ -3516,21 +3553,46 @@ p{
 					left:0;
 					height: 100%;
 					width: 100%;
-					padding: 8px 15px;
+					padding: 8px 10px;
 					outline: none;					
-					border: 1px solid rgba(0,0,0,.05);
+					border:none;
 					background-color: #fff;
-					color: rgba(0,0,0,.5); 
-					border-radius:35px;
-					-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
-					-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
-					box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+					color: rgba(0,0,0,.5); 					
 					-moz-appearance: none;
 				    -webkit-appearance: none;
 				    font-size: 18px;
 				    appearance: none;
-				    font-family: "Open Sans";
-				}		
+				    background-image: url(../img/icon-gris-select-curso.png);
+				    background-repeat: no-repeat;
+				    background-position: center right;
+				    font-family: "Open Sans Semibold";
+				}
+
+		.ui-box-input-region-ciudad{
+			height: 60px;
+			position: relative;
+			margin:0 2%;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}		
+
+			.ui-box-input-region-ciudad input{
+				position: absolute;
+				top:0;
+				right:0;
+				border:none;
+				outline: none;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				font-family: "Open Sans Semibold";
+				padding: 8px;
+				font-size: 16px;
+			}
+
+				.ui-box-input-region-ciudad input::placeholder{
+					color: rgba(0,0,0,.6); 
+					font-family: "Open Sans Semibold";
+				}
 
 		.ui-box-como-se-entero{
 			margin: 0 2%;
@@ -3572,6 +3634,22 @@ p{
 			border-bottom: 1px solid rgba(0,0,0,.2);
 		}
 
+		.ui-box-input-politica:before{
+			content: '';
+		    position: absolute;
+		    bottom: -1.2px;
+		    right: -3.6px;
+		    width: 1px;
+		    height: 9px;
+		    z-index: 1;
+		    background-color: rgba(0,0,0,0.2);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		}
+
 			.ui-box-input-politica input{
 				position: absolute;
 				top:0;
@@ -3611,7 +3689,7 @@ p{
 		}
 
 			.ui-btn-form-detalle-curso{
-				background: #B0E519;
+				background-color: #FA8900;
 				border-radius: 30px;
 				width: 204px;
 				height: 60px;
@@ -4005,7 +4083,7 @@ p{
 				}
 
 					.ui-btn-continuar button:hover{
-						background-color: #B0E519;
+						background-color: #FA8900;
 					}
 
  /*********** modal revision de pedido ***********/
@@ -4377,6 +4455,10 @@ p{
 					outline: none; 
 					font-family:"Open Sans Bold";
 				}
+
+					.ui-btn-realizar-pago-revision-pedido:hover{
+						background-color: #FA8900;
+					}
 
 /************* modal realiza tu pago - tarjeta de credito *************/
 .ui-box-modal-pago-tarjeta-credito{
@@ -4856,6 +4938,7 @@ p{
  /*********** servicios in company **********/
 .ui-banner-servicios-in-company{	
 	height: 707px;
+	margin-top: 122px;
 	position: relative;
 	background-image: url(../img/bg-servicios-in-company.png);
 	background-position: center center;
@@ -4883,6 +4966,11 @@ p{
 	position: relative;
 	z-index: 2;
 
+}
+
+.ui-form-slider.company{
+	position: relative;
+	top:-10px;
 }
 
 	.ui-box-contenedor-servicios-in-company-a{
@@ -4997,7 +5085,9 @@ p{
 			background-color: #fff;
 			border-radius: 10px;
 			text-align: center;
-			overflow: hidden;
+			display: inline-block;
+			vertical-align: top;	
+			overflow: hidden;		
 		}
 
 		.ui-box-figura-modal-consultoria-tab{
@@ -5100,6 +5190,7 @@ p{
 	    min-height: 65px;
 	    transition: 0.3s;	    
 	    font-size: 25px;
+	    border:1px solid #003C75;
 	    font-family:"Open Sans Semibold"; 
 
 	    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
@@ -5137,31 +5228,42 @@ p{
 	max-width: 1114px;
 	margin-left: auto;
 	margin-right: auto;	
-	background-color: #FCFCFC;
 }	
 
 	.owl-carousel.staff-profesional .owl-nav button{	
 		width: 25px;
 		height: 25px;
+		background-color: #fff;
+		outline: none;
+		border:none;
 		background-repeat: no-repeat;
 		background-position: center center;	
 		background-size: contain;	
+		opacity: 1;
+		display: block;
+		border-radius:none;
+		margin: 0px; 
 	}
 
 		.owl-carousel.staff-profesional .owl-nav .owl-prev{
-			background-image:url(../img/left-carousel-staff.png);
+			background-image:url(../img/icon-gris-left-staff.png);
+			position: relative;			
+			right:25px;
 		}
 
 			.owl-carousel.staff-profesional .owl-nav .owl-prev:hover{
-				background-image:url(../img/left-carousel-staff-active.png);
+				background-image:url(../img/icon-hover-left-staff.png);
 			}
 
 		.owl-carousel.staff-profesional .owl-nav .owl-next{
-			background-image:url(../img/right-carousel-staff.png);
+			background-image:url(../img/icon-gris-right-staff.png);
+			position: relative;
+			left:25px;
 		}
 
 			.owl-carousel.staff-profesional .owl-nav .owl-next:hover{
-				background-image:url(../img/right-carousel-staff-active.png);
+				background-image:url(../img/icon-hover-right-staff.png);				
+	
 			}
 
 	.ui-box-item-staff-profesional{
@@ -5186,7 +5288,7 @@ p{
 				vertical-align: bottom;
 				width: 234px;
 				height: 234px;
-				border-radius: 50%;
+				border-radius: 50%;				
 				overflow: hidden;	
 				-webkit-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.05);
 				-moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.05);
@@ -5245,6 +5347,7 @@ p{
 		left:0;
 		visibility: hidden;
 		width: 100%;
+		display: block!important;
 	}
 
 	.owl-carousel.staff-profesional .owl-nav button{
@@ -5270,6 +5373,10 @@ p{
 
 		.ui-box-items-clientes-logotipos{
 			margin-bottom: 50px;
+		}
+
+		.ui-box-items-clientes-logotipos.no-margin{
+			margin-bottom: 0px;
 		}
 
 			.ui-box-items-clientes-logotipos.display{
@@ -5450,6 +5557,7 @@ p{
 		height: 100%;
 		z-index: 9999;
 		display: none;
+		overflow: auto;
 	}
 
 		.ui-box-contenedor-modal > .ui-box{
@@ -5457,21 +5565,20 @@ p{
 			top:0;
 			left:0;
 			width: 100%;
-			height: 100%;
-
-			display: -webkit-flex;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			height: 100%;	
+			text-align: center;
+			padding: 10px;			
 		}
 
 		.ui-box-user-staff-profesional{
-			max-width: 492px;	
-			height: 902px;		
+			max-width: 492px;
+			width: 99.99%;				
 			background-color: #fff;
 			padding: 50px 80px;
 			text-align: center;				
 			position: relative;	
+			display: inline-block;
+			vertical-align: top;
 		}
 
 			.ui-box-icon-cerrar-modal{
@@ -5686,7 +5793,8 @@ p{
     line-height: 27px;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.3);
-    text-align: center;    
+    text-align: center;  
+    border:1px solid rgba(0, 60, 117, 0.8);  
     height: 65px;
     width: 49.99%;
 
@@ -6447,38 +6555,104 @@ p{
 	   margin-right: auto;
 	}	
 		.ui-fila-footer-a-item.a{
-			width:24.99%;
+			width:22.99%;
 			float: left; 
 		} 
 
 		.ui-fila-footer-a-item.b{
-			width:74.99%;
+			width:76.99%;
 			float: right; 
 			padding-top: 14px;		
 		} 
 
-			.ui-dato-contacto-footer{
-				float: left;
-				width: 49.99%;								
+		.ui-box-oficina-informes-a {
+			float: left;
+			width: 49.99%;
+			padding-left: 50px;
+			position: relative;			
+		}
+
+			.ui-box-oficina-informes-a figure{
+				position: absolute;
+				top:3px;
+				left:0;
 			}
 
-				.ui-dato-footer{
-					position: relative;
-					padding-left: 65px;
+			.ui-box-oficina-informes-a .a{
+				font-family: "Open Sans Bold";
+				font-size: 15px;
+				line-height: 20px;
+				text-transform: uppercase;
+			}
+
+			.ui-box-oficina-informes-a .b{
+				font-family: "Open Sans";
+				font-size: 15px;
+				line-height: 19px;
+			}
+
+			.ui-box-oficina-informes-a span{
+				display: block;
+			}
+
+			.ui-box-oficina-informes-b{
+				width: 49.99%;
+				float: right;				
+			}
+
+				.ui-informe-footer-a{
+					float: left;
+					width: 49.99%;
 				}
 
-				.ui-texto-dato-footer p{
-					color: #fff;
+					.ui-informe-footer-a span{ 
+						display: block;
+					}
+
+					.ui-informe-footer-a .a{
+						font-family: "Open Sans Bold";
+					    font-size: 15px;
+					    line-height: 20px;
+					    text-transform: uppercase;
+					    padding-left: 29px;
+					}
+
+					.ui-informe-footer-a .b{
+						position: relative;
+						padding-left: 30px;
+						font-family: "Open Sans";
+					    font-size: 15px;
+					    line-height: 19px;
+					}
+
+						.ui-informe-footer-a .b figure{
+							position: absolute;
+							top:0;
+							left:0;
+						}
+
+				.ui-informe-footer-b{
+					float: right;
+					width: 49.99%;
+					padding-left: 10px;
+					padding-top: 20px;
 				}
 
-				.ui-icon-footer{
-					width: 40px;
-					height: 40px;	
-					position: absolute;
-					top:0;
-					left:0;				
-					background-color: rgba(0,0,0,.1);
-				}
+					.ui-informe-footer-b .a{
+						position: relative;
+						display: block;
+						padding-left: 30px;
+						font-family: "Open Sans";
+					    font-size: 15px;
+					    line-height: 19px;
+					}
+						
+						.ui-informe-footer-b .a figure{
+							position: absolute;
+							top:2px;
+							left:0;
+						}
+	
 
 /************* creditos y enlaces *************/
 .ui-box-credito-enlaces{
